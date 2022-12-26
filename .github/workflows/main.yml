@@ -1,0 +1,80 @@
+name: Release
+
+on:
+  schedule:
+    - cron: '0 0 */10 * *'
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    name: Crawl Domains
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.6'
+
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.18
+
+      - name: Env
+        run: |
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          sudo apt update
+          sudo apt install libxml2-dev libxslt-dev -y
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run python program
+        run: |
+          python src/main.py
+
+      - name: Check result files
+        run: |
+          total=$(wc -l output/domains.txt | awk 'END {print $1}')
+          old=$(curl -sSL --connect-timeout 5 -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/chiroots/iran-hosted-domains/releases/latest | grep "body" | cut -d\" -f4 | cut -d " " -f1)          
+
+          echo "total $total"
+          echo "old $old"
+
+          if [[ $total -ne $old ]]; then
+            echo "SHOULD_UPDATE=true" >> $GITHUB_ENV
+            echo "Should Update"
+          fi
+
+          echo "TOTAL_DOMAINS=$total" >> $GITHUB_ENV
+
+      - name: Build .dat file
+        if: ${{ env.SHOULD_UPDATE }}
+        run: |
+          git clone https://github.com/v2fly/domain-list-community
+          rm -rf domain-list-community/data/*
+          
+          mv output/ir_domains.txt domain-list-community/data/ir
+          mv output/other_domains.txt domain-list-community/data/other
+          mv output/ads.txt domain-list-community/data/ads
+          
+          cd domain-list-community
+          go run ./ --outputdir=../output
+          cd ../output
+          mv dlc.dat iran.dat
+
+      - name: Upload result as release
+        if: ${{ env.SHOULD_UPDATE }}
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "output/*.*"
+          body: "${{ env.TOTAL_DOMAINS }} Domains"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ env.TAG_NAME }}
+          name: ${{ env.RELEASE_NAME }}
