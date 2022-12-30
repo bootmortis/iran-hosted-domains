@@ -8,18 +8,14 @@
 >
 > 🚨 Ensure that your personal email address is not visible when you push commits to Github [More info](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
 
-A lot of services and domains are outside of Iran and they are restricted or blocked by iranian censorship infrastructure or tech companies around the world, 
+A lot of services and domains are outside of Iran and they are restricted or blocked, 
 for accessing this service you need to use VPN or proxies with tunneling option, apart from these problems, when we use 
 proxies the domestic services are unavailable because our IP is not in Iran; for bypassing these issues we gathered a list of 
 Iranian domains and services to help our people bypass this situation.
 
-## VPN & Proxy Problems in Iran
+## Disclaimer
+This repository is a compiled list of public information about websites hosted in Iran. It is intended for informational purposes only and is not intended to provide guidance on how to connect to or create or manage a virtual private network (VPN). The content in this repository is provided as-is and we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability of the information contained in this repository. Any reliance you place on such information is strictly at your own risk. We will not be liable for any errors or omissions in the information or for any losses, damages, or other liabilities that may arise from its use. Please use caution and consult with a qualified professional before using any information from this repository.
 
-The following issues arise when using VPN for some Iran hosted websites:
-
-- They may force you to have Iran IP to be able to access.
-- They may offer 50% off bandwidth while having Iran IP.
-- They may limit speed for non-Iran IPs or VPNs are slow.
 
 ## Usage
 
