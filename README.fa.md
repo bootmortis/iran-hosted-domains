@@ -29,7 +29,7 @@
 5. در کادر باز شده بر روی yes کلیک کنید.
 6. بر روی OK کلیک کنید.
 
-[تصویر](https://imgur.com/M9rJATU)
+<img width="400" src="assets/qv2ray.png">
 
 ### .dat file
 
@@ -40,20 +40,19 @@
 2. فایل را در کلاینت خود کپی و یا وارد کنید.  
   به عنوان مثال:
     - v2ray macOS: `/usr/local/share/v2ray`  
-    [تصویر](https://imgur.com/RTAFQo2)
-
 3. قوانین مناسب را اضافه کنید:
     - `ext:iran.dat:ir`
     - `ext:iran.dat:other`
     - `ext:iran.dat:ads`
-
 4. اتصال خود را قطع و وصل کنید.
+
+<img width="400" src="assets/v2ray.png">
   
 ### [SagerNet](https://github.com/SagerNet/SagerNet)
+<img src="assets/sagernet.png">
+
 1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
 2. فایل را از طریق `Route -> Three dots -> Manage Route Assets`  به کلاینت اضافه کنید.  
-[تصویر](https://imgur.com/bZsNMov)
-
 3.  از بخش  `Route -> Create Route` قوانین زیر را اضافه کنید:   
 </div>  
 
@@ -83,12 +82,15 @@
 
 1. فایل `shadowrocket.conf` را دانلود کنید.
 2. در اپلیکیشن بر روی `Import From Cloud` کلیک کرده و فایل مربوط را اضافه کنید.
-
-[تصویر](https://imgur.com/kTI4DSw)
-
 3. در نهایت، بر روی `shadowrocket.conf`کلیک کرده و `Use Config` را انتخاب کنید.
 
-[تصویر](https://imgur.com/rqM0ke0)  
+<table>
+  <tr>
+    <td>  <img align="right" height="400" src="assets/shadowrocket1.png"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket2.png"> </td>
+   </tr>
+  </tr>
+</table>
 
 ### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
 
@@ -172,14 +174,16 @@ rule-providers:
 1. در ابتدا فایل `domains.txt` را  از [بخش رلیز][link-release] دانلود کنید.
 2. سپس nekoray را باز کنید و روی آیکون `program` بالا سمت چپ کلیک کنید
 3. سپس به ترتیب روی دکمه `preferences` و `routing setting`  کلیک کنید
-
-[تصویر](https://imgur.com/QbW1t6k)  
-  
 4. فایل دانلود شده را بر روی قسمت Direct-Domain جایگذاری کنید.
-
-[تصویر](https://imgur.com/QKaeiWI)  
-
 5. سپس بر روی OK کلیک کنید و برنامه را دوباره اجرا کنید.
+
+<table>
+  <tr>
+    <td> <img align="right" width="400" src="assets/nekoray1.png"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray2.png"> </td>
+   </tr>
+  </tr>
+</table>
 
   
 ## فایل‌ها
