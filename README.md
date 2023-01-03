@@ -8,9 +8,9 @@
 >
 > 🚨 Ensure that your personal email address is not visible when you push commits to Github [More info](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
 
-A lot of services and domains are outside of Iran and they are restricted or blocked, 
-for accessing this service you need to use VPN or proxies with tunneling option, apart from these problems, when we use 
-proxies the domestic services are unavailable because our IP is not in Iran; for bypassing these issues we gathered a list of 
+A lot of services and domains are outside of Iran and they are restricted or blocked,
+for accessing this service you need to use VPN or proxies with tunneling option, apart from these problems, when we use
+proxies the domestic services are unavailable because our IP is not in Iran; for bypassing these issues we gathered a list of
 Iranian domains and services to help our people bypass this situation.
 
 ## Disclaimer
@@ -20,11 +20,13 @@ This repository is a compiled list of public information about websites hosted i
 ## Usage
 
 This can differ depending on which tool you use. You can download the domains list from
-the [release page][link-release].  
-In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing. 
+the [release page][link-release].
+In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing.
 [more info.](https://www.v2ray.com/en/configuration/routing.html)
 
 ### [Qv2ray](https://github.com/Qv2ray/Qv2ray)
+
+<img align="right" width="400" src="assets/qv2ray.png">
 
 In the release section, you'll find the qv2ray_schema file.
 
@@ -35,17 +37,16 @@ In the release section, you'll find the qv2ray_schema file.
 5. in the opened dialogue box, click on yes.
 6. Click on OK.
 
-[Imgur](https://imgur.com/M9rJATU)
 
 ### .dat file
 
 It can be used in all v2fly, v2ray and xray clients.
+<img align="right" width="400" src="assets/v2ray.png">
 
 1. Download `iran.dat` file from [here][link-release].
-2. Copy/Import file in your client.  
+2. Copy/Import file in your client.
   for example:
-    - v2ray macOS: `/usr/local/share/v2ray`  
-    [Imgur](https://imgur.com/RTAFQo2)
+    - v2ray macOS: `/usr/local/share/v2ray`
 
 3. Add proper rules:
     - `ext:iran.dat:ir`
@@ -55,11 +56,13 @@ It can be used in all v2fly, v2ray and xray clients.
 4. Reconnect.
 
 ### [SagerNet](https://github.com/SagerNet/SagerNet)
-1. Download `iran.dat` file from [here][link-release].
-2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:  
-[Imgur](https://imgur.com/bZsNMov)
 
-3.  Add proper rules  `Route -> Create Route`:  
+<img align="right" src="assets/sagernet.png">
+
+1. Download `iran.dat` file from [here][link-release].
+2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
+
+3.  Add proper rules  `Route -> Create Route`:
     - Block Ads:
       - domain: `geosite:category-ads-all`
       - outbound: `Block`
@@ -81,14 +84,19 @@ It can be used in all v2fly, v2ray and xray clients.
 
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
+
 1. Download `shadowrocket.conf` file.
 2. Tap `Import From Cloud` in the Shadowrocket app and then import the file.
-
-[Imgur](https://imgur.com/kTI4DSw)
-
 3. Finally, tap on the `shadowrocket.conf` and select `Use Config`.
 
-[Imgur](https://imgur.com/rqM0ke0)  
+<table>
+  <tr>
+    <td>  <img align="right" height="400" src="assets/shadowrocket1.png"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket2.png"> </td>
+   </tr>
+  </tr>
+</table>
+
 
 ### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
 
@@ -117,14 +125,16 @@ In the [release section][link-release], you'll find the `domains.txt` file.
 1. Download the file.
 2. Open `Program` in the man page of nekoray.
 3. Open `preferences` and click on `Routing Setting`.
-
-[Imgur](https://imgur.com/QbW1t6k)
-
 4. Paste `domains.txt` file on domain-direct section.
-
-[Imgur](https://imgur.com/QKaeiWI)
-
 5. Press OK button and restart the app.
+
+<table>
+  <tr>
+    <td> <img align="right" width="400" src="assets/nekoray1.png"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray2.png"> </td>
+   </tr>
+  </tr>
+</table>
 
 ## Create .dat file manually (Tutorial)
 
