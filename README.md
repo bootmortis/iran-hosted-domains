@@ -26,7 +26,7 @@ In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for be
 
 ### [Qv2ray](https://github.com/Qv2ray/Qv2ray)
 
-<img align="right" width="400" src="assets/qv2ray.png">
+<img align="right" width="400" src="assets/qv2ray.jpeg">
 
 In the release section, you'll find the qv2ray_schema file.
 
@@ -41,7 +41,7 @@ In the release section, you'll find the qv2ray_schema file.
 ### .dat file
 
 It can be used in all v2fly, v2ray and xray clients.
-<img align="right" width="400" src="assets/v2ray.png">
+<img align="right" width="400" src="assets/v2ray.jpeg">
 
 1. Download `iran.dat` file from [here][link-release].
 2. Copy/Import file in your client.
@@ -57,7 +57,7 @@ It can be used in all v2fly, v2ray and xray clients.
 
 ### [SagerNet](https://github.com/SagerNet/SagerNet)
 
-<img align="right" src="assets/sagernet.png">
+<img align="right" src="assets/sagernet.jpeg">
 
 1. Download `iran.dat` file from [here][link-release].
 2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
@@ -91,8 +91,8 @@ It can be used in all v2fly, v2ray and xray clients.
 
 <table>
   <tr>
-    <td>  <img align="right" height="400" src="assets/shadowrocket1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/shadowrocket2.png"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket1.jpeg"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket2.jpeg"> </td>
    </tr>
   </tr>
 </table>
@@ -130,8 +130,8 @@ In the [release section][link-release], you'll find the `domains.txt` file.
 
 <table>
   <tr>
-    <td> <img align="right" width="400" src="assets/nekoray1.png"> </td>
-    <td> <img align="right" width="400" src="assets/nekoray2.png"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray1.jpeg"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray2.jpeg"> </td>
    </tr>
   </tr>
 </table>

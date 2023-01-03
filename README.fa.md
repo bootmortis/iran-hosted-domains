@@ -29,7 +29,7 @@
 5. در کادر باز شده بر روی yes کلیک کنید.
 6. بر روی OK کلیک کنید.
 
-<img width="400" src="assets/qv2ray.png">
+<img width="400" src="assets/qv2ray.jpeg">
 
 ### .dat file
 
@@ -46,10 +46,10 @@
     - `ext:iran.dat:ads`
 4. اتصال خود را قطع و وصل کنید.
 
-<img width="400" src="assets/v2ray.png">
+<img width="400" src="assets/v2ray.jpeg">
   
 ### [SagerNet](https://github.com/SagerNet/SagerNet)
-<img src="assets/sagernet.png">
+<img src="assets/sagernet.jpeg">
 
 1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
 2. فایل را از طریق `Route -> Three dots -> Manage Route Assets`  به کلاینت اضافه کنید.  
@@ -86,8 +86,8 @@
 
 <table>
   <tr>
-    <td>  <img align="right" height="400" src="assets/shadowrocket1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/shadowrocket2.png"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket1.jpeg"> </td>
+    <td>  <img align="right" height="400" src="assets/shadowrocket2.jpeg"> </td>
    </tr>
   </tr>
 </table>
@@ -179,8 +179,8 @@ rule-providers:
 
 <table>
   <tr>
-    <td> <img align="right" width="400" src="assets/nekoray1.png"> </td>
-    <td> <img align="right" width="400" src="assets/nekoray2.png"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray1.jpeg"> </td>
+    <td> <img align="right" width="400" src="assets/nekoray2.jpeg"> </td>
    </tr>
   </tr>
 </table>
