@@ -57,7 +57,8 @@ custom_domains = {
         "gvt1.com",
     ],
     "remove_contain": [
-        "google.com"
+        "google.com",
+        "ooklaserver.net",
     ],
     "remove_regex": [
         r"^xn--",
