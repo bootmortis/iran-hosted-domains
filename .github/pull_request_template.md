@@ -11,7 +11,7 @@ Please link any related issues that your pull request addresses or closes.
 
 ## Checklist
 
-- [ ] I have read and followed the [contributing guidelines](link-to-contributing-guidelines).
+- [ ] I have read and followed the [contributing guidelines](/CONTRIBUTING.md).
 - [ ] I have tested my changes.
 - [ ] I have updated the documentation, if necessary.
 
