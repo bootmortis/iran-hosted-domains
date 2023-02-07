@@ -203,7 +203,7 @@ rule-providers:
   - [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (لایسنس AGPL-3.0)
 
 اگر شما منابع دیگری می‌شناسید، و یا وب‌سایتی پیدا کرده‌اید که اینجا نیست لطفا یک
-[issue](https://github.com/bootmortis/iran-hosted-domains/issues) باز کنید و یا فایل [custom_domains.py][link-custom] را تغییر داده و [PR][link-pr] ایجاد کنید.
+[issue][link-issues] باز کنید و یا فایل [custom_domains.py][link-custom] را تغییر داده و [PR][link-pr] ایجاد کنید.
 
 ## چگونه کار می کند؟
 
@@ -214,5 +214,5 @@ rule-providers:
 
 [link-custom]: src/data/custom_domains.py
 [link-pr]: ../../pulls
-[link-issues]: ../../issues
+[link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
 [link-release]: ../../releases
