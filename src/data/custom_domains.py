@@ -51,6 +51,7 @@ custom_domains = {
         "tourism-bank.com",
         "iauec.ac.ir",
         "iau.ir",
+        "hamrahcard.net",
     ],
     "remove": [
         "googleapis.com",
