@@ -199,5 +199,5 @@ A Python script is executed by Github Action and generates files that are on the
 
 [link-custom]: src/data/custom_domains.py
 [link-pr]: ../../pulls
-[link-issues]: ../../issues
+[link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
 [link-release]: ../../releases
