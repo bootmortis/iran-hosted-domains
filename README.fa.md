@@ -118,21 +118,23 @@ rule-providers:
 ### [V2rayNG](https://github.com/2dust/v2rayNG)
 
 1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در گوشی خود با اپ مدیریت فایل به مسیر `Android/data/com.v2ray.ang/files/assets` منتقل کنید.
-2. بعد توی `Setting` برنامه تو بخش `Routing` مطمئن بشید که `Domain Strategy` رو حالت `IpIfNonMatch` باشه:
-
-[تصویر](https://imgur.com/3znAoM6)
-  
+2. بعد توی `Setting` برنامه تو بخش `Routing` مطمئن بشید که `Domain Strategy` رو حالت `IpIfNonMatch` باشه:  
 3. رو `Custom rules` تپ کنید. تو سربرگ `Direct URL or IP` بنویسید:
-
 - `ext:iran.dat:ir`
 - `ext:iran.dat:other`
-
-[تصویر](https://imgur.com/jhXd8XW)
   
-تو سربرگ `Blocked URL or IP` بنویسید:
+4. تو سربرگ `Blocked URL or IP` بنویسید:
 - `ext:iran.dat:ads`
     
 بعد هم اوکی کنید و تمام.
+<table>
+  <tr>
+    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
+    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
+   </tr>
+  </tr>
+</table>
+
   
   
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
