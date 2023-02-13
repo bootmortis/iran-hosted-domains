@@ -186,7 +186,7 @@ go run ./ --outputdir=../
 - Iran Domains:
   - [ITO GOV](https://eservices.ito.gov.ir/page/iplist) - [Mirror](https://github.com/bootmortis/ito-gov-mirror)
   - [ADSL TCI](https://adsl.tci.ir/panel/sites)
-  - [V2fly Domain List Community](https://github.com/v2fly/domain-list-community)
+  - [V2fly Domain List Community](https://github.com/v2fly/domain-list-community) (MIT License)
   - [Custom List][link-custom]
 - ADs:
   - [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (AGPL-3.0 License)
