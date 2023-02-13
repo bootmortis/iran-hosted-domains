@@ -181,11 +181,12 @@ go run ./ --outputdir=../
 - **qv2ray_schema.json:** Importable json schema that can be used in [Qv2ray](https://github.com/Qv2ray/Qv2ray).
 - **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118).
 
-## Source
+## Sources & Acknowledgements
 
 - Iran Domains:
   - [ITO GOV](https://eservices.ito.gov.ir/page/iplist) - [Mirror](https://github.com/bootmortis/ito-gov-mirror)
   - [ADSL TCI](https://adsl.tci.ir/panel/sites)
+  - [V2fly Domain List Community](https://github.com/v2fly/domain-list-community)
   - [Custom List][link-custom]
 - ADs:
   - [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (AGPL-3.0 License)
