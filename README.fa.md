@@ -124,51 +124,20 @@ rule-providers:
   
 3. رو `Custom rules` تپ کنید. تو سربرگ `Direct URL or IP` بنویسید:
 
-  `ext:iran.dat:ir`
+- `ext:iran.dat:ir`
+- `ext:iran.dat:other`
 
 [تصویر](https://imgur.com/jhXd8XW)
   
 تو سربرگ `Blocked URL or IP` بنویسید:
-  `ext:iran.dat:ads`
-  
-  تو سربرگ `Proxy URL or IP` بنویسید:
-  `ext:iran.dat:other`
-  
+- `ext:iran.dat:ads`
+    
 بعد هم اوکی کنید و تمام.
   
   
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
+برای مسدود سازی دامنه‌ها و IP های داخلی در سمت سرور لطفا به [این آموزش][link-v2ray-server-block] مراجعه کنید.
 
- شما می‌توانید ترافیک سایت‌های ایرانی را در سرور v2ray خود نیز تفکیک کنید و مستقیم صدا بزنید.
-1. برای این منظور ابتدا باید فایل `iran.dat` را از [این صفحه][link-release] در سرور خود در کنار فایل `geoip.dat` و یا `geosite.dat` انتقال دهید.
- این مسیر بسته به نحوه نصب v2ray ممکن است یکی از مسیرهای زیر باشد :
-
-`/usr/local/x-ui/bin/`
-
-`/usr/local/etc/v2ray/`
-
-`/etc/v2ray/`
-
-اگر  فایل `dat` در هیچ‌کدام از مسیرهای بالا نبود با این دستور مسیر مورد نظر را پیدا کنید:
-
- `find / -iname "geo*.dat"`
-
-بعد از پیدا کردن مسیر مقصد به آن فولدر بروید:
-
-`cd /usr/local/x-ui/bin`
-
-و بعد از اینکه لینک فایل `iran.dat` را استخراج کردید مشابه دستور زیر آن را دانلود کنید:
-
-`wget https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat`
-
-2.  حالا باید v2ray را طوری تنظیم کنیم که برای بارگذاری سایت‌های ایرانی از دیتابیس `iran.dat` که در مرحله قبل اضافه کردیم و الگوی regex سایت‌های ir استفاده کند. برای اینکار باید فایل `config.json` (که در همان مسیر قبلی‌ست) را ویرایش کنیم. اگر از پنل x-ui استفاده می‌کنید از قسمت `PanelSettings/XRAYConfiguration` هم می‌توانید این فایل را ویرایش کنید.
-
-محتوای این فایل را در یک اپ یا سایت ادیتور جیسون باز کنید و آبجکت `routing` موجود در فایل [Routing.txt](https://github.com/bootmortis/iran-hosted-domains/files/10308621/Routing.txt) را جایگزین آبجکت قبلی `routing` خودتان کنید (یا اگر که این فیلد کلا وجود نداشت آن را در بالاترین رده یعنی در کنار آبجکت‌های `inbounds` و `outbounds` قرار دهید).
-دقت کنید که محتوای پارامتر `outboundTag` برای هر `rule` (که در اینجا به عنوان مثال مقدار دلخواه `upstream` و `direct` و `blocked` است ) ‍باید با پارامتر `tag` در آبجکت متناظر آن در `outbounds`  یکی باشد. مطابق فایل نمونه.
-  
-3. بعد از این کار  v2ray را از پنل x-ui (یا با دستور `x-ui restart`) یا با دستور `v2ray restart` ریستارت کنید.
-
-تذکر: توصیه اکید ما جداسازی ترافیک سایت‌های ایرانی در سرچشمه یعنی اپ‌های کلاینت کاربر است ولی اگر در سرور خود هم تفکیک Route را انجام دادید حتما به کاربر خود اطلاع دهید که برای سایت‌های این لیست آیپی سرور شما قابل رویت خواهد بود.
   
   ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 1. در ابتدا فایل `domains.txt` را  از [بخش رلیز][link-release] دانلود کنید.
@@ -216,3 +185,4 @@ rule-providers:
 [link-pr]: ../../pulls
 [link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
 [link-release]: ../../releases
+[link-v2ray-server-block]: https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1
