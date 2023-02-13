@@ -68,6 +68,14 @@ jobs:
           go run ./ --outputdir=../output
           cd ../output
           mv dlc.dat iran.dat
+      
+      - name: Calculate checksum
+        if: ${{ env.SHOULD_UPDATE }}
+        run: |
+          cd output
+          for file in *; do
+            sha256sum $file > $file.sha256
+          done
 
       - name: Upload result as release
         if: ${{ env.SHOULD_UPDATE }}
