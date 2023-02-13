@@ -99,7 +99,7 @@ def letter_digit_hyphen(text: str) -> bool:
     # https://github.com/v2fly/v2ray-core/discussions/1275
     # https://www.rfc-editor.org/rfc/rfc952
 
-    return not bool(re.match(r"[^a-zA-Z0-9-.]", text))
+    return bool(re.search(r"^[a-zA-Z0-9-\.]+$", text))
 
 
 def download(url: str, path: str, method: str = 'GET', headers: dict = None, payload: str = None):

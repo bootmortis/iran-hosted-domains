@@ -32,6 +32,7 @@ def ads() -> Iterable[str]:
     ads = (ad.strip() for ad in ads if ad.strip() != '')
     ads = filter(utils.is_not_ip, ads)
     ads = filter(utils.is_url, ads)
+    ads = filter(utils.letter_digit_hyphen, ads)
     return sorted(ads)
 
 def v2fly(filename = "category-ir") -> Iterable[str]:
