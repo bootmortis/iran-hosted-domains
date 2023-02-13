@@ -164,11 +164,12 @@ rule-providers:
 - **qv2ray_schema.json:** فایل قابل استفاده در کلاینت [Qv2ray](https://github.com/Qv2ray/Qv2ray).
 - **shadowrocket.conf:** فایل قابل استفاده در کلاینت [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118).
 
-## منابع
+## منابع و قدردانی‌ها
 
 - دامنه‌های ایران:
   - [سازمان فناوری اطلاعات ایران](https://g2b.ito.gov.ir/index.php/site/list_ip)
   - [سامانه مدیریت اینترنت مشتریان شرکت مخابرات ایران](https://adsl.tci.ir/panel/sites)
+  - [انجمن لیست دامنه v2fly](https://github.com/v2fly/domain-list-community)
   - [لیست شخصی][link-custom]
 - تبلیغات:
   - [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (لایسنس AGPL-3.0)
