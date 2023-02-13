@@ -3,3 +3,4 @@ output
 venv
 download
 .git-credentials
+__pycache__
