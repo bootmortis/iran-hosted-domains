@@ -41,9 +41,9 @@
   به عنوان مثال:
     - v2ray macOS: `/usr/local/share/v2ray`  
 3. قوانین مناسب را اضافه کنید:
-    - `ext:iran.dat:ir`
-    - `ext:iran.dat:other`
-    - `ext:iran.dat:ads`
+    - `ext:iran.dat:ir` در بخش bypass
+    - `ext:iran.dat:other` در بخش bypass
+    - `ext:iran.dat:ads` در بخش block
 4. اتصال خود را قطع و وصل کنید.
 
 <img width="400" src="assets/v2ray.png">

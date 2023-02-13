@@ -49,9 +49,9 @@ It can be used in all v2fly, v2ray and xray clients.
     - v2ray macOS: `/usr/local/share/v2ray`
 
 3. Add proper rules:
-    - `ext:iran.dat:ir`
-    - `ext:iran.dat:other`
-    - `ext:iran.dat:ads`
+    - `ext:iran.dat:ir` in bypass section
+    - `ext:iran.dat:other` in bypass section
+    - `ext:iran.dat:ads` in block section
 
 4. Reconnect.
 
