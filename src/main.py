@@ -44,6 +44,7 @@ if __name__ == "__main__":
     all_domains = collect_and_clean_domains(
         get_domians.g2b_ito_gov(),
         get_domians.adsl_tci(),
+        get_domians.v2fly(),
     )
 
     # Divide info

@@ -33,3 +33,20 @@ def ads() -> Iterable[str]:
     ads = filter(utils.is_not_ip, ads)
     ads = filter(utils.is_url, ads)
     return sorted(ads)
+
+def v2fly(filename = "category-ir") -> Iterable[str]:
+    resp = requests.get(consts.v2fly_base_url + filename)
+    resp.raise_for_status()
+
+    domains = []
+    for line in resp.text.splitlines():
+        line = re.sub(r'(?m)^\s*#.*\n?', '', line)
+        if line.startswith("include:"):
+            domains.extend(v2fly(line.split(":")[1]))
+        else:
+            domains.append(line)
+    
+    domains = (domain.strip() for domain in domains if domain.strip() != '')
+    domains = filter(utils.is_not_ip, domains)
+    domains = filter(utils.is_url, domains)
+    return sorted(domains)
