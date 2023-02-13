@@ -16,7 +16,7 @@ def shadowrocket(bypass_domains: Iterable[str]):
         "ipv6 = true\n"
         "[Rule]\n"
     )
-    config += "\n".join(f"DOMAIN-SUFFIX,{domain},DIRECT" for domain in bypass_domains)
+    config += "\n".join(f"DOMAIN-SUFFIX,{domain},DIRECT" for domain in bypass_domains) + "\n"
     config += (
         "USER-AGENT,Line*,PROXY\n"
         "IP-CIDR,192.168.0.0/16,DIRECT\n"
