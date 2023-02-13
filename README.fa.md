@@ -159,7 +159,7 @@ rule-providers:
 
 و بعد از اینکه لینک فایل `iran‪.‬dat`را استخراج کردید مشابه دستور زیر آن را دانلود کنید:
 
-`wget https://github.com/bootmortis/iran-hosted-domains/releases/download/202212110113/iran.dat`
+`wget https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat`
 
 2.  حالا باید v2ray را طوری تنظیم کنیم که برای بارگذاری سایت‌های ایرانی از دیتابیس `iran.dat` که در مرحله قبل اضافه کردیم و الگوی regex سایت‌های ir استفاده کند. برای اینکار باید فایل `config‪.‬json` (که در همان مسیر قبلی‌ست) را ویرایش کنیم. اگر از پنل x‪-‬ui استفاده می‌کنید از قسمت `PanelSettings/XRAYConfiguration` هم می‌توانید این فایل را ویرایش کنید.
 
