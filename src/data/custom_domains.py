@@ -60,6 +60,7 @@ custom_domains = {
         "numberland.ir",
         "takhfifan.com",
         "aparatsport.com",
+        "rozmusic.com",
     ],
     "remove": [
         "googleapis.com",
