@@ -73,7 +73,18 @@ jobs:
           go run ./ --outputdir=../output
           cd ../output
           mv dlc.dat iran.dat
-      
+
+      - name: Build sing-box .db file
+        if: ${{ env.SHOULD_UPDATE }}
+        run: |
+          git clone https://github.com/bootmortis/sing-geosite
+          
+          cp out/iran.dat sing-geosite/data/iran.dat
+
+          cd sing-geosite
+          go run -v .
+          mv iran-geosite.db ../output/iran-geosite.db
+
       - name: Calculate checksum
         if: ${{ env.SHOULD_UPDATE }}
         run: |
