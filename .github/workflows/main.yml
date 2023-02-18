@@ -79,7 +79,7 @@ jobs:
         run: |
           git clone https://github.com/bootmortis/sing-geosite
           
-          cp out/iran.dat sing-geosite/data/iran.dat
+          cp output/iran.dat sing-geosite/data/iran.dat
 
           cd sing-geosite
           go run -v .
