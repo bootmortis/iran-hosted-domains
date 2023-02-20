@@ -135,15 +135,12 @@ rule-providers:
 1. First download the file `iran.dat` from [here][link-release] then move it to the address `Android/data/com.v2ray.ang/files/assets` using a File Manager.
 2. Then make sure `Routing` is set to `IpIfNonMatch` from `Domain Strategy` in the `Setting`.
 3. Tap on the `Direct URL or IP`. Write the following in the `Custom rules` tab:
-
-```
 - `ext:iran.dat:ir`
 - `ext:iran.dat:other`
-```
+  
 4. Write the following in the `Blocked URL or IP` tab:
-```
 - `ext:iran.dat:ads`
-```
+  
 5. Then press OK and that's it.
 
 <table>
