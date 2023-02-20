@@ -194,7 +194,7 @@ rule-providers:
 
 ```bash
 git clone https://github.com/v2fly/domain-list-community
-
+```
 ### ۳. آماده‌سازی دامنه‌ها
 
 شما می‌توانید در یک فایل .dat هر چقدر که می‌خواهید گروه‌های متفاوت داشته باشید. هر کدام از این گروه‌ها می‌توانند در بخش bypass، proxy یا blocked باشند و هر چقدر که می‌خواهید دامنه داشته باشند.
@@ -212,12 +212,12 @@ cd domain-list-community
 rm data/*
 
 cp ~/ads.txt data/ads
-
+```
 ### ۵. اجرای برنامه
 
 ```bash
 go run ./ --outputdir=../
-
+```
 ## فایل‌ها
 
 - **iran.dat:** شامل تمام سایت های هاست شده در ایران و دامنه های تبلیغاتی با فرمت خاص.
