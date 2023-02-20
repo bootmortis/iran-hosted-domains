@@ -6,7 +6,7 @@
 >
 > 🚨 For safety reasons, it may be advisable to use a separate, non-personal account for your Github activity.
 >
-> 🚨 Ensure that your personal email address is not visible when you push commits to Github [More info](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
+> 🚨 Ensure that your personal email address is not visible when you push commits to Github. [More info](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
 
 A lot of services and domains are outside of Iran and they are restricted or blocked,
 for accessing this service you need to use VPN or proxies with tunneling option, apart from these problems, when we use
@@ -26,8 +26,6 @@ In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for be
 
 ### [Qv2ray](https://github.com/Qv2ray/Qv2ray)
 
-<img align="right" width="400" src="assets/qv2ray.png">
-
 In the release section, you'll find the qv2ray_schema file.
 
 1. Download the file.
@@ -37,11 +35,15 @@ In the release section, you'll find the qv2ray_schema file.
 5. in the opened dialogue box, click on yes.
 6. Click on OK.
 
+<table>
+  <tr>
+    <td><img align="right" width="400" src="assets/qv2ray.png"></td>
+  </tr>
+</table>
 
 ### .dat file
 
 It can be used in all v2fly, v2ray and xray clients.
-<img align="right" width="400" src="assets/v2ray.png">
 
 1. Download `iran.dat` file from [here][link-release].
 2. Copy/Import file in your client.
@@ -55,9 +57,13 @@ It can be used in all v2fly, v2ray and xray clients.
 
 4. Reconnect.
 
-### [SagerNet](https://github.com/SagerNet/SagerNet)
+<table>
+  <tr>
+    <td> <img align="right" width="400" src="assets/v2ray.png"> </td>
+  </tr>
+</table>
 
-<img align="right" src="assets/sagernet.png">
+### [SagerNet](https://github.com/SagerNet/SagerNet)
 
 1. Download `iran.dat` file from [here][link-release].
 2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
@@ -82,6 +88,12 @@ It can be used in all v2fly, v2ray and xray clients.
 
 4. Reconnect.
 
+<table>
+  <tr>
+    <td> <img align="right" src="assets/sagernet.png"> </td>
+  </tr>
+</table>
+
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
 
@@ -93,7 +105,6 @@ It can be used in all v2fly, v2ray and xray clients.
   <tr>
     <td>  <img align="right" height="400" src="assets/shadowrocket1.png"> </td>
     <td>  <img align="right" height="400" src="assets/shadowrocket2.png"> </td>
-   </tr>
   </tr>
 </table>
 
@@ -119,10 +130,33 @@ rule-providers:
 4. Save the file.
 5. Based on the client, you may need to set clash on `Rule` mode.
 
-### [Nekoray](https://github.com/MatsuriDayo/nekoray)
-In the [release section][link-release], you'll find the `domains.txt` file.
+### [V2rayNG](https://github.com/2dust/v2rayNG)
 
-1. Download the file.
+1. First download the file `iran.dat` from [here][link-release] then move it to the address `Android/data/com.v2ray.ang/files/assets` using a File Manager.
+2. Then make sure `Routing` is set to `IpIfNonMatch` from `Domain Strategy` in the `Setting`.
+3. Tap on the `Direct URL or IP`. Write the following in the `Custom rules` tab:
+- `ext:iran.dat:ir`
+- `ext:iran.dat:other`
+  
+4. Write the following in the `Blocked URL or IP` tab:
+- `ext:iran.dat:ads`
+  
+5. Then press OK and that's it.
+
+<table>
+  <tr>
+    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
+    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
+   </tr>
+  </tr>
+</table>
+
+### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
+For blocking local domains and IPs in the server side follow [this][link-v2ray-server-block] instructions. It's only available in Persian.
+
+### [Nekoray](https://github.com/MatsuriDayo/nekoray)
+
+1. Download the `domains.txt` file from [release section][link-release].
 2. Open `Program` in the man page of nekoray.
 3. Open `preferences` and click on `Routing Setting`.
 4. Paste `domains.txt` file on domain-direct section.
@@ -135,6 +169,16 @@ In the [release section][link-release], you'll find the `domains.txt` file.
    </tr>
   </tr>
 </table>
+
+### [v2rayN](https://github.com/2dust/v2rayN/)
+
+1. Download `iran.dat` file from [here][link-release] and place in v2rayN directory and inside `bin` folder.
+2. Open v2ray and select `Settings` and then select `RoutingSetting`
+3. In the new window click on `Advanced Function` and choose `Add`
+4. In the new window, in `Remarks` field choose any name and in the `Rule List` empty area right-click and select `Rule Add`
+5. In the new window choose `direct` for `outboundTag` and the domain section type `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$`
+6. Click on `Confirm` until you reach the main app window
+7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
 
 ## Create .dat file manually (Tutorial)
 
@@ -173,16 +217,6 @@ cp ~/ads.txt data/ads
 go run ./ --outputdir=../
 ```
 
-### [v2rayN](https://github.com/2dust/v2rayN/)
-
-1. Download `iran.dat` file from [here][link-release] and place in v2rayN directory and inside `bin` folder.
-2. Open v2ray and select `Settings` and then select `RoutingSetting`
-3. In the new window click on `Advanced Function` and choose `Add`
-4. In the new window, in `Remarks` field choose any name and in the `Rule List` empty area right-click and select `Rule Add`
-5. In the new window choose `direct` for `outboundTag` and the domain section type `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$`
-6. Click on `Confirm` until you reach the main app window
-7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
-
 ## Files
 
 - **iran.dat:** Contains all websites hosted in Iran and ADs in a special format.
@@ -211,3 +245,4 @@ A Python script is executed by Github Action and generates files that are on the
 [link-pr]: ../../pulls
 [link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
 [link-release]: ../../releases
+[link-v2ray-server-block]: https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1
