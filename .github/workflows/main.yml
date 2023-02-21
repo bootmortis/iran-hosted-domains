@@ -52,7 +52,7 @@ jobs:
           echo "total $total"
           echo "old $old"
 
-          if [[ ${{ github.event.inputs.force_update }} == 'true' || $total -ne $old ]]; then
+          if [[ ${{ github.event.inputs.force_update || 'false' }} == 'true' || $total -ne $old ]]; then
             echo "SHOULD_UPDATE=true" >> $GITHUB_ENV
             echo "Should Update"
           fi
