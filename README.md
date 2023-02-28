@@ -232,7 +232,7 @@ go run ./ --outputdir=../
   - [V2fly Domain List Community](https://github.com/v2fly/domain-list-community) (MIT License)
   - [Custom List][link-custom]
 - ADs:
-  - [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (AGPL-3.0 License)
+  - [uBOPa - uBO Parsi filter list](https://github.com/nimasaj/uBOPa) (MIT License)
 
 If you know of any other source, or you found a website that isn't here, please open
 an [issue][link-issues] or add that specific website to [custom_domains.py][link-custom] and make a [PR][link-pr].

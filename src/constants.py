@@ -1,6 +1,6 @@
 # https://eservices.ito.gov.ir/page/iplist
 g2b_gov_url = "https://raw.githubusercontent.com/bootmortis/ito-gov-mirror/main/out/domains.csv"
-ads_url = "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt"
+ads_url = "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa_Pihole.txt"
 v2fly_base_url = "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/"
 
 # input files

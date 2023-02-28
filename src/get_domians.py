@@ -28,7 +28,7 @@ def ads() -> Iterable[str]:
 
     ads = resp.text
     ads = re.sub(r'(?m)^\s*#.*\n?', '', ads)
-    ads = ads.splitlines()[1:]
+    ads = ads.splitlines()
     ads = (ad.strip() for ad in ads if ad.strip() != '')
     ads = filter(utils.is_not_ip, ads)
     ads = filter(utils.is_url, ads)
