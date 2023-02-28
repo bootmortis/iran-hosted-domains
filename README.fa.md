@@ -233,7 +233,7 @@ go run ./ --outputdir=../
   - مخزن [V2fly Domain List Community](https://github.com/v2fly/domain-list-community) (لایسنس MIT)
   - [لیست شخصی][link-custom]
 - تبلیغات:
-  - مخزن [PersianBlocker](https://github.com/MasterKia/PersianBlocker) (لایسنس AGPL-3.0)
+  - مخزن [uBOPa - uBO Parsi filter list](https://github.com/nimasaj/uBOPa) (لایسنس MIT)
 
 اگر شما منابع دیگری می‌شناسید، و یا وب‌سایتی پیدا کرده‌اید که اینجا نیست لطفا یک
 [issue][link-issues] باز کنید و یا فایل [custom_domains.py][link-custom] را تغییر داده و [PR][link-pr] ایجاد کنید.
