@@ -180,6 +180,38 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 6. Click on `Confirm` until you reach the main app window
 7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
 
+### [Sing-Box](https://github.com/SagerNet/sing-box)
+
+1. Download 'iran-geosite.db' file from [here][link-release] and plafce it in sing-box working directory.
+2. Open sing-box config file and edit route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
+
+```
+"route": {
+        "geosite": {
+                "path": "Sing-Box_Working_Directory",
+                "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
+        },
+        "rules": [{
+                        "geosite": "ir",
+                        "outbound": "direct"
+                },
+                {
+                        "geosite": "other",
+                        "outbound": "direct"
+                },
+                {
+                        "geosite": "ads",
+                        "outbound": "block"
+                },
+                {
+                        "domain_suffix": [
+                                ".ir"
+                        ],
+                        "outbound": "direct"
+                }]}
+```
+3. For more information about sing-box config template [link](https://sing-box.sagernet.org/configuration/)
+
 ## Create .dat file manually (Tutorial)
 
 ### 1. Install [golang](https://go.dev/doc/install)
