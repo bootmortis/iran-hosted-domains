@@ -61,6 +61,7 @@ custom_domains = {
         "takhfifan.com",
         "aparatsport.com",
         "rozmusic.com",
+        "weswap.digital",
     ],
     "remove": [
         "googleapis.com",
