@@ -9,10 +9,15 @@ def shadowrocket(bypass_domains: Iterable[str]):
     config = (
         "#Shadowrocket\n"
         "[General]\n"
+        "fallback-dns-server = \n"
+        "private-ip-answer = false\n"
         "bypass-system = true\n"
         "skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com\n"
         "tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32\n"
-        "dns-server = system\n"
+        "dns-server = 1.1.1.1,8.8.8.8,8.8.4.4\n"
+        "dns-fallback-system = false\n"
+        "dns-direct-system = false\n"
+        "dns-direct-fallback-proxy = true\n"
         "ipv6 = true\n"
         "[Rule]\n"
     )
