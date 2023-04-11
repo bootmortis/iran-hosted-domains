@@ -62,6 +62,7 @@ custom_domains = {
         "aparatsport.com",
         "rozmusic.com",
         "weswap.digital",
+        "blubank.sb24.ir",
     ],
     "remove": [
         "googleapis.com",
