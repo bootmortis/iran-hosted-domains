@@ -63,6 +63,9 @@ custom_domains = {
         "rozmusic.com",
         "weswap.digital",
         "blubank.sb24.ir",
+        "farsgamer.com",
+        "farsgamerpay.com",
+        "fgtal.com",
     ],
     "remove": [
         "googleapis.com",
