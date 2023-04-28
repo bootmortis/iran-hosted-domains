@@ -63,6 +63,7 @@ custom_domains = {
         "rozmusic.com",
         "weswap.digital",
         "blubank.sb24.ir",
+        "sedastore.com",
     ],
     "remove": [
         "googleapis.com",
