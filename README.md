@@ -124,7 +124,7 @@ rule-providers:
     interval: 432000
 ```
 
-3. Add this line to `rules:` section
+3. Add these lines to `rules:` section
 ```yaml
   - RULE-SET,iran,DIRECT
   - GEOIP,IR,DIRECT
