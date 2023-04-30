@@ -57,16 +57,9 @@ def clash(bypass_domains: Iterable[str]):
     config = (
         "# Clash\n"
         "# Wiki: https://github.com/Dreamacro/clash/wiki/premium-core-features#rule-providers\n"
-        "payload:\n"
     )
-    config += "".join(f"  - DOMAIN-SUFFIX,{domain}\n" for domain in bypass_domains)
-    config += (
-        # "  - IP-CIDR,192.168.0.0/16\n"
-        # "  - IP-CIDR,10.0.0.0/8\n"
-        # "  - IP-CIDR,172.16.0.0/12\n"
-        # "  - IP-CIDR,127.0.0.0/8\n"
-        "  - GEOIP,IR\n"
-    )
+    config += "".join(f"+.{domain}\n" for domain in bypass_domains)
+
 
     utils.save_to_file(consts.clash_path, config)
 
