@@ -66,6 +66,7 @@ custom_domains = {
         "farsgamer.com",
         "farsgamerpay.com",
         "fgtal.com",
+        "sedastore.com",
     ],
     "remove": [
         "googleapis.com",
