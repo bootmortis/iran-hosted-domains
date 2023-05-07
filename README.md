@@ -117,15 +117,17 @@ It can be used in all v2fly, v2ray and xray clients.
 rule-providers:
   iran:
     type: http
-    behavior: classical
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
+    format: text
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.txt"
+    path: ./ruleset/iran.txt
     interval: 432000
 ```
 
-3. Add this line to `rules:` section
+3. Add these lines to `rules:` section
 ```yaml
   - RULE-SET,iran,DIRECT
+  - GEOIP,IR,DIRECT
 ```
 4. Save the file.
 5. Based on the client, you may need to set clash on `Rule` mode.

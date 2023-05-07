@@ -117,15 +117,17 @@
 rule-providers:
   iran:
     type: http
-    behavior: classical
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
+    format: text
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.txt"
+    path: ./ruleset/iran.txt
     interval: 432000
 ```
 
-3. سپس خط زیر را به بخش قوانین `Rules` اضافه کنید:  
+3. سپس خط های زیر را به بخش قوانین `Rules` اضافه کنید:  
 ```yaml
   - RULE-SET,iran,DIRECT
+  - GEOIP,IR,DIRECT
 ```
 
 4. فایل را ذخیره کنید.  
