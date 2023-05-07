@@ -111,8 +111,9 @@
 
 ### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
 
-1. صفحه‌ی پروفایل/تنظیمات فعلی خود را که استفاده می‌کنید باز کنید.  
-2. این خطوط را به فایل اضافه کنید:  
+1. مطمئن شوید که حداقل از ورژن `2023.04.13` Clash Core استفاده می‌کنید.
+2. صفحه‌ی پروفایل/تنظیمات فعلی خود را که استفاده می‌کنید باز کنید.  
+3. این خطوط را به فایل اضافه کنید:  
 ```yaml
 rule-providers:
   iran:
@@ -124,14 +125,14 @@ rule-providers:
     interval: 432000
 ```
 
-3. سپس خط های زیر را به بخش قوانین `Rules` اضافه کنید:  
+4. سپس خط های زیر را به بخش قوانین `Rules` اضافه کنید:  
 ```yaml
   - RULE-SET,iran,DIRECT
   - GEOIP,IR,DIRECT
 ```
 
-4. فایل را ذخیره کنید.  
-5. بستگی به نوع کلاینت، ممکن است لازم باشد نرم‌افزار را روی حالت `Rule‍` تنظیم کنید.  
+5. فایل را ذخیره کنید.  
+6. بستگی به نوع کلاینت، ممکن است لازم باشد نرم‌افزار را روی حالت `Rule‍` تنظیم کنید.  
 
    
 ### [V2rayNG](https://github.com/2dust/v2rayNG)

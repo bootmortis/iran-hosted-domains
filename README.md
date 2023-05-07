@@ -111,8 +111,9 @@ It can be used in all v2fly, v2ray and xray clients.
 
 ### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
 
-1. Open your current profile/config that you use.
-2. Add these lines to the file:
+1. Make sure you are using at least version `2023.04.13` of Clash Core.
+2. Open your current profile/config that you use.
+3. Add these lines to the file:
 ```yaml
 rule-providers:
   iran:
@@ -124,13 +125,13 @@ rule-providers:
     interval: 432000
 ```
 
-3. Add these lines to `rules:` section
+4. Add these lines to `rules:` section
 ```yaml
   - RULE-SET,iran,DIRECT
   - GEOIP,IR,DIRECT
 ```
-4. Save the file.
-5. Based on the client, you may need to set clash on `Rule` mode.
+5. Save the file.
+6. Based on the client, you may need to set clash on `Rule` mode.
 
 ### [V2rayNG](https://github.com/2dust/v2rayNG)
 
