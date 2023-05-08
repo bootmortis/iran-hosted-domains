@@ -67,6 +67,8 @@ custom_domains = {
         "farsgamerpay.com",
         "fgtal.com",
         "sedastore.com",
+        "pay98.app",
+        "zil.ink",
     ],
     "remove": [
         "googleapis.com",
