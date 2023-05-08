@@ -100,6 +100,7 @@
 1. فایل `shadowrocket.conf` را دانلود کنید.
 2. در اپلیکیشن بر روی `Import From Cloud` کلیک کرده و فایل مربوط را اضافه کنید.
 3. در نهایت، بر روی `shadowrocket.conf`کلیک کرده و `Use Config` را انتخاب کنید.
+> لیست دامنه ها را از طریق 'Rule Set URL' داخل تنظیمات کانفیگ میتونید آپدیت کنید.
 
 <table>
   <tr>
@@ -134,7 +135,32 @@ rule-providers:
 5. فایل را ذخیره کنید.  
 6. بستگی به نوع کلاینت، ممکن است لازم باشد نرم‌افزار را روی حالت `Rule‍` تنظیم کنید.  
 
-   
+ ### [Surge](https://nssurge.com) / [Surfboard](https://getsurfboard.com)
+1. صفحه‌ی پروفایل/تنظیمات فعلی خود را که استفاده می‌کنید باز کنید. 
+2. سپس خط های زیر را به بخش قوانین `[Rule]` اضافه کنید: 
+```INI
+DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset.txt,DIRECT,update-interval=432000
+GEOIP,IR,DIRECT
+```
+> سرف برد update-interval را نادیده میگیره، بجاش میتونید از طریق Tools> External resources لیست دامنه ها را آپدیت کنید.
+
+⚠️ نکته: اگر از نسخه های قبلتر از Surge for Mac v3.5.1/Surge for iOS v4.2.2 استفاده میکنید بجای DOMAIN-SET از RULE-SET استفاده کنید: 
+```INI
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset.txt,DIRECT,update-interval=432000
+GEOIP,IR,DIRECT
+```
+3. فایل را ذخیره کنید.
+4. قسمت 'Outbound Mode' را روی  'Rule-based' ست کنید.
+
+⚠️ نکته: اگر وبسایت های فیلتر شده تو حالت 'Rule-based' کار نمیکنن این قانون را قبل از قانون 'FINAL' اضافه کنید.
+```INI
+DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
+```
+> بجای YourFinalProxy/ProxyGroup پروکسی/گروه پروکسی خودتان را وارد کنید. 
+
+🚨 از DOMAIN-SET و RULE-SET در  [Loon](https://www.nsloon.com) / [LancX](https://lancex.org) هم میتونید استفاده کنید.
+
+
 ### [V2rayNG](https://github.com/2dust/v2rayNG)
 
 1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در گوشی خود با اپ مدیریت فایل به مسیر `Android/data/com.v2ray.ang/files/assets` منتقل کنید.
