@@ -68,6 +68,7 @@ custom_domains = {
         "fgtal.com",
         "sedastore.com",
         "pay98.app",
+        "zil.ink",
     ],
     "remove": [
         "googleapis.com",
