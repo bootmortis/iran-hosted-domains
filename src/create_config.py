@@ -32,6 +32,7 @@ def shadowrocket(bypass_domains: Iterable[str]):
         "[Host]\n"
         "localhost = 127.0.0.1\n"
     )
+    
     utils.save_to_file(consts.shadowrocket_path, config)
 
 
