@@ -137,23 +137,15 @@ rule-providers:
    
 ### [v2rayNG](https://github.com/2dust/v2rayNG)
 
-1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در گوشی خود با اپ مدیریت فایل به مسیر `Android/data/com.v2ray.ang/files/assets` منتقل کنید.
-2. بعد توی `Setting` برنامه تو بخش `Routing` مطمئن بشید که `Domain Strategy` رو حالت `IpIfNonMatch` باشه:  
-3. رو `Custom rules` تپ کنید. تو سربرگ `Direct URL or IP` بنویسید:
-- `ext:iran.dat:ir`
-- `ext:iran.dat:other`
-  
-4. تو سربرگ `Blocked URL or IP` بنویسید:
-- `ext:iran.dat:ads`
-    
-بعد هم اوکی کنید و تمام.
-<table>
-  <tr>
-    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
-   </tr>
-  </tr>
-</table>
+📽️ [آموزش ویدیویی] (https://imgur.com/8qS5ILD)
+
+1. ابتدا `iran.dat` را از [اینجا][link-release] دانلود کنید.
+2. از منو، به قسمت `Geo asset files` بروید، `+` را از بالا فشار دهید و فایل `iran.dat` را انتخاب کنید.
+2. از منو، به `Settings` بروید و مطمئن شوید که `Domain Strategy` روی `IpIfNonMatch` تنظیم شده است.
+3. به بخش `Custom rules` در `Settings` بروید.
+  - در تب `DIRECT URL OR IP`، عبارت `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir` را بنویسید، سپس `🗸` را از بالا فشار دهید.
+  - در تب `BLOCKED URL OR IP` عبارت `ext:iran.dat:ads` را بنویسید و دوباره از بالا `🗸` را فشار دهید.
+4. دکمه‌ی بازگشت را بزنید و تمام.
 
   
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)

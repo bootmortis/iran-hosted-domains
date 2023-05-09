@@ -135,24 +135,15 @@ rule-providers:
 
 ### [v2rayNG](https://github.com/2dust/v2rayNG)
 
-1. First download the file `iran.dat` from [here][link-release].
-2. Then make sure `Routing` is set to `IpIfNonMatch` from `Domain Strategy` in the `Setting`.
-3. Tap on the `Direct URL or IP`. Write the following in the `Custom rules` tab:
-- `ext:iran.dat:ir`
-- `ext:iran.dat:other`
-  
-4. Write the following in the `Blocked URL or IP` tab:
-- `ext:iran.dat:ads`
-  
-5. Then press OK and that's it.
+📽️ [Video tutorial](https://imgur.com/8qS5ILD)  
 
-<table>
-  <tr>
-    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
-   </tr>
-  </tr>
-</table>
+1. First download `iran.dat` from [here][link-release].  
+2. From the menu, go to the `Geo asset files` section, press `+` from the top, and select the `iran.dat` file.  
+2. From the menu, go to `Settings` and make sure `Domain Strategy` is set to `IpIfNonMatch`.  
+3. Go to the `Custom rules` section in `Settings`.  
+  - In the `DIRECT URL OR IP` tab, write `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir`, then press `🗸` from the top.  
+  - In the `BLOCKED URL OR IP` tab, write `ext:iran.dat:ads` and then press `🗸` from the top again.  
+4. Hit back, and that's it.  
 
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
 For blocking local domains and IPs in the server side follow [this][link-v2ray-server-block] instructions. It's only available in Persian.
