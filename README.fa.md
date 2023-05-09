@@ -218,7 +218,7 @@ rule-providers:
   }
 }
 ```
-3. برای اطلاعات بیشتر در مورد قالب کانفیگ sing-box [اینجا را ببینید] (https://sing-box.sagernet.org/configuration/).
+3. برای اطلاعات بیشتر در مورد قالب کانفیگ sing-box [اینجا را ببینید](https://sing-box.sagernet.org/configuration/).
 
 ## ایجاد دستی فایل .dat (آموزش)
 
