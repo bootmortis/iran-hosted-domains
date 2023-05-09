@@ -144,7 +144,7 @@ GEOIP,IR,DIRECT
 ```
 > Surfboard ignore update-interval at this moment, consider updating from Tool>External resources
 
-⚠️Note: If you are using older Surge versions(before Surge for Mac v3.5.1/Surge for iOS v4.2.2) add these instead:
+⚠️ Note: If you are using older Surge versions (before Surge for Mac v3.5.1/Surge for iOS v4.2.2) add these instead:
 ```INI
 RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
@@ -152,7 +152,7 @@ GEOIP,IR,DIRECT
 3. Save the file.
 4. Set 'Outbound Mode' to 'Rule-based'.
 
-⚠️Note : in case that blocked websites are not working with 'Rule-based' mode, consider adding this rule before 'FINAL' rule:
+⚠️ Note : in case that blocked websites are not working with 'Rule-based' mode, consider adding this rule before 'FINAL' rule:
 ```INI
 DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
