@@ -60,4 +60,5 @@ if __name__ == "__main__":
     create_config.qv2ray(other_domains, proxy_domains, ad_domains)
     create_config.shadowrocket(all_domains)
     create_config.clash(all_domains)
+    create_config.surge(all_domains)    
     create_config.switchy_omega(other_domains)

@@ -20,10 +20,7 @@ def shadowrocket(bypass_domains: Iterable[str]):
         "dns-direct-fallback-proxy = true\n"
         "ipv6 = true\n"
         "[Rule]\n"
-    )
-    config += "\n".join(f"DOMAIN-SUFFIX,{domain},DIRECT" for domain in bypass_domains) + "\n"
-    config += (
-        "USER-AGENT,Line*,PROXY\n"
+        "DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset.txt,DIRECT,update-interval=432000\n"        
         "IP-CIDR,192.168.0.0/16,DIRECT\n"
         "IP-CIDR,10.0.0.0/8,DIRECT\n"
         "IP-CIDR,172.16.0.0/12,DIRECT\n"
@@ -62,6 +59,25 @@ def clash(bypass_domains: Iterable[str]):
 
 
     utils.save_to_file(consts.clash_path, config)
+
+
+def surge(bypass_domains: Iterable[str]):
+    ruleset_config = (
+        "# Surge\n"
+        "# Manual: https://manual.nssurge.com/rule/ruleset.html\n"
+    )
+    ruleset_config += "".join(f"DOMAIN-SUFFIX,{domain}\n" for domain in bypass_domains)    
+
+
+    domainset_config = (
+        "# Surge\n"
+        "# Manual: https://manual.nssurge.com/rule/domain-based.html\n"
+    )    
+    domainset_config += "".join(f".{domain}\n" for domain in bypass_domains)    
+
+
+    utils.save_to_file(consts.surge_ruleset_path, ruleset_config)
+    utils.save_to_file(consts.surge_domainset_path, domainset_config)    
 
 
 def switchy_omega(bypass_domains: Iterable[str]):
