@@ -100,7 +100,6 @@ It can be used in all v2fly, v2ray and xray clients.
 1. Download `shadowrocket.conf` file.
 2. Tap `Import From Cloud` in the Shadowrocket app and then import the file.
 3. Finally, tap on the `shadowrocket.conf` and select `Use Config`.
-> Domains list can be updated form 'Rule Set URL' in config's setting.
 
 <table>
   <tr>
