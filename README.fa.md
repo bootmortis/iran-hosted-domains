@@ -135,7 +135,7 @@ rule-providers:
 6. بستگی به نوع کلاینت، ممکن است لازم باشد نرم‌افزار را روی حالت `Rule‍` تنظیم کنید.  
 
    
-### [V2rayNG](https://github.com/2dust/v2rayNG)
+### [v2rayNG](https://github.com/2dust/v2rayNG)
 
 1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در گوشی خود با اپ مدیریت فایل به مسیر `Android/data/com.v2ray.ang/files/assets` منتقل کنید.
 2. بعد توی `Setting` برنامه تو بخش `Routing` مطمئن بشید که `Domain Strategy` رو حالت `IpIfNonMatch` باشه:  
@@ -287,5 +287,5 @@ go run ./ --outputdir=../
 [link-custom]: src/data/custom_domains.py
 [link-pr]: ../../pulls
 [link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
-[link-release]: ../../releases
+[link-release]: ../../releases/latest
 [link-v2ray-server-block]: https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1
