@@ -160,26 +160,18 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
 🚨 از DOMAIN-SET و RULE-SET در  [Loon](https://www.nsloon.com) / [LancX](https://lancex.org) هم میتونید استفاده کنید.
 
+   
+### [v2rayNG](https://github.com/2dust/v2rayNG)
 
-### [V2rayNG](https://github.com/2dust/v2rayNG)
+📽️ [آموزش ویدیویی](https://imgur.com/8qS5ILD)
 
-1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در گوشی خود با اپ مدیریت فایل به مسیر `Android/data/com.v2ray.ang/files/assets` منتقل کنید.
-2. بعد توی `Setting` برنامه تو بخش `Routing` مطمئن بشید که `Domain Strategy` رو حالت `IpIfNonMatch` باشه:  
-3. رو `Custom rules` تپ کنید. تو سربرگ `Direct URL or IP` بنویسید:
-- `ext:iran.dat:ir`
-- `ext:iran.dat:other`
-  
-4. تو سربرگ `Blocked URL or IP` بنویسید:
-- `ext:iran.dat:ads`
-    
-بعد هم اوکی کنید و تمام.
-<table>
-  <tr>
-    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
-   </tr>
-  </tr>
-</table>
+1. ابتدا `iran.dat` را از [اینجا][link-release] دانلود کنید.
+2. از منو، به قسمت `Geo asset files` بروید، `+` را از بالا فشار دهید و فایل `iran.dat` را انتخاب کنید.
+2. از منو، به `Settings` بروید و مطمئن شوید که `Domain Strategy` روی `IpIfNonMatch` تنظیم شده است.
+3. به بخش `Custom rules` در `Settings` بروید.
+  - در تب `DIRECT URL OR IP`، عبارت `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir` را بنویسید، سپس `🗸` را از بالا فشار دهید.
+  - در تب `BLOCKED URL OR IP` عبارت `ext:iran.dat:ads` را بنویسید و دوباره از بالا `🗸` را فشار دهید.
+4. دکمه‌ی بازگشت را بزنید و تمام.
 
   
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
@@ -203,7 +195,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 </table>
 
   
-## [v2rayN](https://github.com/2dust/v2rayN)
+### [v2rayN](https://github.com/2dust/v2rayN)
 
 1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در محل نصب برنامه `v2rayN` در پوشه `bin` قرار دهید.
 2. سپس `v2rayN` را باز کنید و روی `Setting` کلیک کنید و گزینه `RoutingSetting` را انتخاب کنید.
@@ -212,6 +204,42 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 5. در پنجره جدید در قسمت `OutboundTag` گزینه `Direct` را انتخاب کنید و سپس در قسمت `Domains` عبارت `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$` را کپی کنید.
 6. بر روی گزینه `Confirm` کلیک کنید تا به صفحه اصلی برنامه برگردید.
 7. مطمن شوید که از پایین برنامه فسمت `Routing` نام rule انتخابی شما وارد شده است. درغیر اینصورت فلش رو به پایین سمت راست آنرا بزنید و نام rule انتخابی خود را انتخاب کنید.
+
+### [Sing-Box](https://github.com/SagerNet/sing-box)
+
+1. فایل `iran-geosite.db` را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
+2. فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/route/geosite/) ویرایش کنید:
+```json
+{
+  "route": {
+    "geosite": {
+      "path": "Sing-Box_Working_Directory",
+      "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
+    },
+    "rules": [
+      {
+        "geosite": "ir",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "other",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "ads",
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          ".ir"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
+```
+3. برای اطلاعات بیشتر در مورد قالب کانفیگ sing-box [اینجا را ببینید](https://sing-box.sagernet.org/configuration/).
 
 ## ایجاد دستی فایل .dat (آموزش)
 
@@ -277,5 +305,5 @@ go run ./ --outputdir=../
 [link-custom]: src/data/custom_domains.py
 [link-pr]: ../../pulls
 [link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
-[link-release]: ../../releases
+[link-release]: ../../releases/latest
 [link-v2ray-server-block]: https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1

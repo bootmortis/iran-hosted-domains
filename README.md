@@ -134,6 +134,7 @@ rule-providers:
 5. Save the file.
 6. Based on the client, you may need to set clash on `Rule` mode.
 
+
 ### [Surge](https://nssurge.com) / [Surfboard](https://getsurfboard.com)
 1. Open your current profile/config that you use.
 2. Add these lines to `[Rule]` section
@@ -159,26 +160,17 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
 🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LancX](https://lancex.org).
 
-### [V2rayNG](https://github.com/2dust/v2rayNG)
+### [v2rayNG](https://github.com/2dust/v2rayNG)
 
-1. First download the file `iran.dat` from [here][link-release] then move it to the address `Android/data/com.v2ray.ang/files/assets` using a File Manager.
-2. Then make sure `Routing` is set to `IpIfNonMatch` from `Domain Strategy` in the `Setting`.
-3. Tap on the `Direct URL or IP`. Write the following in the `Custom rules` tab:
-- `ext:iran.dat:ir`
-- `ext:iran.dat:other`
-  
-4. Write the following in the `Blocked URL or IP` tab:
-- `ext:iran.dat:ads`
-  
-5. Then press OK and that's it.
+📽️ [Video tutorial](https://imgur.com/8qS5ILD)  
 
-<table>
-  <tr>
-    <td>  <img align="right" height="400" src="assets/v2rayng1.png"> </td>
-    <td>  <img align="right" height="400" src="assets/v2rayng2.png"> </td>
-   </tr>
-  </tr>
-</table>
+1. First download `iran.dat` from [here][link-release].  
+2. From the menu, go to the `Geo asset files` section, press `+` from the top, and select the `iran.dat` file.  
+2. From the menu, go to `Settings` and make sure `Domain Strategy` is set to `IpIfNonMatch`.  
+3. Go to the `Custom rules` section in `Settings`.  
+  - In the `DIRECT URL OR IP` tab, write `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir`, then press `🗸` from the top.  
+  - In the `BLOCKED URL OR IP` tab, write `ext:iran.dat:ads` and then press `🗸` from the top again.  
+4. Hit back, and that's it.  
 
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
 For blocking local domains and IPs in the server side follow [this][link-v2ray-server-block] instructions. It's only available in Persian.
@@ -208,6 +200,43 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 5. In the new window choose `direct` for `outboundTag` and the domain section type `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$`
 6. Click on `Confirm` until you reach the main app window
 7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
+
+### [Sing-Box](https://github.com/SagerNet/sing-box)
+
+1. Download `iran-geosite.db` file from [here][link-release] and place it in the sing-box working directory.
+2. Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
+
+```json
+{
+  "route": {
+    "geosite": {
+      "path": "Sing-Box_Working_Directory",
+      "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
+    },
+    "rules": [
+      {
+        "geosite": "ir",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "other",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "ads",
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          ".ir"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
+```
+3. For more information about the sing-box config template [see here](https://sing-box.sagernet.org/configuration/).
 
 ## Create .dat file manually (Tutorial)
 
@@ -273,5 +302,5 @@ A Python script is executed by Github Action and generates files that are on the
 [link-custom]: src/data/custom_domains.py
 [link-pr]: ../../pulls
 [link-issues]: ../../issues/new?assignees=&labels=enhancement&template=request-for-domain-addition-removal.md&title=Add%2FRemove+%60example.com%60
-[link-release]: ../../releases
+[link-release]: ../../releases/latest
 [link-v2ray-server-block]: https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1
