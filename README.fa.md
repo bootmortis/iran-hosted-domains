@@ -174,7 +174,7 @@ rule-providers:
 </table>
 
   
-## [v2rayN](https://github.com/2dust/v2rayN)
+### [v2rayN](https://github.com/2dust/v2rayN)
 
 1. ابتدا فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید و در محل نصب برنامه `v2rayN` در پوشه `bin` قرار دهید.
 2. سپس `v2rayN` را باز کنید و روی `Setting` کلیک کنید و گزینه `RoutingSetting` را انتخاب کنید.
@@ -183,6 +183,42 @@ rule-providers:
 5. در پنجره جدید در قسمت `OutboundTag` گزینه `Direct` را انتخاب کنید و سپس در قسمت `Domains` عبارت `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$` را کپی کنید.
 6. بر روی گزینه `Confirm` کلیک کنید تا به صفحه اصلی برنامه برگردید.
 7. مطمن شوید که از پایین برنامه فسمت `Routing` نام rule انتخابی شما وارد شده است. درغیر اینصورت فلش رو به پایین سمت راست آنرا بزنید و نام rule انتخابی خود را انتخاب کنید.
+
+### [Sing-Box](https://github.com/SagerNet/sing-box)
+
+1. فایل 'iran-geosite.db' را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
+2. فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/route/geosite/) ویرایش کنید:
+```json
+{
+  "route": {
+    "geosite": {
+      "path": "Sing-Box_Working_Directory",
+      "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
+    },
+    "rules": [
+      {
+        "geosite": "ir",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "other",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "ads",
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          ".ir"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
+```
+3. برای اطلاعات بیشتر در مورد قالب کانفیگ sing-box [اینجا را ببینید] (https://sing-box.sagernet.org/configuration/).
 
 ## ایجاد دستی فایل .dat (آموزش)
 

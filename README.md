@@ -182,35 +182,40 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
-1. Download 'iran-geosite.db' file from [here][link-release] and plafce it in sing-box working directory.
-2. Open sing-box config file and edit route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
+1. Download 'iran-geosite.db' file from [here][link-release] and place it in the sing-box working directory.
+2. Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
 
+```json
+{
+  "route": {
+    "geosite": {
+      "path": "Sing-Box_Working_Directory",
+      "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
+    },
+    "rules": [
+      {
+        "geosite": "ir",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "other",
+        "outbound": "direct"
+      },
+      {
+        "geosite": "ads",
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          ".ir"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
 ```
-"route": {
-        "geosite": {
-                "path": "Sing-Box_Working_Directory",
-                "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
-        },
-        "rules": [{
-                        "geosite": "ir",
-                        "outbound": "direct"
-                },
-                {
-                        "geosite": "other",
-                        "outbound": "direct"
-                },
-                {
-                        "geosite": "ads",
-                        "outbound": "block"
-                },
-                {
-                        "domain_suffix": [
-                                ".ir"
-                        ],
-                        "outbound": "direct"
-                }]}
-```
-3. For more information about sing-box config template [link](https://sing-box.sagernet.org/configuration/)
+3. For more information about the sing-box config template [see here](https://sing-box.sagernet.org/configuration/).
 
 ## Create .dat file manually (Tutorial)
 
