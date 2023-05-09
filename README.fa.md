@@ -186,7 +186,7 @@ rule-providers:
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
-1. فایل 'iran-geosite.db' را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
+1. فایل `iran-geosite.db` را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
 2. فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/route/geosite/) ویرایش کنید:
 ```json
 {

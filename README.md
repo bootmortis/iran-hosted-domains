@@ -182,7 +182,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
-1. Download 'iran-geosite.db' file from [here][link-release] and place it in the sing-box working directory.
+1. Download `iran-geosite.db` file from [here][link-release] and place it in the sing-box working directory.
 2. Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
 
 ```json
