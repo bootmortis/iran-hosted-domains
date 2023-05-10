@@ -124,8 +124,18 @@ rule-providers:
     path: ./ruleset/iran.txt
     interval: 432000
 ```
+⚠️اگر از نسخه‌های قدیمی تر Clash Core استفاده می‌کنید بجای خطوط بالا این خطوط را به فایل اضافه کنید:
+```yaml
+rule-providers:
+  iran:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+```
 
-4. سپس خط های زیر را به بخش قوانین `Rules` اضافه کنید:  
+4. سپس خط‌های زیر را به بخش قوانین `Rules` اضافه کنید:  
 ```yaml
   - RULE-SET,iran,DIRECT
   - GEOIP,IR,DIRECT
