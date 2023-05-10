@@ -124,6 +124,16 @@ rule-providers:
     path: ./ruleset/iran.txt
     interval: 432000
 ```
+⚠️ Note: If you are using older Clash Core versions add these instead:
+```yaml
+rule-providers:
+  iran:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+```
 
 4. Add these lines to `rules:` section
 ```yaml
