@@ -20,7 +20,9 @@ def shadowrocket(bypass_domains: Iterable[str]):
         "dns-direct-fallback-proxy = true\n"
         "ipv6 = true\n"
         "[Rule]\n"
-        "DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset.txt,DIRECT,update-interval=432000\n"        
+    )
+    config += "\n".join(f"DOMAIN-SUFFIX,{domain},DIRECT" for domain in bypass_domains) + "\n"
+    config += (        
         "IP-CIDR,192.168.0.0/16,DIRECT\n"
         "IP-CIDR,10.0.0.0/8,DIRECT\n"
         "IP-CIDR,172.16.0.0/12,DIRECT\n"
@@ -30,7 +32,7 @@ def shadowrocket(bypass_domains: Iterable[str]):
         "[Host]\n"
         "localhost = 127.0.0.1\n"
     )
-
+    
     utils.save_to_file(consts.shadowrocket_path, config)
 
 
