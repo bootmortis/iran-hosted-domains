@@ -167,7 +167,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
 > Use your own Proxy/ProxyGroup instead of 'YourFinalProxy/ProxyGroup')
 
-🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LancX](https://lancex.org).
+🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LanceX](https://lancex.org).
 
 ### [v2rayNG](https://github.com/2dust/v2rayNG)
 
