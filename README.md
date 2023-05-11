@@ -219,7 +219,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 {
   "route": {
     "geosite": {
-      "path": "Sing-Box_Working_Directory",
+      "path": "iran-geosite.db",
       "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
     },
     "rules": [
