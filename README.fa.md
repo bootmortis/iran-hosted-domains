@@ -109,9 +109,9 @@
   </tr>
 </table>
 
-### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
+### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash Verge](https://github.com/zzzgydi/clash-verge) / ...)
 
-1. مطمئن شوید که حداقل از ورژن `2023.04.13` Clash Core استفاده می‌کنید.
+1. مطمئن شوید که حداقل از ورژن `2023.04.13` [Clash Premium](https://github.com/Dreamacro/clash/releases/tag/premium) Core یا ورژن `1.14.1` [Clash.Meta](https://github.com/MetaCubeX/Clash.Meta) Core استفاده می‌کنید.
 2. صفحه‌ی پروفایل/تنظیمات فعلی خود را که استفاده می‌کنید باز کنید.  
 3. این خطوط را به فایل اضافه کنید:  
 ```yaml
@@ -124,7 +124,7 @@ rule-providers:
     path: ./ruleset/iran.txt
     interval: 432000
 ```
-⚠️اگر از نسخه‌های قدیمی تر Clash Core استفاده می‌کنید بجای خطوط بالا این خطوط را به فایل اضافه کنید:
+⚠️ نکته: اگر از نسخه‌های قدیمی تر Clash Core استفاده می‌کنید بجای خطوط بالا این خطوط را به فایل اضافه کنید:
 ```yaml
 rule-providers:
   iran:
@@ -167,7 +167,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
 > به‌جای YourFinalProxy/ProxyGroup پروکسی/گروه پروکسی خودتان را وارد کنید. 
 
-🚨 از DOMAIN-SET و RULE-SET در  [Loon](https://www.nsloon.com) / [LancX](https://lancex.org) هم می‌تونید استفاده کنید.
+🚨 از DOMAIN-SET و RULE-SET در  [Loon](https://www.nsloon.com) / [LanceX](https://lancex.org) هم می‌تونید استفاده کنید.
 
    
 ### [v2rayNG](https://github.com/2dust/v2rayNG)
