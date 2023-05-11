@@ -109,9 +109,9 @@ It can be used in all v2fly, v2ray and xray clients.
 </table>
 
 
-### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash .NET](https://github.com/ClashDotNetFramework/ClashDotNetFramework/releases) / ...)
+### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash Verge](https://github.com/zzzgydi/clash-verge) / ...)
 
-1. Make sure you are using at least version `2023.04.13` of Clash Core.
+1. Make sure you are using at least version `2023.04.13` of [Clash Premium](https://github.com/Dreamacro/clash/releases/tag/premium) Core  Or `v1.14.1` of [Clash.Meta](https://github.com/MetaCubeX/Clash.Meta) Core. If not, you can use the old version format described in the third step.
 2. Open your current profile/config that you use.
 3. Add these lines to the file:
 ```yaml
@@ -122,6 +122,16 @@ rule-providers:
     behavior: domain
     url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.txt"
     path: ./ruleset/iran.txt
+    interval: 432000
+```
+⚠️ Note: If you are using older versions add these instead :
+```yaml
+rule-providers:
+  iran:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
     interval: 432000
 ```
 
@@ -157,7 +167,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
 > Use your own Proxy/ProxyGroup instead of 'YourFinalProxy/ProxyGroup')
 
-🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LancX](https://lancex.org).
+🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LanceX](https://lancex.org).
 
 ### [v2rayNG](https://github.com/2dust/v2rayNG)
 
@@ -209,7 +219,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 {
   "route": {
     "geosite": {
-      "path": "Sing-Box_Working_Directory",
+      "path": "iran-geosite.db",
       "download_url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran-geosite.db"
     },
     "rules": [

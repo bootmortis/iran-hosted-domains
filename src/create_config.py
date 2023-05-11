@@ -53,14 +53,17 @@ def qv2ray(bypass_domains: Iterable[str], proxied_domains: Iterable[str], ads_do
 
 
 def clash(bypass_domains: Iterable[str]):
-    config = (
+    text_config = yaml_config = (
         "# Clash\n"
         "# Wiki: https://github.com/Dreamacro/clash/wiki/premium-core-features#rule-providers\n"
     )
-    config += "".join(f"+.{domain}\n" for domain in bypass_domains)
+    
+    text_config += "".join(f"+.{domain}\n" for domain in bypass_domains)
+    yaml_config += "payload:\n" + "".join(f"  - '+.{domain}'\n" for domain in bypass_domains)
 
 
-    utils.save_to_file(consts.clash_path, config)
+    utils.save_to_file(consts.clash_path_text, text_config)
+    utils.save_to_file(consts.clash_path_yaml, yaml_config)
 
 
 def surge(bypass_domains: Iterable[str]):
