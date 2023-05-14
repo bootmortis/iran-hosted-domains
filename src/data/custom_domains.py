@@ -5,6 +5,8 @@ custom_domains = {
     "direct": [
         "bpi.ir",
         "arvancdn.com",
+        "arvancdn.ir",
+        "arvancloud.ir",
         "blubank.com",
         "cedarmaps.com",
         "digikalacloud.com",
