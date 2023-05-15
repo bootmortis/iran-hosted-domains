@@ -43,6 +43,7 @@ if __name__ == "__main__":
     # Request data from sources and cleanup
     all_domains = collect_and_clean_domains(
         get_domians.g2b_ito_gov(),
+        get_domians.enamad(),
         get_domians.adsl_tci(),
         get_domians.v2fly(),
     )
