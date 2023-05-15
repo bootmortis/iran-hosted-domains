@@ -16,6 +16,14 @@ def g2b_ito_gov() -> Iterable[str]:
     domains = (domain.split(',')[0] for domain in domains)
     return list(set(domains))
 
+def enamad() -> Iterable[str]:
+    resp = requests.get(consts.enamad_url)
+    resp.raise_for_status()
+
+    domains = resp.text
+    domains = domains.splitlines()[1:]
+    domains = (domain.split(',')[2] for domain in domains)
+    return list(set(domains))
 
 def adsl_tci() -> Iterable[str]:
     with open(consts.adsl_tci_file_path, "r") as file:
