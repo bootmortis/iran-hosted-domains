@@ -294,7 +294,8 @@ go run ./ --outputdir=../
 ## منابع و گرامیداشت
 
 - دامنه‌های ایران:
-  - [سازمان فناوری اطلاعات ایران](https://g2b.ito.gov.ir/index.php/site/list_ip)
+  - [سازمان فناوری اطلاعات ایران](https://eservices.ito.gov.ir/page/iplist) - [Mirror](https://github.com/bootmortis/ito-gov-mirror)
+  - [اینماد](https://enamad.ir/DomainListForMIMT) - [Mirror](https://github.com/bootmortis/enamad-mirror)
   - [سامانه مدیریت اینترنت مشتریان شرکت مخابرات ایران](https://adsl.tci.ir/panel/sites)
   - مخزن [V2fly Domain List Community](https://github.com/v2fly/domain-list-community) (لایسنس MIT)
   - [لیست شخصی][link-custom]
