@@ -53,7 +53,7 @@ def qv2ray(bypass_domains: Iterable[str], proxied_domains: Iterable[str], ads_do
 
 
 def clash(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
-    text_config_other = yaml_config_other = text_config_ads = yaml_config_ads (
+    text_config_other = yaml_config_other = text_config_ads = yaml_config_ads = (
         "# Clash\n"
         "# Wiki: https://github.com/Dreamacro/clash/wiki/premium-core-features#rule-providers\n"
     )
