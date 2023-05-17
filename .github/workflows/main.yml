@@ -1,6 +1,8 @@
 name: Release
 
 on:
+  schedule:
+    - cron: '0 0 * * Mon'
   workflow_dispatch:
     inputs:
       force_update:
@@ -14,17 +16,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.11.2'
+          python-version: '3.10.6'
 
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.20.4
+          go-version: 1.18
 
       - name: Env
         run: |
