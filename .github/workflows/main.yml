@@ -1,8 +1,6 @@
 name: Release
 
 on:
-  schedule:
-    - cron: '0 0 * * Mon'
   workflow_dispatch:
     inputs:
       force_update:
