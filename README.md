@@ -111,33 +111,48 @@ It can be used in all v2fly, v2ray and xray clients.
 
 ### [Clash](https://github.com/Dreamacro/clash) (Like [ClashX](https://github.com/yichengchen/clashX) / [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg) / [Clash Verge](https://github.com/zzzgydi/clash-verge) / ...)
 
-1. Make sure you are using at least version `2023.04.13` of [Clash Premium](https://github.com/Dreamacro/clash/releases/tag/premium) Core  Or `v1.14.1` of [Clash.Meta](https://github.com/MetaCubeX/Clash.Meta) Core. If not, you can use the old version format described in the third step.
+1. Make sure you are using at least version `2023.04.13` of [Clash Premium](https://github.com/Dreamacro/clash/releases/tag/premium) Core  Or `v1.14.4` of [Clash.Meta](https://github.com/MetaCubeX/Clash.Meta) Core. If not, you can use the old version format described in the third step.
 2. Open your current profile/config that you use.
 3. Add these lines to the file:
 ```yaml
 rule-providers:
-  iran:
+  iran_other:
     type: http
     format: text
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.txt"
-    path: ./ruleset/iran.txt
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt"
+    path: ./ruleset/iran_other.txt
+    interval: 432000
+  iran_ads:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_ads.txt"
+    path: ./ruleset/iran_ads.txt
     interval: 432000
 ```
 ⚠️ Note: If you are using older versions add these instead :
 ```yaml
 rule-providers:
-  iran:
+  iran_other:
     type: http
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.yaml"
+    path: ./ruleset/iran_other.yaml
+    interval: 432000
+  iran_ads:
+    type: http
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_ads.yaml"
+    path: ./ruleset/iran_ads.yaml
     interval: 432000
 ```
 
 4. Add these lines to `rules:` section
 ```yaml
-  - RULE-SET,iran,DIRECT
+  - RULE-SET,iran_ads,REJECT
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - RULE-SET,iran_other,DIRECT
   - GEOIP,IR,DIRECT
 ```
 5. Save the file.
