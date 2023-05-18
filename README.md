@@ -262,6 +262,42 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 ```
 3. For more information about the sing-box config template [see here](https://sing-box.sagernet.org/configuration/).
 
+## Automatically Updating the `iran.dat` File
+
+Ensuring that you have the latest version of the `iran.dat` file is crucial for accurate filtering of Iranian domains. This section will guide you on how to set up an automated process to update the file on a regular basis.
+
+### Prerequisites
+
+- You should have `curl` and `shasum` installed on your system.
+
+### Usage
+
+1. Download the [update_iran_dat.sh](scripts/update_iran_dat.sh) script from this repository.
+    ```shell
+    curl -LO https://raw.githubusercontent.com/bootmortis/iran-hosted-domains/main/scripts/update_iran_dat.sh
+    ```
+2. Make the script executable by running the following command in the terminal:
+    ```shell
+    chmod +x update_iran_dat.sh
+    ```
+3. Open your crontab file by running the following command:
+    ```shell
+    crontab -e
+    ```
+4. In the crontab editor, add the following line to schedule the script to run every Tuesday (a day after we update `iran.dat`):
+    ```shell
+    0 0 * * 2 /path/to/update_iran_dat.sh /path/to/iran.dat
+    ```
+    Make sure to replace `/path/to/update_iran_dat.sh` with the actual path to the script on your system and `/path/to/iran.dat` with the actual path to the `iran.dat` file that you want to update.
+5. Save the crontab file and exit the editor.
+
+The script `update_iran_dat.sh` handles the process of updating the `iran.dat` file. It checks if the file already exists and compares the checksum of the existing file with the latest version available on the repository. If a new version is available, it downloads the updated file and replaces the existing one.
+
+**Note:** The script assumes that you have the necessary permissions to write to the directory where the iran.dat file is located. If you encounter any issues, ensure that the script has appropriate write permissions or modify the script accordingly.
+
+It is recommended to test the script manually before setting up the cron job to ensure it executes correctly.
+
+
 ## Create .dat file manually (Tutorial)
 
 ### 1. Install [golang](https://go.dev/doc/install)
