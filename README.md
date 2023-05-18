@@ -182,7 +182,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 4. Hit back, and that's it.  
 
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
-For blocking local domains and IPs in the server side follow [this][link-v2ray-server-block] instructions. It's only available in Persian.
+For blocking local domains and IPs in the server side follow [this][link-v2ray-server-block] instructions (also be sure to check #53 too).
 
 ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 

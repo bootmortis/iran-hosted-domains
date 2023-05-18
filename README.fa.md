@@ -184,8 +184,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
   
 ### [V2Ray Server](https://www.v2ray.com/en/configuration/routing.html)
-برای مسدود سازی دامنه‌ها و IP های داخلی در سمت سرور لطفا به [این آموزش][link-v2ray-server-block] مراجعه کنید.
-
+برای مسدود سازی دامنه‌ها و IP های داخلی در سمت سرور لطفا به [این آموزش][link-v2ray-server-block] مراجعه کنید (همچنین حتما #53 را نیز بررسی کنید).
   
 ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 
