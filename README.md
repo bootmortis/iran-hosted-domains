@@ -291,7 +291,7 @@ Ensuring that you have the latest version of the `iran.dat` file is crucial for 
     Make sure to replace `/path/to/update_iran_dat.sh` with the actual path to the script on your system and `/path/to/iran.dat` with the actual path to the `iran.dat` file that you want to update.
 5. Save the crontab file and exit the editor.
 
-The script `update_iran_dat.sh` handles the process of updating the `iran.dat` file. It checks if the file already exists and compares the checksum of the existing file with the latest version available on the repository. If a new version is available, it downloads the updated file and replaces the existing one.
+The script `update_iran_dat.sh` handles the process of updating the `iran.dat` file. It checks if the file already exists and compares the checksum of the existing file with the latest version available on the repository. If a new version is available, it downloads the updated file and replaces the existing one. If the local file doesn't exist, it simply downloads the latest version and saves it to the specified path.
 
 **Note:** The script assumes that you have the necessary permissions to write to the directory where the iran.dat file is located. If you encounter any issues, ensure that the script has appropriate write permissions or modify the script accordingly.
 
