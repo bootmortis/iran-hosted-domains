@@ -65,7 +65,7 @@ It can be used in all v2fly, v2ray and xray clients.
 
 ### [SagerNet](https://github.com/SagerNet/SagerNet)
 
-1. Download `iran.dat` file from [here][link-release].
+1. Download `iran-geosite.db` file from [here][link-release].
 2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
 
 3.  Add proper rules  `Route -> Create Route`:
@@ -93,6 +93,30 @@ It can be used in all v2fly, v2ray and xray clients.
     <td> <img align="right" src="assets/sagernet.png"> </td>
   </tr>
 </table>
+
+
+### [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+
+1. Download `iran-geosite.db` file from [here][link-release].
+2. Rename it to `geosite.db`
+3. Import .db file from `Route -> Three dots -> Manage Route Assets`:
+4.  Add proper rules  `Route -> Create Route`:
+    - Block Iran Ads:
+      - domain: `geosite:ads`
+      - outbound: `Block`
+    - Bypass Iran .ir Domains:
+      - domain: `domain:.ir`
+      - outbound: `Bypass`
+    - Bypass Iran non .ir Domains:
+      - domain: `geosite:other`
+      - outbound: `Bypass`
+    - Bypass Iran geoip:
+      - ip: `geoip:ir`
+      - outbound: `Bypass`
+5. Reconnect.
+
+⚠️ Important: You are replacing `geosite.db` with `iran-geosite.db` by doing this, so you can't use default geosite categories like `category-ads-all`. You can switch back to default geosite by updating `geosite.db` from `Manage Route Assets` section.
+
 
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
