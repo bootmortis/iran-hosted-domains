@@ -63,9 +63,9 @@ It can be used in all v2fly, v2ray and xray clients.
   </tr>
 </table>
 
-### [SagerNet](https://github.com/SagerNet/SagerNet)
+### [SagerNet](https://github.com/SagerNet/SagerNet) / [Matsuri](https://github.com/MatsuriDayo/Matsuri)
 
-1. Download `iran-geosite.db` file from [here][link-release].
+1. Download `iran.dat` file from [here][link-release].
 2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
 
 3.  Add proper rules  `Route -> Create Route`:
