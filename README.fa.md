@@ -119,9 +119,9 @@
 
 <div dir=rtl>  
 
-5. اتصال خود را قطع و وصل کنید
+5. اتصال خود را قطع و وصل کنید.
   
-  ⚠️ مهم: با اینکار فایل پیشفرض geosite با `iran-geosite.db` جایگذاری میشود و دسته بندی های geosite پیشفرض مثل `category-ads-all` قابل استفاده نیستند. با آپدیت کردن `geosite.db` از طریق `Manage Route Assets` می‌توانید دوباره از geosite پیشفرض استفاده کنید.
+  ⚠️ مهم: با اینکار فایل پیش‌فرض geosite با `iran-geosite.db` جایگذاری می‌شود و دسته بندی‌های geosite پیش‌فرض مثل `category-ads-all` قابل استفاده نیستند. با آپدیت کردن `geosite.db` از طریق `Manage Route Assets` می‌توانید دوباره از geosite پیش‌فرض استفاده کنید.
   
   
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
