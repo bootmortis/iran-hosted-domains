@@ -201,9 +201,9 @@ GEOIP,IR,DIRECT
 
 ⚠️ نکته: اگر از نسخه‌های قدیمی‌تر از Surge for Mac v3.5.1/Surge for iOS v4.2.2 استفاده می‌کنید به‌جای DOMAIN-SET از RULE-SET استفاده کنید: 
 ```INI
-DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_ads.txt,REJECT,update-interval=432000
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_ads.txt,REJECT,update-interval=432000
 DOMAIN-SUFFIX,ir,DIRECT
-DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_other.txt,DIRECT,update-interval=432000
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_other.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
 ```
 3. فایل را ذخیره کنید.
