@@ -63,7 +63,7 @@ It can be used in all v2fly, v2ray and xray clients.
   </tr>
 </table>
 
-### [SagerNet](https://github.com/SagerNet/SagerNet)
+### [SagerNet](https://github.com/SagerNet/SagerNet) / [Matsuri](https://github.com/MatsuriDayo/Matsuri)
 
 1. Download `iran.dat` file from [here][link-release].
 2. Import .dat file from `Route -> Three dots -> Manage Route Assets`:
@@ -93,6 +93,30 @@ It can be used in all v2fly, v2ray and xray clients.
     <td> <img align="right" src="assets/sagernet.png"> </td>
   </tr>
 </table>
+
+
+### [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+
+1. Download `iran-geosite.db` file from [here][link-release].
+2. Rename it to `geosite.db`
+3. Import .db file from `Route -> Three dots -> Manage Route Assets`:
+4.  Add proper rules  `Route -> Create Route`:
+    - Block Iran Ads:
+      - domain: `geosite:ads`
+      - outbound: `Block`
+    - Bypass Iran .ir Domains:
+      - domain: `domain:.ir`
+      - outbound: `Bypass`
+    - Bypass Iran non .ir Domains:
+      - domain: `geosite:other`
+      - outbound: `Bypass`
+    - Bypass Iran geoip:
+      - ip: `geoip:ir`
+      - outbound: `Bypass`
+5. Reconnect.
+
+⚠️ Important: You are replacing default geosite with `iran-geosite.db` by doing this, so you can't use default geosite categories like `category-ads-all`. You can switch back to default geosite by updating `geosite.db` from `Manage Route Assets` section.
+
 
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
@@ -163,14 +187,18 @@ rule-providers:
 1. Open your current profile/config that you use.
 2. Add these lines to `[Rule]` section
 ```INI
-DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset.txt,DIRECT,update-interval=432000
+DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset_ads.txt,REJECT,update-interval=432000
+DOMAIN-SUFFIX,ir,DIRECT
+DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset_other.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
 ```
 > Surfboard ignore update-interval at this moment, consider updating from Tool>External resources
 
 ⚠️ Note: If you are using older Surge versions (before Surge for Mac v3.5.1/Surge for iOS v4.2.2) add these instead:
 ```INI
-RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset.txt,DIRECT,update-interval=432000
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_ads.txt,REJECT,update-interval=432000
+DOMAIN-SUFFIX,ir,DIRECT
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_other.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
 ```
 3. Save the file.

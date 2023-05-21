@@ -60,7 +60,7 @@
   </tr>
 </table>
   
-### [SagerNet](https://github.com/SagerNet/SagerNet)
+### [SagerNet](https://github.com/SagerNet/SagerNet) / [Matsuri](https://github.com/MatsuriDayo/Matsuri)
 
 1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
 2. فایل را از طریق `Route -> Three dots -> Manage Route Assets`  به کلاینت اضافه کنید.  
@@ -95,6 +95,35 @@
   </tr>
 </table>
 
+  
+### [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+
+1. فایل `iran-geosite.db` را از [این صفحه][link-release] دانلود کنید.
+2. نام فایل را به `geosite.db` تغییر دهید.
+3. فایل را از طریق `Route -> Three dots -> Manage Route Assets`  به کلاینت اضافه کنید.  
+4.  از بخش  `Route -> Create Route` قوانین زیر را اضافه کنید:   
+</div>  
+
+- Block Iran Ads:
+  - domain: `geosite:ads`
+  - outbound: `Block`
+- Bypass Iran .ir Domains:
+  - domain: `domain:.ir`
+  - outbound: `Bypass`
+- Bypass Iran non .ir Domains:
+  - domain: `geosite:other`
+  - outbound: `Bypass`
+- Bypass Iran geoip:
+  - ip: `geoip:ir`
+  - outbound: `Bypass`
+
+<div dir=rtl>  
+
+5. اتصال خود را قطع و وصل کنید.
+  
+  ⚠️ مهم: با اینکار فایل پیش‌فرض geosite با `iran-geosite.db` جایگذاری می‌شود و دسته بندی‌های geosite پیش‌فرض مثل `category-ads-all` قابل استفاده نیستند. با آپدیت کردن `geosite.db` از طریق `Manage Route Assets` می‌توانید دوباره از geosite پیش‌فرض استفاده کنید.
+  
+  
 ### [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
 1. فایل `shadowrocket.conf` را دانلود کنید.
@@ -163,14 +192,18 @@ rule-providers:
 1. صفحه‌ی پروفایل/تنظیمات فعلی خود را که استفاده می‌کنید باز کنید. 
 2. سپس خط‌های زیر را به بخش قوانین `[Rule]` اضافه کنید: 
 ```INI
-DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset.txt,DIRECT,update-interval=432000
+DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset_ads.txt,REJECT,update-interval=432000
+DOMAIN-SUFFIX,ir,DIRECT
+DOMAIN-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_domainset_other.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
 ```
 > سرف برد update-interval را نادیده می‌گیره، بجاش می‌تونید از طریق Tools> External resources لیست دامنه‌ها را آپدیت کنید.
 
 ⚠️ نکته: اگر از نسخه‌های قدیمی‌تر از Surge for Mac v3.5.1/Surge for iOS v4.2.2 استفاده می‌کنید به‌جای DOMAIN-SET از RULE-SET استفاده کنید: 
 ```INI
-RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset.txt,DIRECT,update-interval=432000
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_ads.txt,REJECT,update-interval=432000
+DOMAIN-SUFFIX,ir,DIRECT
+RULE-SET,https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/surge_ruleset_other.txt,DIRECT,update-interval=432000
 GEOIP,IR,DIRECT
 ```
 3. فایل را ذخیره کنید.
