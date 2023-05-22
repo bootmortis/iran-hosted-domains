@@ -71,6 +71,7 @@ custom_domains = {
         "sedastore.com",
         "pay98.app",
         "zil.ink",
+        "salambaabaa.com",
     ],
     "remove": [
         "googleapis.com",
