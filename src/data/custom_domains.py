@@ -74,6 +74,10 @@ custom_domains = {
         "salambaabaa.com",
         "konkurcomputer.ir",
         "bazicenter.com",
+        "mimfarsi.com",
+        "wiiz.ir",
+        "shad.ir",
+        "targoman.ir",
     ],
     "remove": [
         "googleapis.com",
