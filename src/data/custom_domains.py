@@ -78,6 +78,7 @@ custom_domains = {
         "wiiz.ir",
         "shad.ir",
         "targoman.ir",
+        "freebies.faradars.org",
     ],
     "remove": [
         "googleapis.com",
