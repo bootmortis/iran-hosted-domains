@@ -240,7 +240,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
 :information_source: میتوانید با رفتن به `Preferences` > `Basic Settings` > `Core` هسته فعلی مورد استفاده خود را ببینید.
 
-  #### [sing-box core](https://github.com/chocolate4u/iran-hosted-domains/edit/update-nekoray-docs/README.fa.md#sing-box-core)
+  #### [sing-box core](#sing-box-core)
 
   1. فایل `iran-geosite.db` را از [بخش ریلیز][link-release] دانلود کنید.
   2. آن را به `geosite.db` تغییر نام دهید.
@@ -272,7 +272,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    </tr>
   </table>
 
-  #### [v2ray core](https://github.com/chocolate4u/iran-hosted-domains/edit/update-nekoray-docs/README.md#v2ray-core)
+  #### [v2ray core](#v2ray-core)
 
   1. فایل `iran.dat` را از [بخش ریلیز][link-release] دانلود کنید.
   2. فایل `iran.dat` را در پوشه Nekoray کپی کنید.
