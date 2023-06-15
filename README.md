@@ -233,7 +233,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
 :information_source: You can see your current Nekoray core by going to `preferences` > `Basic Settings` > `Core`. 
 
-  #### [sing-box core](https://github.com/chocolate4u/iran-hosted-domains/edit/update-nekoray-docs/README.md#sing-box-core)
+  #### [sing-box core](#sing-box-core)
 
   1. Download `iran-geosite.db` from [release section][link-release].
   2. Rename it to `geosite.db`.
@@ -265,7 +265,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
    </tr>
   </table>
 
-  #### [v2ray core](https://github.com/chocolate4u/iran-hosted-domains/edit/update-nekoray-docs/README.md#v2ray-core)
+  #### [v2ray core](#v2ray-core)
 
   1. Download `iran.dat` from [release section][link-release].
   2. Copy `iran.dat` to Nekoray folder.
