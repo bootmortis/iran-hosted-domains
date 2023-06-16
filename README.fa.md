@@ -236,20 +236,70 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
   
 ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 
-1. در ابتدا فایل `domains.txt` را  از [بخش رلیز][link-release] دانلود کنید.
-2. سپس nekoray را باز کنید و روی آیکون `program` بالا سمت چپ کلیک کنید
-3. سپس به ترتیب روی دکمه `preferences` و `routing setting`  کلیک کنید
-4. فایل دانلود شده را بر روی قسمت Direct-Domain جایگذاری کنید.
-5. سپس بر روی OK کلیک کنید و برنامه را دوباره اجرا کنید.
+:warning: نکوری میتواند از هر دو هسته sing-box و v2ray استفاده کند. لطفا از قوانین مسیریابی مربوطه بر اساس هسته انتخابی خود در نکوری استفاده کنید.
 
-<table>
-  <tr>
-    <td> <img align="right" width="400" src="assets/nekoray1.png"> </td>
-    <td> <img align="right" width="400" src="assets/nekoray2.png"> </td>
+:information_source: میتوانید با رفتن به `Preferences` > `Basic Settings` > `Core` هسته فعلی مورد استفاده خود را ببینید.
+
+  #### [sing-box core](#sing-box-core)
+
+  1. فایل `iran-geosite.db` را از [بخش ریلیز][link-release] دانلود کنید.
+  2. آن را به `geosite.db` تغییر نام دهید.
+  3. فایل `geosite.db` را در پوشه nekoray کپی و جایگزین کنید.
+  4. روی `Preferences` کلیک کنید و سپس `Routing Setting` را انتخاب کنید.
+  5. به سربرگ `Simple Route` بروید.
+  6. خطوط زیر را در قسمت های مربوطه کپی کنید:
+   - `Direct, IP`
+   ```
+   geoip:ir
+   geoip:private
+   ```
+   - `Direct, Domain`
+   ```
+   regexp:.+\.ir$
+   geosite:other
+   ```
+   - `Block, Domain`
+   ```
+   geosite:ads
+   ```
+  7. روی Ok کلیک کنید و برنامه را دوباره اجرا کنید.
+  
+  ⚠️ مهم: با اینکار فایل پیش‌فرض geosite با `iran-geosite.db` جایگذاری می‌شود و دسته بندی‌های geosite پیش‌فرض مثل `category-ads-all` قابل استفاده نیستند. برای برگشتن به geosite پیشفرض، فایل `geosite.db` را از [sing-geosite](https://github.com/SagerNet/sing-geosite/releases) دانلود کنید و در پوشه Nekoray جایگزین کنید.
+  
+  <table>
+   <tr>
+    <td> <img align="right" width="400" src="assets/nekoray-sing-box.png"> </td>
    </tr>
-  </tr>
-</table>
+  </table>
 
+  #### [v2ray core](#v2ray-core)
+
+  1. فایل `iran.dat` را از [بخش ریلیز][link-release] دانلود کنید.
+  2. فایل `iran.dat` را در پوشه Nekoray کپی کنید.
+  3. روی `Preferences` کلیک کنید و سپس `Routing Setting` را انتخاب کنید.
+  4. به سربرگ `Simple Route` بروید.
+  5. خطوط زیر را در قسمت های مربوطه کپی کنید:
+   - `Direct, IP`
+   ```
+   geoip:ir
+   geoip:private
+   ```
+   - `Direct, Domain`
+   ```
+   regexp:.+\.ir$
+   ext:iran.dat:other
+   ```
+   - `Block, Domain`
+   ```
+   ext:iran.dat:ads
+   ```
+   6. روی Ok کلیک کنید و برنامه را دوباره اجرا کنید.
+
+   <table>
+    <tr>
+     <td> <img align="right" width="400" src="assets/nekoray-v2ray.png"> </td>
+    </tr>
+   </table>
   
 ### [v2rayN](https://github.com/2dust/v2rayN)
 
