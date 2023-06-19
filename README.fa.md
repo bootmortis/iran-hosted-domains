@@ -347,6 +347,18 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
 3. برای اطلاعات بیشتر در مورد قالب کانفیگ sing-box [اینجا را ببینید](https://sing-box.sagernet.org/configuration/).
 
+### [Hysteria](https://github.com/apernet/hysteria)
+1. با توجه به نیازتون `hysteria_client.acl`یا `hysteria_server.acl` را از [اینجا][link-release] دانلود کنید.
+
+    - hysteria_client.acl : بلاک کردن تبلیغات ایرانی و بای پس کردن دامنه/آیپی‌های ایران (برای کلاینت)
+    - hysteria_server.acl : بلاک کردن تمام دامنه/آیپی‌های ایران (برای سرور)
+    
+3. این خط‎ ها را به کانفیگ خودتون اضافه کنید:
+```json
+    "acl": "acl_file_path",
+    "mmdb": "GeoLite2-Country.mmdb"
+```
+> 'acl_file_path': محل فایل
 ## به‌روزرسانی فایل `iran.dat` به‌طور خودکار
 
 اطمینان حاصل کردن از داشتن آخرین نسخه فایل `iran.dat` ممکن است برای شما اهمیت داشته باشد. این بخش شما را در راه‌اندازی یک فرآیند خودکار برای به‌روزرسانی فایل راهنمایی خواهد کرد.
