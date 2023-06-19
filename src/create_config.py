@@ -96,6 +96,34 @@ def surge(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
     utils.save_to_file(consts.surge_domainset_path_ads, domainset_config_ads)          
 
 
+def hysteria(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
+    acl_client = acl_server =  (
+        "# Hysteria\n"
+        "# Docs: https://hysteria.network/docs/acl\n"
+    )
+
+    acl_client += "".join(f"block domain-suffix {domain}\n" for domain in ads_domains) 
+    acl_client +=  (
+        "direct domain-suffix ir\n"
+        "direct country ir\n"
+    )
+    acl_client += "".join(f"direct domain-suffix {domain}\n" for domain in bypass_domains) 
+    acl_client += "proxy all"
+
+
+    acl_server +=  (
+        "block domain-suffix ir\n"
+        "block country ir\n"
+    )
+    acl_server += "".join(f"block domain-suffix {domain}\n" for domain in ads_domains)
+    acl_server += "".join(f"block domain-suffix {domain}\n" for domain in bypass_domains) 
+    acl_server += "direct all"              
+
+       
+    utils.save_to_file(consts.hysteria_client_path, acl_client)
+    utils.save_to_file(consts.hysteria_server_path, acl_server)
+
+
 def switchy_omega(bypass_domains: Iterable[str]):
     config = "127.0.0.1\n" "::1\n" "localhost\n" "*.ir\n"
     config += "\n".join(f"*{domain}" for domain in bypass_domains)
