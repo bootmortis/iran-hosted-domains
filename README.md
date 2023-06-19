@@ -208,7 +208,7 @@ GEOIP,IR,DIRECT
 ```INI
 DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 ```
-> Use your own Proxy/ProxyGroup instead of 'YourFinalProxy/ProxyGroup')
+> Use your own Proxy/ProxyGroup instead of 'YourFinalProxy/ProxyGroup'
 
 🚨 You can also use Surge's Rule-Set or Domain-Set in [Loon](https://www.nsloon.com) / [LanceX](https://lancex.org).
 
@@ -341,6 +341,19 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 ```
 3. For more information about the sing-box config template [see here](https://sing-box.sagernet.org/configuration/).
 
+### [Hysteria](https://github.com/apernet/hysteria)
+1. Download `hysteria_client.acl` OR `hysteria_server.acl` based on your usage from [here][link-release].
+    - hysteria_client.acl : block Iran ADs and bypass other Iran Domains/IPs (for client)
+    - hysteria_server.acl : block all Iran Domains/IPs (for server)
+    
+2. Add these lines to your conifg:
+```json
+    "acl": "acl_file_path",
+    "mmdb": "GeoLite2-Country.mmdb"
+```
+> 'acl_file_path': path of downloaded `.acl` file
+
+   
 ## Automatically Updating the `iran.dat` File
 
 Ensuring that you have the latest version of the `iran.dat` file is crucial for accurate filtering of Iranian domains. This section will guide you on how to set up an automated process to update the file on a regular basis.
