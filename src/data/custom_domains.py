@@ -112,7 +112,7 @@ custom_domains = {
         "bitmit.co",
         "exbito.com",
         "arzpaya.com",
-        "bittestan.com        
+        "bittestan.com,    
     ],
     "remove": [
         "googleapis.com",
