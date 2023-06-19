@@ -112,7 +112,9 @@ custom_domains = {
         "bitmit.co",
         "exbito.com",
         "arzpaya.com",
-        "bittestan.com",    
+        "bittestan.com",
+        "bitmax.ir",
+        "erythron.net",
     ],
     "remove": [
         "googleapis.com",
