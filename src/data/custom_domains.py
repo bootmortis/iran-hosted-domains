@@ -121,6 +121,7 @@ custom_domains = {
         "microless.shop",
         "boomidi.net",
         "shab.cloud",
+        "kermanmotor.com",
     ],
     "remove": [
         "googleapis.com",
