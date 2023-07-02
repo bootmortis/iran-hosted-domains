@@ -120,7 +120,7 @@ custom_domains = {
         "masirwp.com",
         "microless.shop",
         "boomidi.net",
-        "shab.cloud"
+        "shab.cloud",
     ],
     "remove": [
         "googleapis.com",
