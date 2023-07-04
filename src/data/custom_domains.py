@@ -115,6 +115,13 @@ custom_domains = {
         "bittestan.com",
         "bitmax.ir",
         "erythron.net",
+        "arvanstorage.com",
+        "digijojeh.com",
+        "masirwp.com",
+        "microless.shop",
+        "boomidi.net",
+        "shab.cloud",
+        "kermanmotor.com",
     ],
     "remove": [
         "googleapis.com",
