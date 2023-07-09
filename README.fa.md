@@ -244,10 +244,11 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
   1. فایل `iran-geosite.db` را از [بخش ریلیز][link-release] دانلود کنید.
   2. آن را به `geosite.db` تغییر نام دهید.
-  3. فایل `geosite.db` را در پوشه nekoray کپی و جایگزین کنید.
-  4. روی `Preferences` کلیک کنید و سپس `Routing Setting` را انتخاب کنید.
-  5. به سربرگ `Simple Route` بروید.
-  6. خطوط زیر را در قسمت های مربوطه کپی کنید:
+  3. فایل `geosite.db` را در پوشه nekoray به `backup-geosite.db` تغییرنام دهید.
+  4. فایل `geosite.db` دانلودی را به پوشه nkoray انتقال دهید.
+  5. روی `Preferences` کلیک کنید و سپس `Routing Setting` را انتخاب کنید.
+  6. به سربرگ `Simple Route` بروید.
+  7. خطوط زیر را در قسمت های مربوطه کپی کنید:
    - `Direct, IP`
    ```
    geoip:ir
@@ -262,9 +263,9 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    ```
    geosite:ads
    ```
-  7. روی Ok کلیک کنید و برنامه را دوباره اجرا کنید.
+  8. روی Ok کلیک کنید و برنامه را دوباره اجرا کنید.
   
-  ⚠️ مهم: با اینکار فایل پیش‌فرض geosite با `iran-geosite.db` جایگذاری می‌شود و دسته بندی‌های geosite پیش‌فرض مثل `category-ads-all` قابل استفاده نیستند. برای برگشتن به geosite پیشفرض، فایل `geosite.db` را از [sing-geosite](https://github.com/SagerNet/sing-geosite/releases) دانلود کنید و در پوشه Nekoray جایگزین کنید.
+  ⚠️ مهم: با اینکار دسته بندی‌های geosite پیش‌فرض مثل `category-ads-all` قابل استفاده نیستند. برای برگشتن به geosite پیشفرض، فایل `geosite.db` فعلی را حذف کرده و `backup-geosite.db` را به `geosite.db` تغییر نام دهید. همچنین می‌توانید از [sing-geosite](https://github.com/SagerNet/sing-geosite/releases) نسخه اصلی `geosite.db` را دانلود کنید.
   
   <table>
    <tr>
