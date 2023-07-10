@@ -237,10 +237,11 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
   1. Download `iran-geosite.db` from [release section][link-release].
   2. Rename it to `geosite.db`.
-  3. Copy `geosite.db` to Nekoray folder and replace the file.
-  4. Open `preferences` and click on `Routing Setting`.
-  5. Go to `Simple Route` tab.
-  6. Copy the following lines to the corresponding fields:
+  3. Rename `geosite.db` in Nekoray folder to `backup-geosite.db`.
+  4. Copy the downloaded `geosite.db` to Nekoray folder.
+  5. Open `preferences` and click on `Routing Setting`.
+  6. Go to `Simple Route` tab.
+  7. Copy the following lines to the corresponding fields:
    - `Direct, IP`
    ```
    geoip:ir
@@ -255,9 +256,9 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
    ```
    geosite:ads
    ```
-  7. Press OK button and restart the app.
+  8. Press OK button and restart the app.
   
-  :warning: Important: You are replacing default geosite with `iran-geosite.db` by doing this, so you can't use default geosite categories like `category-ads-all`. You can switch back to default geosite by downloading `geosite.db` from [sing-geosite](https://github.com/SagerNet/sing-geosite/releases) and replace it in Nekoray folder.
+  :warning: Important: By changing the default `geosite.db`, you can't use default geosite categories like `category-ads-all`. You can switch back to default geosite by removing the new `geosite.db` and renaming `backup-geosite.db` back to `geosite.db`. You can also download the original `geosite.db` from [sing-geosite](https://github.com/SagerNet/sing-geosite/releases).
   
   <table>
    <tr>
