@@ -360,6 +360,21 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
     "mmdb": "GeoLite2-Country.mmdb"
 ```
 > 'acl_file_path': محل فایل
+
+
+### [Mikrotik](https://mikrotik.com)
+1. «mikrotik_ir.rsc» یا «mikrotik_ads.rsc» را بر اساس نوع استفاده خود از [اینجا][link-release] دانلود کنید.
+    - `mikrotik_ads.rsc`: دامنه‌های تبلیغاتی را به لیست آدرس فایروال شما با نام `IRAN-ADS-DOMAINS` اضافه می کند.
+    - `mikrotik_ir.rsc`: سایر دامنه‌های ایران را به لیست آدرس فایروال شما با نام `IRAN-HOSTED-DOMAINS` اضافه می کند.
+
+2. فایل های دانلود شده را در روتر میکروتیک خود کپی کنید.
+```
+/import mikrotik_ads.rsc
+/import mikrotik_ir.rsc
+```
+> این اسکریپت‌ها فقط فهرست آدرس‌ها را اضافه می‌کنند. تعریف rule توسط خودتان باید انجام شود.
+
+
 ## به‌روزرسانی فایل `iran.dat` به‌طور خودکار
 
 اطمینان حاصل کردن از داشتن آخرین نسخه فایل `iran.dat` ممکن است برای شما اهمیت داشته باشد. این بخش شما را در راه‌اندازی یک فرآیند خودکار برای به‌روزرسانی فایل راهنمایی خواهد کرد.

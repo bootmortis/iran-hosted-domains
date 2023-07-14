@@ -355,6 +355,20 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 > 'acl_file_path': path of downloaded `.acl` file
 
    
+### [Mikrotik](https://mikrotik.com)
+1. Download `mikrotik_ir.rsc` OR `mikrotik_ads.rsc` based on your usage from [here][link-release].
+    - `mikrotik_ads.rsc` : Adds Iran ADs domains to your firewall address list under name `IRAN-ADS-DOMAINS`
+    - `mikrotik_ir.rsc` : Adds other Iran domains to your firewall address list under name `IRAN-HOSTED-DOMAINS`
+
+
+2. Copy Downloaded files to your Mikrotik router.
+```
+/import mikrotik_ads.rsc
+/import mikrotik_ir.rsc
+```
+> These scripts will add just address list you need to define rules by yourself
+
+   
 ## Automatically Updating the `iran.dat` File
 
 Ensuring that you have the latest version of the `iran.dat` file is crucial for accurate filtering of Iranian domains. This section will guide you on how to set up an automated process to update the file on a regular basis.
