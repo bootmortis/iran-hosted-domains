@@ -129,3 +129,23 @@ def switchy_omega(bypass_domains: Iterable[str]):
     config += "\n".join(f"*{domain}" for domain in bypass_domains)
 
     utils.save_to_file(consts.switchy_omega_path, config)
+
+def mikrotik(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
+    ir_address_list_name = "IRAN-HOSTED-DOMAINS"
+    ir_domains_config = (
+        f"/log info \"Loading {ir_address_list_name} address list\"\n"
+        "/ip firewall address-list remove [/ip firewall address-list find list={ir_address_list_name}]\n"
+        "/ip firewall address-list\n"
+    )
+    ir_domains_config += "\n".join(f":do {{ add address={domain} list={ir_address_list_name} }} on-error={{}}" for domain in bypass_domains)
+
+    ads_address_list_name = "IRAN-ADS-DOMAINS"
+    ads_domains_config = (
+        f"/log info \"Loading {ads_address_list_name} address list\"\n"
+        "/ip firewall address-list remove [/ip firewall address-list find list={ads_address_list_name}]\n"
+        "/ip firewall address-list\n"
+    )
+    ads_domains_config += "\n".join(f":do {{ add address={domain} list={ads_address_list_name} }} on-error={{}}" for domain in ads_domains)
+
+    utils.save_to_file(consts.mikrotik_path_ir, ir_domains_config)
+    utils.save_to_file(consts.mikrotik_path_ads, ads_domains_config)
