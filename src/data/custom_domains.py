@@ -136,6 +136,8 @@ custom_domains = {
         "charter724.vip",
         "cheapcharter.net",
         "kish44.com",
+        "rahavard365.com",
+        "snapp.market",
     ],
     "remove": [
         "googleapis.com",
