@@ -4,6 +4,7 @@ custom_domains = {
     ],
     "direct": [
         "bpi.ir",
+        "asnaf.arvandfreezone.com/",
         "arvancdn.com",
         "arvancdn.ir",
         "arvancloud.ir",
