@@ -3,7 +3,7 @@ custom_domains = {
         "animelist.ir",
     ],
     "direct": [
-        "asnaf.arvandfreezone.com/",
+        "asnaf.arvandfreezone.com",
         "bpi.ir",
         "arvancdn.com",
         "arvancdn.ir",
