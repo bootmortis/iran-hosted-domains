@@ -138,6 +138,11 @@ custom_domains = {
         "kish44.com",
         "rahavard365.com",
         "snapp.market",
+        "mlt.link",
+        "iranianbirdingclub.com",
+        "parsiday.com",
+        "ostadpaz.com",
+        "raykanet.com",
     ],
     "remove": [
         "googleapis.com",
