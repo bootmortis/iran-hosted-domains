@@ -236,11 +236,11 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
   
 ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 
-:warning: نکوری میتواند از هر دو هسته sing-box و v2ray استفاده کند. لطفا از قوانین مسیریابی مربوطه بر اساس هسته انتخابی خود در نکوری استفاده کنید.
+:warning: نکوری میتواند از هر دو هسته sing-box و Xray استفاده کند. لطفا از قوانین مسیریابی مربوطه بر اساس هسته انتخابی خود در نکوری استفاده کنید.
 
 :information_source: میتوانید با رفتن به `Preferences` > `Basic Settings` > `Core` هسته فعلی مورد استفاده خود را ببینید.
 
-  #### [sing-box core](#sing-box-core)
+  - #### [sing-box core](#sing-box-core)
 
   1. فایل `iran-geosite.db` را از [بخش ریلیز][link-release] دانلود کنید.
   2. آن را به `geosite.db` تغییر نام دهید.
@@ -273,7 +273,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    </tr>
   </table>
 
-  #### [v2ray core](#v2ray-core)
+  - #### [Xray core](#Xray-core)
 
   1. فایل `iran.dat` را از [بخش ریلیز][link-release] دانلود کنید.
   2. فایل `iran.dat` را در پوشه Nekoray کپی کنید.
@@ -298,7 +298,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 
    <table>
     <tr>
-     <td> <img align="right" width="400" src="assets/nekoray-v2ray.png"> </td>
+     <td> <img align="right" width="400" src="assets/nekoray-xray.png"> </td>
     </tr>
    </table>
   
