@@ -229,11 +229,11 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
 ### [Nekoray](https://github.com/MatsuriDayo/nekoray)
 
-:warning: Nekoray can use both sing-box and v2ray cores. Please use the corresponding routing rules according to your selected Nekoray core.
+:warning: Nekoray can use both sing-box and Xray cores. Please use the corresponding routing rules according to your selected Nekoray core.
 
 :information_source: You can see your current Nekoray core by going to `preferences` > `Basic Settings` > `Core`. 
 
-  #### [sing-box core](#sing-box-core)
+  - #### [sing-box core](#sing-box-core)
 
   1. Download `iran-geosite.db` from [release section][link-release].
   2. Rename it to `geosite.db`.
@@ -266,7 +266,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
    </tr>
   </table>
 
-  #### [v2ray core](#v2ray-core)
+  - #### [Xray core](#Xray-core)
 
   1. Download `iran.dat` from [release section][link-release].
   2. Copy `iran.dat` to Nekoray folder.
@@ -291,7 +291,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
    <table>
     <tr>
-     <td> <img align="right" width="400" src="assets/nekoray-v2ray.png"> </td>
+     <td> <img align="right" width="400" src="assets/nekoray-xray.png"> </td>
     </tr>
    </table>
 
