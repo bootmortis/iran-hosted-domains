@@ -305,6 +305,29 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 6. Click on `Confirm` until you reach the main app window
 7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
 
+
+### [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)
+1.Open SwitchyOmega Options.
+
+2.Go to "auto switch" Or any other "Switch" type profile that you use.
+
+3.Check "Rule list rules" box and choose Direct for it's profile.
+
+4.Choose your proxy's profile for "Default" rule.
+
+5.Enter this URL for "Rule List URL":
+```
+https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switchy_omega.sorl
+```
+6.Tap "Download Profile Now".
+
+7.Apply Changes.
+
+8.Set SwitchyOmegas's mode to "auto switch" or your other Switch type profile that you use.
+
+> For updating rules's list just repeat step 6.
+
+
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
 1. Download `iran-geosite.db` file from [here][link-release] and place it in the sing-box working directory.
