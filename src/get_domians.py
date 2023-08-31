@@ -25,6 +25,15 @@ def enamad() -> Iterable[str]:
     domains = (domain.split(',')[2] for domain in domains)
     return list(set(domains))
 
+def iwmf() -> Iterable[str]:
+    resp = requests.get(consts.iwmf_url)
+    resp.raise_for_status()
+
+    domains = resp.text
+    domains = domains.splitlines()[1:]
+    domains = (domain.split(',')[1] for domain in domains)
+    return list(set(domains))
+
 def adsl_tci() -> Iterable[str]:
     with open(consts.adsl_tci_file_path, "r") as file:
         return (line.strip() for line in file.readlines())
