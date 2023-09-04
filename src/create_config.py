@@ -125,7 +125,13 @@ def hysteria(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
 
 
 def switchy_omega(bypass_domains: Iterable[str]):
-    config = "127.0.0.1\n" "::1\n" "localhost\n" "*.ir\n"
-    config += "\n".join(f"*{domain}" for domain in bypass_domains)
+    config = (
+        "[SwitchyOmega Conditions]\n"
+        "; Require: SwitchyOmega >= 2.3.2\n"
+        "; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage\n\n"
+        "**.ir\n"
+    )
+    config += "\n".join(f".{domain}" for domain in bypass_domains)
 
     utils.save_to_file(consts.switchy_omega_path, config)
+
