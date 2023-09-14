@@ -149,6 +149,7 @@ custom_domains = {
         "gvt1.com",
         "eset.com",
         "ubuntu.com",
+        "radiojavan.com",
     ],
     "remove_contain": [
         "google.com",
