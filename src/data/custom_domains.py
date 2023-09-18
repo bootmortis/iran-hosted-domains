@@ -143,6 +143,8 @@ custom_domains = {
         "parsiday.com",
         "ostadpaz.com",
         "raykanet.com",
+        "cafeartini.com",
+        "ks.center",
     ],
     "remove": [
         "googleapis.com",
