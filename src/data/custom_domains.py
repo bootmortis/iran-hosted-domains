@@ -144,7 +144,6 @@ custom_domains = {
         "ostadpaz.com",
         "raykanet.com",
         "cafeartini.com",
-        "ks.center",
     ],
     "remove": [
         "googleapis.com",
