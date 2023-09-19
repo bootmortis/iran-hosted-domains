@@ -143,6 +143,8 @@ custom_domains = {
         "parsiday.com",
         "ostadpaz.com",
         "raykanet.com",
+        "ir.archive.ubuntu.com",
+        "ir.prod.hosts.ooklaserver.net"
     ],
     "remove": [
         "googleapis.com",
