@@ -111,6 +111,8 @@ custom_domains = {
         "ostadpaz.com",
         "raykanet.com",
         "cafeartini.com",
+        "ir.archive.ubuntu.com",
+        "ir.prod.hosts.ooklaserver.net",
     ],
     "remove": [
         "googleapis.com",
