@@ -12,7 +12,6 @@ adsl_tci_file_path = "src/data/adsl_tci.txt"
 
 # Output files
 ad_domains_path = "output/ads.txt"
-ir_domains_path = "output/ir_domains.txt"
 other_domains_path = "output/other_domains.txt"
 all_domains_path = "output/domains.txt"
 qv2ray_schema_path = "output/qv2ray_schema.json"
