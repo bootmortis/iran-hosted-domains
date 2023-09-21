@@ -120,6 +120,7 @@ custom_domains = {
         "eset.com",
         "ubuntu.com",
         "radiojavan.com",
+        "github.io",
     ],
     "remove_contain": [
         "google.com",
