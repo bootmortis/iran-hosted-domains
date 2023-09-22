@@ -55,6 +55,7 @@ if __name__ == "__main__":
 
     # Generate output files
     utils.save_to_file(consts.ad_domains_path, "\n".join(ad_domains))
+    utils.save_to_file(consts.ir_domains_path, "\n".join(ir_domains))
     utils.save_to_file(consts.other_domains_path, "\n".join(other_domains))
     utils.save_to_file(consts.all_domains_path, "\n".join(all_domains))
 

@@ -66,8 +66,10 @@ jobs:
           git clone https://github.com/v2fly/domain-list-community
           rm -rf domain-list-community/data/*
           
-          cp src/data/ir_tld.txt domain-list-community/data/ir
+          mv output/ir_domains.txt domain-list-community/data/ir
           mv output/other_domains.txt domain-list-community/data/other
+          cp src/data/tld_ir.txt domain-list-community/data/tld-ir
+          cp src/data/all.txt domain-list-community/data/all
           mv output/ads.txt domain-list-community/data/ads
           
           cd domain-list-community
