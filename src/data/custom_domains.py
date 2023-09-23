@@ -64,7 +64,6 @@ custom_domains = {
         "pishkhan.com",
         "ana.press",
         "tandisfood.ir",
-        "gov.ir",
         "azadfekrischool.ir",
         "azad.im",
         "bitbarg.com",
