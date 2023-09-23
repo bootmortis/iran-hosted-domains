@@ -3,7 +3,6 @@ custom_domains = {
         "animelist.ir",
     ],
     "direct": [
-        "bpi.ir",
         "arvancdn.com",
         "arvancdn.ir",
         "digikalacloud.com",
