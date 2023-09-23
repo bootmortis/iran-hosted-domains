@@ -74,7 +74,7 @@ It can be used in all v2fly, v2ray and xray clients.
     - Block Iran Ads:
       - domain: `ext:iran.dat:ads`
       - outbound: `Block`
-    - Bypass Iran non .ir Domains:
+    - Bypass Iran Domains:
       - domain: `ext:iran.dat:all`
       - outbound: `Bypass`
     - Bypass Iran geoip:
