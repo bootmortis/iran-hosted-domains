@@ -24,6 +24,35 @@ the [release page][link-release].
 In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing.
 [more info.](https://www.v2ray.com/en/configuration/routing.html)
 
+### `iran.dat`/`iran-geosite.db` general rules
+
+`iran.dat` can be used in v2fly, v2ray, and xray clients. Similarly, cores related to SingBox can use the `iran-geosite.db` file.
+
+1. Download `iran.dat` file from [here][link-release].
+2. Copy/Import the file to your client.
+  For example:
+    - v2ray macOS: `/usr/local/share/v2ray`
+
+3. Add proper rules:
+    - `ext:iran.dat:all` in bypass section
+    - `ext:iran.dat:ads` in block section
+
+4. Reconnect.
+
+#### Full categories
+
+- `ir`: handpicked `.ir` domains
+- `other`: non `.ir` domains
+- `tld-ir`: all `.ir` domains
+- `all`: a combination of `other` and `tld-ir`
+- `ads`: Iran-related advertising services
+
+<table>
+  <tr>
+    <td> <img align="right" width="400" src="assets/v2ray.png"> </td>
+  </tr>
+</table>
+
 ### [Qv2ray](https://github.com/Qv2ray/Qv2ray)
 
 In the release section, you'll find the qv2ray_schema file.
@@ -38,27 +67,6 @@ In the release section, you'll find the qv2ray_schema file.
 <table>
   <tr>
     <td><img align="right" width="400" src="assets/qv2ray.png"></td>
-  </tr>
-</table>
-
-### .dat file
-
-It can be used in all v2fly, v2ray and xray clients.
-
-1. Download `iran.dat` file from [here][link-release].
-2. Copy/Import file in your client.
-  for example:
-    - v2ray macOS: `/usr/local/share/v2ray`
-
-3. Add proper rules:
-    - `ext:iran.dat:all` in bypass section
-    - `ext:iran.dat:ads` in block section
-
-4. Reconnect.
-
-<table>
-  <tr>
-    <td> <img align="right" width="400" src="assets/v2ray.png"> </td>
   </tr>
 </table>
 
