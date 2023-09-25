@@ -49,8 +49,7 @@
   به عنوان مثال:
     - v2ray macOS: `/usr/local/share/v2ray`  
 3. قوانین مناسب را اضافه کنید:
-    - `ext:iran.dat:ir` در بخش bypass
-    - `ext:iran.dat:other` در بخش bypass
+    - `ext:iran.dat:all` در بخش bypass
     - `ext:iran.dat:ads` در بخش block
 4. اتصال خود را قطع و وصل کنید.
 
@@ -73,11 +72,8 @@
 - Block Iran Ads:
   - domain: `ext:iran.dat:ads`
   - outbound: `Block`
-- Bypass Iran .ir Domains:
-  - domain: `regexp:.+\.ir$`
-  - outbound: `Bypass`
-- Bypass Iran non .ir Domains:
-  - domain: `ext:iran.dat:other`
+- Bypass Iran Domains:
+  - domain: `ext:iran.dat:all`
   - outbound: `Bypass`
 - Bypass Iran geoip:
   - ip: `geoip:ir`
@@ -107,11 +103,8 @@
 - Block Iran Ads:
   - domain: `geosite:ads`
   - outbound: `Block`
-- Bypass Iran .ir Domains:
-  - domain: `domain:.ir`
-  - outbound: `Bypass`
-- Bypass Iran non .ir Domains:
-  - domain: `geosite:other`
+- Bypass Iran Domains:
+  - domain: `geosite:all`
   - outbound: `Bypass`
 - Bypass Iran geoip:
   - ip: `geoip:ir`
@@ -226,7 +219,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 2. از منو، به قسمت `Geo asset files` بروید، `+` را از بالا فشار دهید و فایل `iran.dat` را انتخاب کنید.
 2. از منو، به `Settings` بروید و مطمئن شوید که `Domain Strategy` روی `IpIfNonMatch` تنظیم شده است.
 3. به بخش `Custom rules` در `Settings` بروید.
-  - در تب `DIRECT URL OR IP`، عبارت `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir` را بنویسید، سپس `🗸` را از بالا فشار دهید.
+  - در تب `DIRECT URL OR IP`، عبارت `ext:iran.dat:all,geoip:ir` را بنویسید، سپس `🗸` را از بالا فشار دهید.
   - در تب `BLOCKED URL OR IP` عبارت `ext:iran.dat:ads` را بنویسید و دوباره از بالا `🗸` را فشار دهید.
 4. دکمه‌ی بازگشت را بزنید و تمام.
 
@@ -256,8 +249,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    ```
    - `Direct, Domain`
    ```
-   regexp:.+\.ir$
-   geosite:other
+   geosite:all
    ```
    - `Block, Domain`
    ```
@@ -287,8 +279,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    ```
    - `Direct, Domain`
    ```
-   regexp:.+\.ir$
-   ext:iran.dat:other
+   ext:iran.dat:all
    ```
    - `Block, Domain`
    ```
@@ -308,7 +299,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 2. سپس `v2rayN` را باز کنید و روی `Setting` کلیک کنید و گزینه `RoutingSetting` را انتخاب کنید.
 3. سپس در پنجره جدید روِی `Advance Function` کلیک کنید و گزینه `Add` را انتخاب کنید.
 4. در پنجره جدید در قسمت `Remarks` یک نام انتخاب کنید و در قسمت `Rule List` در قسمت خالی راست کلیک کرده و گزینه `Rule Add` را انتخاب کنید.
-5. در پنجره جدید در قسمت `OutboundTag` گزینه `Direct` را انتخاب کنید و سپس در قسمت `Domains` عبارت `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$` را کپی کنید.
+5. در پنجره جدید در قسمت `OutboundTag` گزینه `Direct` را انتخاب کنید و سپس در قسمت `Domains` عبارت `ext:iran.dat:all$` را کپی کنید.
 6. بر روی گزینه `Confirm` کلیک کنید تا به صفحه اصلی برنامه برگردید.
 7. مطمن شوید که از پایین برنامه فسمت `Routing` نام rule انتخابی شما وارد شده است. درغیر اینصورت فلش رو به پایین سمت راست آنرا بزنید و نام rule انتخابی خود را انتخاب کنید.
 
@@ -341,11 +332,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
     },
     "rules": [
       {
-        "geosite": "ir",
-        "outbound": "direct"
-      },
-      {
-        "geosite": "other",
+        "geosite": "all",
         "outbound": "direct"
       },
       {

@@ -51,8 +51,7 @@ It can be used in all v2fly, v2ray and xray clients.
     - v2ray macOS: `/usr/local/share/v2ray`
 
 3. Add proper rules:
-    - `ext:iran.dat:ir` in bypass section
-    - `ext:iran.dat:other` in bypass section
+    - `ext:iran.dat:all` in bypass section
     - `ext:iran.dat:ads` in block section
 
 4. Reconnect.
@@ -75,11 +74,8 @@ It can be used in all v2fly, v2ray and xray clients.
     - Block Iran Ads:
       - domain: `ext:iran.dat:ads`
       - outbound: `Block`
-    - Bypass Iran .ir Domains:
-      - domain: `regexp:.+\.ir$`
-      - outbound: `Bypass`
-    - Bypass Iran non .ir Domains:
-      - domain: `ext:iran.dat:other`
+    - Bypass Iran Domains:
+      - domain: `ext:iran.dat:all`
       - outbound: `Bypass`
     - Bypass Iran geoip:
       - ip: `geoip:ir`
@@ -104,11 +100,8 @@ It can be used in all v2fly, v2ray and xray clients.
     - Block Iran Ads:
       - domain: `geosite:ads`
       - outbound: `Block`
-    - Bypass Iran .ir Domains:
-      - domain: `domain:.ir`
-      - outbound: `Bypass`
-    - Bypass Iran non .ir Domains:
-      - domain: `geosite:other`
+    - Bypass Iran Domains:
+      - domain: `geosite:all`
       - outbound: `Bypass`
     - Bypass Iran geoip:
       - ip: `geoip:ir`
@@ -220,7 +213,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
 2. From the menu, go to the `Geo asset files` section, press `+` from the top, and select the `iran.dat` file.  
 2. From the menu, go to `Settings` and make sure `Domain Strategy` is set to `IpIfNonMatch`.  
 3. Go to the `Custom rules` section in `Settings`.  
-  - In the `DIRECT URL OR IP` tab, write `ext:iran.dat:ir,ext:iran.dat:other,geoip:ir`, then press `🗸` from the top.  
+  - In the `DIRECT URL OR IP` tab, write `ext:iran.dat:all,geoip:ir`, then press `🗸` from the top.  
   - In the `BLOCKED URL OR IP` tab, write `ext:iran.dat:ads` and then press `🗸` from the top again.  
 4. Hit back, and that's it.  
 
@@ -249,8 +242,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
    ```
    - `Direct, Domain`
    ```
-   regexp:.+\.ir$
-   geosite:other
+   geosite:all
    ```
    - `Block, Domain`
    ```
@@ -280,8 +272,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
    ```
    - `Direct, Domain`
    ```
-   regexp:.+\.ir$
-   ext:iran.dat:other
+   ext:iran.dat:all
    ```
    - `Block, Domain`
    ```
@@ -301,7 +292,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 2. Open v2ray and select `Settings` and then select `RoutingSetting`
 3. In the new window click on `Advanced Function` and choose `Add`
 4. In the new window, in `Remarks` field choose any name and in the `Rule List` empty area right-click and select `Rule Add`
-5. In the new window choose `direct` for `outboundTag` and the domain section type `ext:iran.dat:ir,ext:iran.dat:other,regexp:^.+\.ir$`
+5. In the new window choose `direct` for `outboundTag` and the domain section type `ext:iran.dat:all`
 6. Click on `Confirm` until you reach the main app window
 7. Make sure that your rule is selected from the bottom of the page. If not choose it from the drop down menu.
 
@@ -336,11 +327,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
     },
     "rules": [
       {
-        "geosite": "ir",
-        "outbound": "direct"
-      },
-      {
-        "geosite": "other",
+        "geosite": "all",
         "outbound": "direct"
       },
       {
