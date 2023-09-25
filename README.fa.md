@@ -22,6 +22,34 @@
 برای سیستم routing بهتر در کلاینت‌های v2ray شما می‌توانید پارامتر `Domain Resolution Strategy` را به `IPIfNonMatch` تغییر دهید. [اطلاعات بیشتر](https://www.v2ray.com/en/configuration/routing.html) 
 
 
+### `iran.dat`/`iran-geosite.db` general rules
+
+فایل `iran.dat` را می توان در کلاینت های v2fly، v2ray و xray استفاده کرد. به طور مشابه، هسته های مربوط به SingBox می‌توانند از فایل `iran-geosite.db` استفاده کنند.
+
+1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
+2. فایل را در کلاینت خود کپی و یا وارد کنید.  
+  به عنوان مثال:
+    - v2ray macOS: `/usr/local/share/v2ray`  
+3. قوانین مناسب را اضافه کنید:
+    - `ext:iran.dat:all` در بخش bypass
+    - `ext:iran.dat:ads` در بخش block
+4. اتصال خود را قطع و وصل کنید.
+
+#### دسته بندی کامل
+
+- `ir`: دامنه‌های `.ir` دستچین شده
+- `other`: دامنه‌های غیر `.ir`.
+- `tld-ir`: همه دامنه‌های `.ir`
+- `all`: ترکیبی از `other` و `tld-ir`.
+- `ads`: خدمات تبلیغاتی مرتبط با ایران
+
+<table>
+  <tr>
+    <td> <img align="right" width="400" src="assets/v2ray.png"> </td>
+  </tr>
+</table>
+
+  
 ### [Qv2ray](https://github.com/Qv2ray/Qv2ray)
 
 شما می‌توانید فایل qv2ray_schema.json را در [این صفحه][link-release] پیدا کنید.
@@ -38,27 +66,7 @@
     <td> <img width="400" src="assets/qv2ray.png"> </td>
   </tr>
 </table>
-
-### .dat file
-
-این فایل در تمامی کلاینت‌های v2ray
-  v2fly و xray قابل استفاده است.
-
-1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
-2. فایل را در کلاینت خود کپی و یا وارد کنید.  
-  به عنوان مثال:
-    - v2ray macOS: `/usr/local/share/v2ray`  
-3. قوانین مناسب را اضافه کنید:
-    - `ext:iran.dat:all` در بخش bypass
-    - `ext:iran.dat:ads` در بخش block
-4. اتصال خود را قطع و وصل کنید.
-
-<table>
-  <tr>
-    <td> <img align="right" width="400" src="assets/v2ray.png"> </td>
-  </tr>
-</table>
-  
+    
 ### [SagerNet](https://github.com/SagerNet/SagerNet) / [Matsuri](https://github.com/MatsuriDayo/Matsuri)
 
 1. فایل `iran.dat` را از [این صفحه][link-release] دانلود کنید.
