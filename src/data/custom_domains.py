@@ -107,6 +107,7 @@ custom_domains = {
         "ubuntu.com",
         "radiojavan.com",
         "github.io",
+        "wordpress.com",
     ],
     "remove_contain": [
         "google.com",
