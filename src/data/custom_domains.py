@@ -1,6 +1,7 @@
 custom_domains = {
     "proxy": [
         "animelist.ir",
+        "gamepass.ir",
     ],
     "direct": [
         "arvancdn.com",
