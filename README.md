@@ -41,8 +41,8 @@ In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for be
 
 #### Full categories
 
-- `ir`: handpicked `.ir` domains, use as `direct`
-- `other`: non `.ir` domains, use as `direct`
+- `ir`: handpicked `.ir` domains, use as `direct`.
+- `other`: non `.ir` domains, use as `direct`.
 - `tld-ir`: all `.ir` domains, use as `direct`.
 - `all`: a combination of `other` and `tld-ir`, should be used as `direct`.
 - `ads`: Iran-related advertising services that need to be `blocked`.
