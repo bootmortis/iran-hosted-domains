@@ -100,6 +100,10 @@ custom_domains = {
         "cafeartini.com",
         "ir.archive.ubuntu.com",
         "ir.prod.hosts.ooklaserver.net",
+        "dadhotel.com",
+        "adnetwork.credit",
+        "shahrad.net",
+        "khanesony.co",
     ],
     "remove": [
         "googleapis.com",
