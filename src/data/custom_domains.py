@@ -101,7 +101,6 @@ custom_domains = {
         "ir.archive.ubuntu.com",
         "ir.prod.hosts.ooklaserver.net",
         "dadhotel.com",
-        "paystar.click",
         "adnetwork.credit",
         "shahrad.net",
         "khanesony.co",
