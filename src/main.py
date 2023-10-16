@@ -20,6 +20,7 @@ def collect_and_clean_domains(*domain_set: Iterable[Iterable[str]]) -> Iterable[
     domains = filter(utils.letter_digit_hyphen, domains)
     domains = filter(lambda x: x != '', domains)
     domains = filter(lambda domain: domain not in custom_domains["remove"], domains)
+    domains = filter(lambda domain: domain not in custom_domains["proxy"], domains)
     for remove_contain in custom_domains["remove_contain"]:
         domains = list(filter(lambda domain: remove_contain not in domain, domains))
     for remove_regex in custom_domains["remove_regex"]:
