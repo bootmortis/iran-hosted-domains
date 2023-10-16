@@ -104,6 +104,7 @@ custom_domains = {
         "adnetwork.credit",
         "shahrad.net",
         "khanesony.co",
+        "danemarket.com",
     ],
     "remove": [
         "googleapis.com",
