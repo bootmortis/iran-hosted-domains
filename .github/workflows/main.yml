@@ -65,7 +65,8 @@ jobs:
         run: |
           git clone https://github.com/v2fly/domain-list-community
           rm -rf domain-list-community/data/*
-          
+
+          python3 src/data/custom_domains.py | jq -r '.proxy | join("\n")' > domain-list-community/data/proxy
           mv output/ir_domains.txt domain-list-community/data/ir
           mv output/other_domains.txt domain-list-community/data/other
           cp src/data/tld_ir.txt domain-list-community/data/tld-ir
