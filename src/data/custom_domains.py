@@ -118,3 +118,7 @@ custom_domains = {
         r"^xn--",
     ],
 }
+
+if __name__ == "__main__":
+    import json
+    print(json.dumps(custom_domains))
