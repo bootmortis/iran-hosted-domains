@@ -1,5 +1,8 @@
 import os
 import re
+import tempfile
+import urllib.request
+import zipfile
 
 import requests
 import tldextract
@@ -125,3 +128,43 @@ def fix_requests_ssl():
         requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
     except AttributeError:
         pass
+
+def get_v2fly_ir_directories(base_dir, dir):
+    # recursive function: recursivly get all line start with `include:` to create a list of iran related files with the new files also
+    directories = []
+    directories.append(dir)
+    with open(base_dir + dir) as f:
+        for line in f.readlines():
+            if line.startswith('include:'):
+                file_name = line.split(':')[1].strip()
+                directories.extend(get_v2fly_ir_directories(base_dir, file_name))
+
+    return directories
+
+def get_v2fly_non_ir_domains():
+    # download https://github.com/v2fly/domain-list-community/archive/refs/heads/master.zip into /tmp
+    url = 'https://github.com/v2fly/domain-list-community/archive/refs/heads/master.zip'
+    filehandle, _ = urllib.request.urlretrieve(url)
+    zip_file_object = zipfile.ZipFile(filehandle, 'r')
+    domains = []
+   
+    with tempfile.TemporaryDirectory() as tempdir:
+        zip_file_object.extractall(tempdir)
+
+        ir_directories = get_v2fly_ir_directories(tempdir + '/domain-list-community-master/data/', 'category-ir') + ['category-ads-ir']
+
+        for filename in os.listdir(tempdir + '/domain-list-community-master/data'):
+            if filename.strip() not in ir_directories:
+                filepath = tempdir + '/domain-list-community-master/data/' + filename
+                with open(filepath) as f:
+                    for line in f.readlines():
+                        line = re.sub(r'(?m)^\s*#.*\n?', '', line).strip()
+                        if line.startswith("full:"):
+                            domains.append(line.split(':')[1])
+                        elif not line.startswith("include:"):
+                            domains.append(line)
+
+    domains = filter(is_not_ip, domains)
+    domains = filter(is_url, domains)
+
+    return sorted(domains)
