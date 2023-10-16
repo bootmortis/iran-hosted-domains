@@ -151,8 +151,8 @@ def get_v2fly_non_ir_domains():
     with tempfile.TemporaryDirectory() as tempdir:
         zip_file_object.extractall(tempdir)
 
-        ir_directories = get_v2fly_ir_directories(tempdir + '/domain-list-community-master/data/', 'category-ir')
-    
+        ir_directories = get_v2fly_ir_directories(tempdir + '/domain-list-community-master/data/', 'category-ir') + ['category-ads-ir']
+
         for filename in os.listdir(tempdir + '/domain-list-community-master/data'):
             if filename.strip() not in ir_directories:
                 filepath = tempdir + '/domain-list-community-master/data/' + filename
