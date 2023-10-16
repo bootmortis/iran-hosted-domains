@@ -25,6 +25,15 @@ def collect_and_clean_domains(*domain_set: Iterable[Iterable[str]]) -> Iterable[
         domains = list(filter(lambda domain: remove_contain not in domain, domains))
     for remove_regex in custom_domains["remove_regex"]:
         domains = list(filter(lambda domain: not re.match(remove_regex, domain), domains))
+
+    v2fly_non_ir_domains = utils.get_v2fly_non_ir_domains()
+    print("removing v2fly domains from domains...")
+    domains = sorted(set(domains))
+    for domain in domains:
+        if domain in v2fly_non_ir_domains:
+            print("> removed: " + domain)
+            domains.remove(domain)
+
     domains = domains + custom_domains["direct"]
     return sorted(set(domains))
 
