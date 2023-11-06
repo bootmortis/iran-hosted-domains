@@ -105,6 +105,7 @@ custom_domains = {
         "shahrad.net",
         "khanesony.co",
         "danemarket.com",
+        "openapi.sdb247.com",
     ],
     "remove": [
         "googleapis.com",
