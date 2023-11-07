@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: '0 0 * * Mon'
   workflow_dispatch:
-    inputs:
-      force_update:
-        description: 'Force update'
-        required: false
-        default: 'false'
 
 jobs:
   crawl:
@@ -53,15 +48,9 @@ jobs:
           echo "total $total"
           echo "old $old"
 
-          if [[ ${{ github.event.inputs.force_update || 'false' }} == 'true' || $total -ne $old ]]; then
-            echo "SHOULD_UPDATE=true" >> $GITHUB_ENV
-            echo "Should Update"
-          fi
-
           echo "TOTAL_DOMAINS=$total" >> $GITHUB_ENV
 
       - name: Build .dat file
-        if: ${{ env.SHOULD_UPDATE }}
         run: |
           git clone https://github.com/v2fly/domain-list-community
           rm -rf domain-list-community/data/*
@@ -79,7 +68,6 @@ jobs:
           mv dlc.dat iran.dat
 
       - name: Build sing-box .db file
-        if: ${{ env.SHOULD_UPDATE }}
         run: |
           git clone https://github.com/bootmortis/sing-geosite
           
@@ -90,7 +78,6 @@ jobs:
           mv iran-geosite.db ../output/iran-geosite.db
 
       - name: Calculate checksum
-        if: ${{ env.SHOULD_UPDATE }}
         run: |
           cd output
           for file in *; do
@@ -98,7 +85,6 @@ jobs:
           done
 
       - name: Upload result as release
-        if: ${{ env.SHOULD_UPDATE }}
         uses: ncipollo/release-action@v1
         with:
           artifacts: "output/*.*"
