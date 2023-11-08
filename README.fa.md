@@ -415,7 +415,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
     ```
 #### استفاده
 
-1. اسکریپت [update_iran_dat.ps1](scripts/update_iran_dat.ps1) را دانلود کنید و آن را در محل مناسبی (مثلا در کنار فایل `iran.dat`) قرار دهید
+1. اسکریپت [update_iran_dat.ps1](scripts/update_iran_dat.ps1) را دانلود کنید و آن را در محل مناسبی (مثلا در کنار فایل `iran.dat`) قرار دهید.
 
 2. یک پنجره `cmd` با دسترسی `Administrator` باز کرده و فرمان زیر را در آن اجرا کنید:
    ```cmd

@@ -413,7 +413,7 @@ Ensuring that you have the latest version of the `iran.dat` file is crucial for 
 
 1. Download the [update_iran_dat.ps1](scripts/update_iran_dat.ps1) script from this repository and move it to your preferred  location (next to `iran.dat` file should be good).
 
-2. Run the Windows command prompt as and Administrator and run the following command:
+2. Run the Windows command prompt as Administrator and execute the following command:
    ```cmd
    SCHTASKS /CREATE /SC WEEKLY /D TUE /TN "UPDATE IRAN.DAT" /TR "powershell -File '<path\to\update_iran_dat.ps1>' '<path\to\iran.dat>'" /ST 19:00
    ```
