@@ -421,6 +421,7 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    ```cmd
    SCHTASKS /CREATE /SC WEEKLY /D TUE /TN "UPDATE IRAN.DAT" /TR "powershell -File '<path\to\update_iran_dat.ps1>' '<path\to\iran.dat>'" /ST 19:00
    ```
+   مطمئن شوید که `<path\to\update_iran_dat.ps1>` را با مسیر واقعی اسکریپت در سیستم خود و `<path\to\iran.dat>` را با مسیر واقعی فایل `iran.dat` که می‌خواهید به‌روزرسانی کنید، جایگزین کرده‌اید.
 
 اسکریپت فرآیند به‌روزرسانی فایل `iran.dat` را انجام می‌دهد. ابتدا بررسی می‌کند که فایل از قبل وجود دارد و مقدار checksum فایل فعلی را با آخرین نسخه موجود در مخزن مقایسه می‌کند. اگر نسخه جدیدی موجود باشد، فایل جدید را دانلود کرده و جایگزین فایل قبلی می‌کند. اگر فایل محلی وجود نداشته باشد، به سادگی آخرین نسخه را دانلود کرده و در مسیر مشخص شده ذخیره می کند.
 

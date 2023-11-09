@@ -418,6 +418,7 @@ Ensuring that you have the latest version of the `iran.dat` file is crucial for 
    SCHTASKS /CREATE /SC WEEKLY /D TUE /TN "UPDATE IRAN.DAT" /TR "powershell -File '<path\to\update_iran_dat.ps1>' '<path\to\iran.dat>'" /ST 19:00
    ```
 
+    Make sure to replace `<path\to\update_iran_dat.ps1>` with the actual path to the script on your system and `<path\to\iran.dat>` with the actual path to the `iran.dat` file that you want to update. 
 
 The scripts handle the process of updating the `iran.dat` file. They check if the file already exists and compare the checksum of the existing file with the latest version available on the repository. If a new version is available, they download the updated file and replace the existing one. If the local file doesn't exist, they simply download the latest version and save it to the specified path.
 
