@@ -372,11 +372,13 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 
 Ensuring that you have the latest version of the `iran.dat` file is crucial for accurate filtering of Iranian domains. This section will guide you on how to set up an automated process to update the file on a regular basis.
 
-### Prerequisites
+### Linux
+
+#### Prerequisites
 
 - You should have `curl` and `shasum` installed on your system.
 
-### Usage
+#### Usage
 
 1. Download the [update_iran_dat.sh](scripts/update_iran_dat.sh) script from this repository.
     ```shell
@@ -397,11 +399,32 @@ Ensuring that you have the latest version of the `iran.dat` file is crucial for 
     Make sure to replace `/path/to/update_iran_dat.sh` with the actual path to the script on your system and `/path/to/iran.dat` with the actual path to the `iran.dat` file that you want to update.
 5. Save the crontab file and exit the editor.
 
-The script `update_iran_dat.sh` handles the process of updating the `iran.dat` file. It checks if the file already exists and compares the checksum of the existing file with the latest version available on the repository. If a new version is available, it downloads the updated file and replaces the existing one. If the local file doesn't exist, it simply downloads the latest version and saves it to the specified path.
+### Windows
 
-**Note:** The script assumes that you have the necessary permissions to write to the directory where the iran.dat file is located. If you encounter any issues, ensure that the script has appropriate write permissions or modify the script accordingly.
+#### Prerequisites
 
-It is recommended to test the script manually before setting up the cron job to ensure it executes correctly.
+- Since the script is not signed, you must have the appropriate execution policy to run it.
+- This can be achieved by running the following command in a Powershell window with administrative rights:
+    ```powershell
+    Set-ExecutionPolicy unrestricted
+    ```
+
+#### Usage
+
+1. Download the [update_iran_dat.ps1](scripts/update_iran_dat.ps1) script from this repository and move it to your preferred  location (next to `iran.dat` file should be good).
+
+2. Run the Windows command prompt as Administrator and execute the following command:
+   ```cmd
+   SCHTASKS /CREATE /SC WEEKLY /D TUE /TN "UPDATE IRAN.DAT" /TR "powershell -File '<path\to\update_iran_dat.ps1>' '<path\to\iran.dat>'" /ST 19:00
+   ```
+
+    Make sure to replace `<path\to\update_iran_dat.ps1>` with the actual path to the script on your system and `<path\to\iran.dat>` with the actual path to the `iran.dat` file that you want to update. 
+
+The scripts handle the process of updating the `iran.dat` file. They check if the file already exists and compare the checksum of the existing file with the latest version available on the repository. If a new version is available, they download the updated file and replace the existing one. If the local file doesn't exist, they simply download the latest version and save it to the specified path.
+
+**Note:** The script assumes that you have the necessary permissions to write to the directory where the `iran.dat` file is located. If you encounter any issues, ensure that the script has appropriate write permissions or modify the script accordingly.
+
+It is recommended to test the script manually before setting up the cron job or SCHTASK to ensure it executes correctly.
 
 
 ## Create .dat file manually (Tutorial)
