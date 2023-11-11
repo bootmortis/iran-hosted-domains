@@ -107,8 +107,7 @@ custom_domains = {
         "danemarket.com",
         "openapi.sdb247.com",
         "tapsi.cab",
-        "tap30.services,
-"
+        "tap30.services",
     ],
     "remove": [
         "googleapis.com",
