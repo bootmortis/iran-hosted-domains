@@ -108,6 +108,7 @@ custom_domains = {
         "openapi.sdb247.com",
         "tapsi.cab",
         "tap30.services",
+        "swiftsrv.net",
     ],
     "remove": [
         "googleapis.com",
