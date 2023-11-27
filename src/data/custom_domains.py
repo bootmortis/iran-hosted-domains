@@ -109,6 +109,7 @@ custom_domains = {
         "tapsi.cab",
         "tap30.services",
         "swiftsrv.net",
+        "rasayesh.com"
     ],
     "remove": [
         "googleapis.com",
