@@ -367,7 +367,7 @@ For blocking local domains and IPs in the server side follow [this][link-v2ray-s
 ```
 > 'acl_file_path': path of downloaded `.acl` file
 
-### [Pass Wall](https://github.com/xiaorouji/openwrt-passwall)
+### [OpenWrt Pass Wall](https://github.com/xiaorouji/openwrt-passwall)
 Only tested with Xray core. (v2ray core may work too)
 1. Download `iran.dat` file from [here][link-release].
   ```shell
