@@ -384,6 +384,9 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
   mv iran.dat /usr/share/v2ray/
   ```
 3. قوانین shunt زیر را در بخش `Pass Wall -> Rule Manage -> Shunt Rules` به همین ترتیب ایجاد کنید:
+
+</div>
+
    1. `Block`:
       - Remarks: `Block`
       - Domain: `ext:iran.dat:ads`
@@ -392,9 +395,15 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
       - Domain: `ext:iran.dat:proxy`
    3. `Direct`:
       - Remarks: `Direct`
-      - Domain: `ext:iran.dat:all` (شما می‌توانید از `other`, `ir` یا `tld-ir` نیز به جای `all` استفاده کنید. برای اطلاعات بیشتر به [این بخش](#دسته-بندی-کامل) مراجعه کنید)
-      - IP: `geoip:ir` (شما نیز می‌توانید در خط جدیدی `geoip:private` را اضافه کنید)
-4. یک Node جدید در `Pass Wall -> Node List -> Add` با مشخصات زیر ایجاد کنید:
+      - Domain: `ext:iran.dat:all` 
+      - IP: `geoip:ir` 
+
+<div dir=rtl>
+
+4. یک Node جدید در `Pass Wall -> Node List -> Add` با مشخصات زیر ایجاد کنید:  
+
+</div>
+
    - Node Remarks: `Shunt`
    - Type: `Xray`
    - Protocol: `Shunt`
@@ -403,9 +412,19 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
    - Direct: `Direct Connection`
    - Default: یکی از سرور‌های خود را انتخاب کنید
    - Domain Strategy: `AsIs` برای کارایی بیشتر یا `IPIfNonMatch` برای دقت مسیر یابی بهتر.
+
+<div dir=rtl>
+
 5. به `Pass Wall -> Basic Settings -> Main` بروید و سپس:
+</div>
+
    - TCP Node: `[Shunt]`
    - UDP Node: `Same as the tcp node`
+
+<div dir=rtl>
+
+
+
    - گزینه `Save & Apply` را بزنید.
    - همچنین به تب `DNS` رفته و `Clear IPSET` را بزنید.
 
