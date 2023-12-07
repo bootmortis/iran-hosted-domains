@@ -21,8 +21,7 @@ This repository is a compiled list of public information about websites hosted i
 
 This can differ depending on which tool you use. You can download the domains list from the [release page][link-release].  
 for quick review of all release files see [Files section](#files).  
-In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing.
-[more info.](https://www.v2ray.com/en/configuration/routing.html)
+In v2ray/Xray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing, or `AsIs` for better performance. See [#83](https://github.com/bootmortis/iran-hosted-domains/issues/83) for more info.
 
 ### `iran.dat`/`iran-geosite.db` general rules
 
@@ -425,11 +424,12 @@ mv iran.dat /usr/share/v2ray/
    - UDP Node: `Same as the tcp node`
    - Hit `Save & Apply`
    - You can also go to `DNS` tab and hit `Clear IPSET`.
-  
+
 ### [v2rayA](https://github.com/v2rayA/v2rayA)
+
 1. Download `iran.dat` file from [here][link-release] and place it in assets directory.
 2. Use the following rules ([More Info](https://v2raya.org/en/docs/manual/routinga/)):
-  
+
 ```
 default: proxy
 
@@ -438,7 +438,7 @@ domain(ext:"iran.dat:proxy")->proxy
 domain(ext:"iran.dat:all")->direct
 ip(geoip:ir)->direct
 ```
-  
+
 ## Automatically Updating the `iran.dat` File
 
 Ensuring that you have the latest version of the `iran.dat` file is crucial for accurate filtering of Iranian domains. This section will guide you on how to set up an automated process to update the file on a regular basis.

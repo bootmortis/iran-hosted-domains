@@ -18,7 +18,7 @@
 
 بسته به اینکه از کدام کلاینت استفاده می‌کنید، ممکن است متفاوت باشد. لیست دامنه‌ها و فایل‌های مربوط را می‌توانید از [این صفحه][link-release] دریافت کنید.  
  برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](#فایل-ها) مراجعه کنید.  
-برای سیستم routing بهتر در کلاینت‌های v2ray شما می‌توانید پارامتر `Domain Resolution Strategy` را به `IPIfNonMatch` تغییر دهید. [اطلاعات بیشتر](https://www.v2ray.com/en/configuration/routing.html)
+برای سیستم routing بهتر در کلاینت‌های v2ray/Xray شما می‌توانید پارامتر `Domain Resolution Strategy` را به `IPIfNonMatch` برای مسیریابی بهتر یا `AsIs` برای کارایی بیشتر تغییر دهید. اطلاعات بیشتر را می‌توانید در [#83](https://github.com/bootmortis/iran-hosted-domains/issues/83) مشاهده کنید.
 
 ### `iran.dat`/`iran-geosite.db` general rules
 
