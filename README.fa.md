@@ -372,6 +372,43 @@ DOMAIN-KEYWORD,,YourFinalProxy/ProxyGroup,force-remote-dns
     "mmdb": "GeoLite2-Country.mmdb"
 ```
 > 'acl_file_path': محل فایل
+
+### [Pass Wall](https://github.com/xiaorouji/openwrt-passwall)
+فقط با هسته Xray تست شده است. (با هسته v2ray هم ممکن است کار کند)
+1. فایل `iran.dat` را از [اینجا][link-release] دانلود کنید.
+  ```shell
+    curl -LO https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat
+  ```
+2. فایل `iran.dat` را به دایرکتوری `/usr/share/v2ray/` منتقل کنید. (شما می توانید دایرکتوری صحیح را در د`Pass Wall -> Rule Manage -> Location of V2ray/Xray asset`ببینید)
+  ```shell
+  mv iran.dat /usr/share/v2ray/
+  ```
+3. قوانین shunt زیر را در بخش `Pass Wall -> Rule Manage -> Shunt Rules` به همین ترتیب ایجاد کنید:
+   1. `Block`:
+      - Remarks: `Block`
+      - Domain: `ext:iran.dat:ads`
+   2. `Proxy`:
+      - Remarks: `Proxy`
+      - Domain: `ext:iran.dat:proxy`
+   3. `Direct`:
+      - Remarks: `Direct`
+      - Domain: `ext:iran.dat:all` (شما می‌توانید از `other`, `ir` یا `tld-ir` نیز به جای `all` استفاده کنید. برای اطلاعات بیشتر به [این بخش](#دسته-بندی-کامل) مراجعه کنید)
+      - IP: `geoip:ir` (شما نیز می‌توانید در خط جدیدی `geoip:private` را اضافه کنید)
+4. یک Node جدید در `Pass Wall -> Node List -> Add` با مشخصات زیر ایجاد کنید:
+   - Node Remarks: `Shunt`
+   - Type: `Xray`
+   - Protocol: `Shunt`
+   - Block: `Blackhole`
+   - Proxy: `Default`
+   - Direct: `Direct Connection`
+   - Default: یکی از سرور‌های خود را انتخاب کنید
+   - Domain Strategy: `AsIs` برای کارایی بیشتر یا `IPIfNonMatch` برای دقت مسیر یابی بهتر.
+5. به `Pass Wall -> Basic Settings -> Main` بروید و سپس:
+   - TCP Node: `[Shunt]`
+   - UDP Node: `Same as the tcp node`
+   - گزینه `Save & Apply` را بزنید.
+   - همچنین به تب `DNS` رفته و `Clear IPSET` را بزنید.
+
 ## به‌روزرسانی فایل `iran.dat` به‌طور خودکار
 
 اطمینان حاصل کردن از داشتن آخرین نسخه فایل `iran.dat` ممکن است برای شما اهمیت داشته باشد. این بخش شما را در راه‌اندازی یک فرآیند خودکار برای به‌روزرسانی فایل راهنمایی خواهد کرد.
