@@ -17,6 +17,7 @@
 ## روش استفاده
 
 بسته به اینکه از کدام کلاینت استفاده می‌کنید، ممکن است متفاوت باشد. لیست دامنه‌ها و فایل‌های مربوط را می‌توانید از [این صفحه][link-release] دریافت کنید.  
+  برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](#فایل-ها) مراجعه کنید.  
 برای سیستم routing بهتر در کلاینت‌های v2ray شما می‌توانید پارامتر `Domain Resolution Strategy` را به `IPIfNonMatch` تغییر دهید. [اطلاعات بیشتر](https://www.v2ray.com/en/configuration/routing.html)
 
 ### `iran.dat`/`iran-geosite.db` general rules
@@ -551,12 +552,22 @@ cp ~/ads.txt data/ads
 go run ./ --outputdir=../
 ```
 
-## فایل‌ها
+## فایل ها
+شما همیشه می توانید آخرین نسخه این فایل ها را در [صفحه انتشار][link-release] پیدا کنید.  
+شما می توانید روی نام برنامه کلیک کنید تا دستورالعمل های استفاده را ببینید.  
+همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.  
+- **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge) در دو فرمت مختلف شامل می شود.
+- **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
+- **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](#hysteria) را ببینید.
+- **iran-geosite.db**: برای هسته sing-box بخش [Sing-Box](#sing-box) را ببینید.
+- **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#full-categories) را ببینید.
+- **qv2ray_schema.json**: سناریوی json قابل وارد کردن که می تواند در [Qv2ray](#qv2ray) استفاده شود.
+- **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](#shadowrocket) استفاده شود.
+- **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](#surge--surfboard) در دو فرمت مختلف شامل می شود.
+- **switchy_omega.sorl**: دامنه ها را برای [SwitchyOmega](#switchyomega) شامل می شود.
 
-- **iran.dat:** شامل تمام سایت های هاست شده در ایران و دامنه های تبلیغاتی با فرمت خاص.
-- **domains.txt:** شامل تمام سایت های هاست شده در ایران.
-- **qv2ray_schema.json:** فایل قابل استفاده در کلاینت [Qv2ray](https://github.com/Qv2ray/Qv2ray).
-- **shadowrocket.conf:** فایل قابل استفاده در کلاینت [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118).
+
+
 
 ## منابع و گرامیداشت
 
