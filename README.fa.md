@@ -17,7 +17,7 @@
 ## روش استفاده
 
 بسته به اینکه از کدام کلاینت استفاده می‌کنید، ممکن است متفاوت باشد. لیست دامنه‌ها و فایل‌های مربوط را می‌توانید از [این صفحه][link-release] دریافت کنید.  
-  برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](#فایل-ها) مراجعه کنید.  
+ برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](#فایل-ها) مراجعه کنید.  
 برای سیستم routing بهتر در کلاینت‌های v2ray شما می‌توانید پارامتر `Domain Resolution Strategy` را به `IPIfNonMatch` تغییر دهید. [اطلاعات بیشتر](https://www.v2ray.com/en/configuration/routing.html)
 
 ### `iran.dat`/`iran-geosite.db` general rules
@@ -457,11 +457,12 @@ mv iran.dat /usr/share/v2ray/
 
 - گزینه `Save & Apply` را بزنید.
 - همچنین به تب `DNS` رفته و `Clear IPSET` را بزنید.
-  
+
 ### [v2rayA](https://github.com/v2rayA/v2rayA)
+
 1. فایل `iran.dat` را از [اینجا][link-release] دانلود کنید و آن را در دایرکتوری assets قرار دهید.
 2. از قوانین زیر استفاده کنید ([اطلاعات بیشتر](https://v2raya.org/en/docs/manual/routinga/)):
-  
+
 ```
 default: proxy
 
@@ -470,7 +471,7 @@ domain(ext:"iran.dat:proxy")->proxy
 domain(ext:"iran.dat:all")->direct
 ip(geoip:ir)->direct
 ```
-  
+
 ## به‌روزرسانی فایل `iran.dat` به‌طور خودکار
 
 اطمینان حاصل کردن از داشتن آخرین نسخه فایل `iran.dat` ممکن است برای شما اهمیت داشته باشد. این بخش شما را در راه‌اندازی یک فرآیند خودکار برای به‌روزرسانی فایل راهنمایی خواهد کرد.
@@ -566,9 +567,11 @@ go run ./ --outputdir=../
 ```
 
 ## فایل ها
+
 شما همیشه می توانید آخرین نسخه این فایل ها را در [صفحه انتشار][link-release] پیدا کنید.  
 شما می توانید روی نام برنامه کلیک کنید تا دستورالعمل های استفاده را ببینید.  
-همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.  
+همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.
+
 - فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge--) در دو فرمت مختلف شامل می شود.
 - فایل **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
 - فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](#hysteria) را ببینید.
@@ -578,9 +581,6 @@ go run ./ --outputdir=../
 - فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](#shadowrocket) استفاده شود.
 - فایل‌های **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](#surge--surfboard) در دو فرمت مختلف شامل می شود.
 - فایل **switchy_omega.sorl**: دامنه ها را برای [SwitchyOmega](#switchyomega) شامل می شود.
-
-
-
 
 ## منابع و گرامیداشت
 
