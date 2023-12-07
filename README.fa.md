@@ -556,11 +556,11 @@ go run ./ --outputdir=../
 شما همیشه می توانید آخرین نسخه این فایل ها را در [صفحه انتشار][link-release] پیدا کنید.  
 شما می توانید روی نام برنامه کلیک کنید تا دستورالعمل های استفاده را ببینید.  
 همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.  
-- فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge) در دو فرمت مختلف شامل می شود.
+- فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge--) در دو فرمت مختلف شامل می شود.
 - فایل **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
 - فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](#hysteria) را ببینید.
 - فایل **iran-geosite.db**: برای هسته sing-box بخش [Sing-Box](#sing-box) را ببینید.
-- فایل **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#full-categories) را ببینید.
+- فایل **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#دسته-بندی-کامل) را ببینید.
 - فایل **qv2ray_schema.json**: سناریوی json قابل وارد کردن که می تواند در [Qv2ray](#qv2ray) استفاده شود.
 - فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](#shadowrocket) استفاده شود.
 - فایل‌های **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](#surge--surfboard) در دو فرمت مختلف شامل می شود.
