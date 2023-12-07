@@ -457,7 +457,20 @@ mv iran.dat /usr/share/v2ray/
 
 - گزینه `Save & Apply` را بزنید.
 - همچنین به تب `DNS` رفته و `Clear IPSET` را بزنید.
+  
+### [v2rayA](https://github.com/v2rayA/v2rayA)
+1. فایل `iran.dat` را از [اینجا][link-release] دانلود کنید و آن را در دایرکتوری assets قرار دهید.
+2. از قوانین زیر استفاده کنید ([اطلاعات بیشتر](https://v2raya.org/en/docs/manual/routinga/)):
+  
+```
+default: proxy
 
+domain(ext:"iran.dat:ads")->block
+domain(ext:"iran.dat:proxy")->proxy
+domain(ext:"iran.dat:all")->direct
+ip(geoip:ir)->direct
+```
+  
 ## به‌روزرسانی فایل `iran.dat` به‌طور خودکار
 
 اطمینان حاصل کردن از داشتن آخرین نسخه فایل `iran.dat` ممکن است برای شما اهمیت داشته باشد. این بخش شما را در راه‌اندازی یک فرآیند خودکار برای به‌روزرسانی فایل راهنمایی خواهد کرد.
