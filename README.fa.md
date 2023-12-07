@@ -480,7 +480,7 @@ ip(geoip:ir)->direct
 
 #### استفاده
 
-1. اسکریپت [update_iran_dat.sh](scripts/update_iran_dat.sh) را دانلود کنید.
+1. اسکریپت [update_iran_dat.sh](scripts/update_iran_dat.sh) را دانلود کنید. (اگر از ash استفاده می‌کنید، فایل [update_iran_dat.ash](scripts/update_iran_dat.ash) را دانلود کنید.)
    ```shell
    curl -LO https://raw.githubusercontent.com/bootmortis/iran-hosted-domains/main/scripts/update_iran_dat.sh
    ```

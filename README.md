@@ -445,7 +445,7 @@ Ensuring that you have the latest version of the `iran.dat` file is crucial for 
 
 #### Usage
 
-1. Download the [update_iran_dat.sh](scripts/update_iran_dat.sh) script from this repository.
+1. Download the [update_iran_dat.sh](scripts/update_iran_dat.sh) script from this repository. (if you use ash, like OpenWrt, download [update_iran_dat.ash](scripts/update_iran_dat.ash) instead)
    ```shell
    curl -LO https://raw.githubusercontent.com/bootmortis/iran-hosted-domains/main/scripts/update_iran_dat.sh
    ```
