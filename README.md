@@ -19,8 +19,8 @@ This repository is a compiled list of public information about websites hosted i
 
 ## Usage
 
-This can differ depending on which tool you use. You can download the domains list from
-the [release page][link-release].
+This can differ depending on which tool you use. You can download the domains list from the [release page][link-release].  
+for quick review of all release files see [Files section](#files).  
 In v2ray clients you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing.
 [more info.](https://www.v2ray.com/en/configuration/routing.html)
 
@@ -500,11 +500,18 @@ go run ./ --outputdir=../
 ```
 
 ## Files
-
-- **iran.dat:** Contains all websites hosted in Iran and ADs in a special format.
-- **domains.txt:** Contains all websites hosted in Iran.
-- **qv2ray_schema.json:** Importable json schema that can be used in [Qv2ray](https://github.com/Qv2ray/Qv2ray).
-- **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118).
+You can always find the latest version of these files in the [release page][link-release].  
+You can click on app name to see the usage instructions.  
+Also, for each file there is a `.sha256` file that contains sha256 hash of that file.  
+- **clash_rules_ads.txt**, **clash_rules_ads.yaml**, **clash_rules_other.txt** and **clash_rules_other.yaml**: Contains all ADs and non-ir domains for [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge) in two different formats.
+- **domains.txt**: Contains all websites hosted in Iran.
+- **hysteria_client.acl** and **hysteria_server.acl**: see [Hysteria](#hysteria) section.
+- **iran-geosite.db**: for sing-box core see [Sing-Box](#sing-box) section.
+- **iran.dat**: Contains all websites hosted in Iran, ADs and proxy related domains for v2ray/xray, see [Full Categories](#full-categories) for more info.
+- **qv2ray_schema.json**: Importable json schema that can be used in [Qv2ray](#qv2ray).
+- **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](#shadowrocket).
+- **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** and **surge_ruleset_other.txt**: Contains all ADs and non-ir websites hosted in Iran for [Surge](#surge--surfboard) in two different formats.
+- **switchy_omega.sorl**: Contains domains for [SwitchyOmega](#switchyomega).
 
 ## Sources & Acknowledgements
 
