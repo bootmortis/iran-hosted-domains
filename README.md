@@ -2,12 +2,6 @@
 
 - [داکیومنت فارسی](README.fa.md)
 
-> **Note**
->
-> 🚨 For safety reasons, it may be advisable to use a separate, non-personal account for your Github activity.
->
-> 🚨 Ensure that your personal email address is not visible when you push commits to Github. [More info](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
-
 A lot of services and domains are outside of Iran and they are restricted or blocked,
 for accessing this service you need to use VPN or proxies with tunneling option, apart from these problems, when we use
 proxies the domestic services are unavailable because our IP is not in Iran; for bypassing these issues we gathered a list of
