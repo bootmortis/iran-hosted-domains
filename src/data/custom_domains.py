@@ -111,6 +111,8 @@ custom_domains = {
         "swiftsrv.net",
         "rasayesh.com",
         "voorivex.academy",
+        "wallpay.org",
+        "haamee.org",
     ],
     "remove": [
         "googleapis.com",
