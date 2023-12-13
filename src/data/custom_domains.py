@@ -113,6 +113,7 @@ custom_domains = {
         "voorivex.academy",
         "wallpay.org",
         "haamee.org",
+        "herminal.com",
     ],
     "remove": [
         "googleapis.com",
