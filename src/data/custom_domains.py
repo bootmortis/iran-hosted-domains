@@ -115,6 +115,7 @@ custom_domains = {
         "haamee.org",
         "herminal.com",
         "ninifile.com",
+        "behzisti.net",
     ],
     "remove": [
         "googleapis.com",
