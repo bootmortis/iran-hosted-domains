@@ -114,6 +114,7 @@ custom_domains = {
         "wallpay.org",
         "haamee.org",
         "herminal.com",
+        "ninifile.com",
     ],
     "remove": [
         "googleapis.com",
