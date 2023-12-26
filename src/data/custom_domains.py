@@ -116,6 +116,7 @@ custom_domains = {
         "herminal.com",
         "ninifile.com",
         "behzisti.net",
+        "dehkhodaedu.com",
     ],
     "remove": [
         "googleapis.com",
