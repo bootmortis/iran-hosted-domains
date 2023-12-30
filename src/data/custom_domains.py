@@ -117,6 +117,7 @@ custom_domains = {
         "ninifile.com",
         "behzisti.net",
         "dehkhodaedu.com",
+        "liara.run",
     ],
     "remove": [
         "googleapis.com",
