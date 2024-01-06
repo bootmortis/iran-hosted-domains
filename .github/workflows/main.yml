@@ -93,7 +93,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "sing-geosite/rule-set/*.*"
-          repo: bootmortis/sing-geosite
+          repo: sing-geosite
           body: "${{ env.TOTAL_DOMAINS }} Domains"
           token: ${{ secrets.SINGBOX_REPO_TOKEN }}
           tag: ${{ env.TAG_NAME }}
