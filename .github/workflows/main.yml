@@ -77,6 +77,11 @@ jobs:
           go run -v .
           mv iran-geosite.db ../output/iran-geosite.db
 
+          cd rule-set
+          for file in *; do
+            sha256sum $file > $file.sha256
+          done
+
       - name: Calculate checksum
         run: |
           cd output
@@ -84,7 +89,17 @@ jobs:
             sha256sum $file > $file.sha256
           done
 
-      - name: Upload result as release
+      - name: Upload singbox-geosite result as release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "sing-geosite/rule-set/*.*"
+          repo: bootmortis/sing-geosite
+          body: "${{ env.TOTAL_DOMAINS }} Domains"
+          token: ${{ secrets.SINGBOX_REPO_TOKEN }}
+          tag: ${{ env.TAG_NAME }}
+          name: ${{ env.RELEASE_NAME }}
+          
+      - name: Upload iran-hosted result as release
         uses: ncipollo/release-action@v1
         with:
           artifacts: "output/*.*"
