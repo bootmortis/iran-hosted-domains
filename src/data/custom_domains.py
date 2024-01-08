@@ -118,6 +118,7 @@ custom_domains = {
         "behzisti.net",
         "dehkhodaedu.com",
         "liara.run",
+        "etadbir.com",
     ],
     "remove": [
         "googleapis.com",
