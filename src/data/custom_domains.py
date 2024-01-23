@@ -119,6 +119,7 @@ custom_domains = {
         "dehkhodaedu.com",
         "liara.run",
         "etadbir.com",
+        "gold-team.org",
     ],
     "remove": [
         "googleapis.com",
