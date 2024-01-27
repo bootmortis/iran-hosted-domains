@@ -120,6 +120,7 @@ custom_domains = {
         "liara.run",
         "etadbir.com",
         "gold-team.org",
+        "sha.tel",
     ],
     "remove": [
         "googleapis.com",
