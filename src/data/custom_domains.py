@@ -121,6 +121,7 @@ custom_domains = {
         "etadbir.com",
         "gold-team.org",
         "sha.tel",
+        "glorycartoon.com",
     ],
     "remove": [
         "googleapis.com",
