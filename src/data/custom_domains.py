@@ -122,6 +122,7 @@ custom_domains = {
         "gold-team.org",
         "sha.tel",
         "glorycartoon.com",
+        "ofood.app",
     ],
     "remove": [
         "googleapis.com",
