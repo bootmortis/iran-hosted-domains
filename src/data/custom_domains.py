@@ -123,6 +123,7 @@ custom_domains = {
         "sha.tel",
         "glorycartoon.com",
         "ofood.app",
+        "talabash.com",
     ],
     "remove": [
         "googleapis.com",
