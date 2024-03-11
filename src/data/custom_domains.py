@@ -124,9 +124,8 @@ custom_domains = {
         "glorycartoon.com",
         "ofood.app",
         "parsimap.com",
-        "parsget.com,
-        "ir-pos.com,
-        "techrato.com"
+        "ir-pos.com",
+        "techrato.com",
     ],
     "remove": [
         "googleapis.com",
