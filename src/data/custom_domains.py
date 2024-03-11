@@ -123,6 +123,9 @@ custom_domains = {
         "sha.tel",
         "glorycartoon.com",
         "ofood.app",
+        "parsimap.com",
+        "ir-pos.com",
+        "techrato.com",
     ],
     "remove": [
         "googleapis.com",
