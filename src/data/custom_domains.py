@@ -140,7 +140,6 @@ custom_domains = {
         "itposhtiban.com",
         "mojnews.com",
         "namavid.com",
-        "parsimap.com",
         "pelikan.media",
         "radisan.com",
         "sadrasono.com",
