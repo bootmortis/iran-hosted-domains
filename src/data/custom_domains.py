@@ -149,6 +149,8 @@ custom_domains = {
         "snpp.link",
         "softinja.com",
         "tara.mobi",
+        "pishgaman.cloud",
+        "pishdad.org",
     ],
     "remove": [
         "googleapis.com",
