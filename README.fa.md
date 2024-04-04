@@ -349,6 +349,49 @@ https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switc
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
+فرمت `geosite.srs`
+
+فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/rule-set/) ویرایش کنید:
+```json
+{
+  "route": {
+    "rule_set": [
+      {
+        "tag": "geosite-ads",
+        "type": "remote",
+        "format": "binary",
+        "update_interval": "7d",
+        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ads.srs"
+      },
+      {
+        "tag": "geosite-ir",
+        "type": "remote",
+        "format": "binary",
+        "update_interval": "7d",
+        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ir.srs"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": [
+          "geosite-ads"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
+```
+فرمت `geosite.db`
+
+⚠️نکته: این فرمت قدیمی شده و ممکن است در نسخه های آینده پشتیبانی نشود، [اینجا را ببینید](https://github.com/bootmortis/iran-hosted-domains/issues/180).
+
 1. فایل `iran-geosite.db` را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
 2. فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/route/geosite/) ویرایش کنید:
 
