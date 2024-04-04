@@ -332,38 +332,39 @@ https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switc
    > For updating rules's list just repeat step 7.
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
-`Geosite.srs` formatting:
 
-Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/rule-set/)
+#### `geosite.srs` formatting:
+
+Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/rule-set/):
 ```json
 {
   "route": {
     "rule_set": [
       {
-        "tag": "geosite-ads",
+        "tag": "iran-geosite-ads",
         "type": "remote",
         "format": "binary",
         "update_interval": "7d",
         "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ads.srs"
       },
       {
-        "tag": "geosite-ir",
+        "tag": "iran-geosite-all",
         "type": "remote",
         "format": "binary",
         "update_interval": "7d",
-        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ir.srs"
+        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-all.srs"
       }
     ],
     "rules": [
       {
         "rule_set": [
-          "geosite-ads"
+          "iran-geosite-ads"
         ],
         "outbound": "block"
       },
       {
         "rule_set": [
-          "geosite-ir"
+          "iran-geosite-all"
         ],
         "outbound": "direct"
       }
@@ -372,9 +373,9 @@ Open the sing-box config file and edit the Route section in this [format](https:
 }
 ```
 
-`Geosite.db` formatting:
+#### `geosite.db` formatting:
 
-⚠️ Important: Geosite is deprecated and may be removed in the future, check [Migration](https://sing-box.sagernet.org/migration/#migrate-geosite-to-rule-sets) or [here](https://github.com/bootmortis/iran-hosted-domains/issues/180)
+⚠️ Important: Geosite is deprecated and may be removed in the future, check [Migration](https://sing-box.sagernet.org/migration/#migrate-geosite-to-rule-sets) or [here](https://github.com/bootmortis/iran-hosted-domains/issues/180).
 1. Download `iran-geosite.db` file from [here][link-release] and place it in the sing-box working directory.
 2. Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/route/geosite/)
 

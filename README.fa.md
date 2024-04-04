@@ -349,7 +349,7 @@ https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switc
 
 ### [Sing-Box](https://github.com/SagerNet/sing-box)
 
-فرمت `geosite.srs`
+#### فرمت `geosite.srs`
 
 فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/rule-set/) ویرایش کنید:
 ```json
@@ -357,30 +357,30 @@ https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switc
   "route": {
     "rule_set": [
       {
-        "tag": "geosite-ads",
+        "tag": "iran-geosite-ads",
         "type": "remote",
         "format": "binary",
         "update_interval": "7d",
         "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ads.srs"
       },
       {
-        "tag": "geosite-ir",
+        "tag": "iran-geosite-all",
         "type": "remote",
         "format": "binary",
         "update_interval": "7d",
-        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-ir.srs"
+        "url": "https://github.com/bootmortis/sing-geosite/releases/latest/download/geosite-all.srs"
       }
     ],
     "rules": [
       {
         "rule_set": [
-          "geosite-ads"
+          "iran-geosite-ads"
         ],
         "outbound": "block"
       },
       {
         "rule_set": [
-          "geosite-ir"
+          "iran-geosite-all"
         ],
         "outbound": "direct"
       }
@@ -388,9 +388,9 @@ https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/switc
   }
 }
 ```
-فرمت `geosite.db`
+#### فرمت `geosite.db`
 
-⚠️نکته: این فرمت قدیمی شده و ممکن است در نسخه های آینده پشتیبانی نشود، [اینجا را ببینید](https://github.com/bootmortis/iran-hosted-domains/issues/180).
+⚠️نکته: این فرمت قدیمی شده و ممکن است در نسخه های آینده پشتیبانی نشود، برای مهاجرت به نسخه‌ی جدید [اینجا](https://sing-box.sagernet.org/migration/#migrate-geosite-to-rule-sets) و برای اطلاعات بیشتر [اینجا](https://github.com/bootmortis/iran-hosted-domains/issues/180)  را ببینید.
 
 1. فایل `iran-geosite.db` را از [اینجا][link-release] دانلود کرده و در پوشه sing-box قرار دهید.
 2. فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/route/geosite/) ویرایش کنید:
