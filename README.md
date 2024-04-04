@@ -581,6 +581,7 @@ Also, for each file there is a `.sha256` file that contains sha256 hash of that 
 - **domains.txt**: Contains all websites hosted in Iran.
 - **hysteria_client.acl** and **hysteria_server.acl**: see [Hysteria](#hysteria) section.
 - **iran-geosite.db**: for sing-box core see [Sing-Box](#sing-box) section.
+- **geosite-*.srs** files: for sing-box v1.8 and later, these files are available [here](https://github.com/bootmortis/sing-geosite/releases/latest).
 - **iran.dat**: Contains all websites hosted in Iran, ADs and proxy related domains for v2ray/xray, see [Full Categories](#full-categories) for more info.
 - **qv2ray_schema.json**: Importable json schema that can be used in [Qv2ray](#qv2ray).
 - **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](#shadowrocket).

@@ -615,6 +615,7 @@ go run ./ --outputdir=../
 - فایل **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
 - فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](#hysteria) را ببینید.
 - فایل **iran-geosite.db**: برای هسته sing-box بخش [Sing-Box](#sing-box) را ببینید.
+- فایل‌های **geosite-*.srs**: برای sing-box ورژن 1.8 به بعد، این فایل‌ها را می‌توانید از [این صفحه](https://github.com/bootmortis/sing-geosite/releases/latest) دریافت کنید.
 - فایل **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#دسته-بندی-کامل) را ببینید.
 - فایل **qv2ray_schema.json**: سناریوی json قابل وارد کردن که می تواند در [Qv2ray](#qv2ray) استفاده شود.
 - فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](#shadowrocket) استفاده شود.
