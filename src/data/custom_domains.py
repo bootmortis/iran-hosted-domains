@@ -153,6 +153,7 @@ custom_domains = {
         "pishdad.org",
         "persiamoviebox.com",
         "fardayeeghtesad.com",
+        "nabzebourse.com",
     ],
     "remove": [
         "googleapis.com",
