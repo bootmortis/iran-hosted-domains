@@ -152,6 +152,7 @@ custom_domains = {
         "pishgaman.cloud",
         "pishdad.org",
         "persiamoviebox.com",
+        "fardayeeghtesad.com",
     ],
     "remove": [
         "googleapis.com",
