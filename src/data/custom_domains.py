@@ -154,6 +154,7 @@ custom_domains = {
         "persiamoviebox.com",
         "fardayeeghtesad.com",
         "nabzebourse.com",
+        "dgka.me",
     ],
     "remove": [
         "googleapis.com",
