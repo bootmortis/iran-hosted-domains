@@ -151,6 +151,7 @@ custom_domains = {
         "tara.mobi",
         "pishgaman.cloud",
         "pishdad.org",
+        "persiamoviebox.com",
     ],
     "remove": [
         "googleapis.com",
