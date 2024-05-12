@@ -155,6 +155,7 @@ custom_domains = {
         "fardayeeghtesad.com",
         "nabzebourse.com",
         "dgka.me",
+        "snapp.market",
     ],
     "remove": [
         "googleapis.com",
