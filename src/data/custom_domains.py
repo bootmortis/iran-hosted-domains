@@ -155,6 +155,7 @@ custom_domains = {
         "fardayeeghtesad.com",
         "nabzebourse.com",
         "dgka.me",
+        "dkjet.ir",
         "snapp.market",
         "firouzeh.com",
     ],
