@@ -160,6 +160,13 @@ custom_domains = {
         "snapp-food.com",
         "suber.live",
         "tap33.me",
+        "persiamoviebox.com",
+        "fardayeeghtesad.com",
+        "nabzebourse.com",
+        "dgka.me",
+        "dkjet.ir",
+        "snapp.market",
+        "firouzeh.com",
     ],
     "remove": [
         "googleapis.com",
