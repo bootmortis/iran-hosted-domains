@@ -1,6 +1,6 @@
 name: Add or Remove Domain
 description: Use this form to request a domain to be added or removed from the list.
-title: [Add/Remove]: `example.com`
+title: "[Add/Remove]: `example.com`"
 labels: [domain]
 body:
   - type: input
