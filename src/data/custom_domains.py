@@ -166,6 +166,9 @@ custom_domains = {
         "dkjet.ir",
         "snapp.market",
         "firouzeh.com",
+        "darschi.com",
+        "dgkl.me",
+        "tadbirrlc.com",
     ],
     "remove": [
         "googleapis.com",
