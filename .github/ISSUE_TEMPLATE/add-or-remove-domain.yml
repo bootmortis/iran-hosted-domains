@@ -1,0 +1,47 @@
+name: Add or Remove Domain
+description: Use this form to request a domain to be added or removed from the list.
+title: [Add/Remove]: `example.com`
+labels: [domain]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain Address
+      placeholder: example.com
+      description: Please provide the domain name you would like to add or remove.
+    validations:
+      required: true
+  - type: dropdown
+    id: add-or-remove
+    attributes:
+      label: Add or Remove
+      description: Specify whether you want this domain to be added or removed.
+      multiple: false
+      options:
+        - Added ✅
+        - Removed ❌
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      placeholder: This domain is used in... Therefore, I request it to be added/removed from the list...
+      description: Please explain why you want to add or remove this domain from the list.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting Evidence
+      description: If available, please provide any relevant supporting evidence for your request (e.g., screenshots).
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Verify Existing Domains
+      description: Please review the current [bypass list](https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/domains.txt) to ensure this domain is not already listed.
+      options:
+        - label: "I have checked the list and confirmed the domain is not included"
+          required: true
