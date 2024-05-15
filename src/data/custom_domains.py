@@ -154,7 +154,6 @@ custom_domains = {
         "hiweb.one",
         "livuvo.com",
         "medrick.games",
-        "persiansub.com",
         "sdb247.com",
         "sibirani.com",
         "snapp-food.com",
