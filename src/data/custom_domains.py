@@ -100,6 +100,7 @@ custom_domains = {
         "mimfarsi.com",
         "mlt.link",
         "mojnews.com",
+        "mytendo.net",
         "nabzebourse.com",
         "namavid.com",
         "nassaab.com",
