@@ -169,6 +169,7 @@ custom_domains = {
         "wepod.ir",
         "wiiz.ir",
         "wizardingcenter.com",
+        "yrp24.com",
         "zoomg.ir",
     ],
     "remove": [
