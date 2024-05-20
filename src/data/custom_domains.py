@@ -170,6 +170,8 @@ custom_domains = {
         "wiiz.ir",
         "wizardingcenter.com",
         "zoomg.ir",
+        "sbbiran.ir",
+        "sbbiran.com"
     ],
     "remove": [
         "eset.com",
