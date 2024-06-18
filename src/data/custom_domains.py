@@ -115,6 +115,7 @@ custom_domains = {
         "parsimap.com",
         "parspack.com",
         "pay98.app",
+        "peivast.com",
         "pelikan.media",
         "persiamoviebox.com",
         "pi.hole",
