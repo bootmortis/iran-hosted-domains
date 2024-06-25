@@ -42,6 +42,7 @@ custom_domains = {
         "dgka.me",
         "dgkl.link",
         "dgkl.me",
+        "dgkljet.me",
         "digicharter.com",
         "digijojeh.com",
         "digikalacloud.com",
