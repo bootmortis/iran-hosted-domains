@@ -123,6 +123,7 @@ custom_domains = {
         "pishdad.org",
         "pishgaman.cloud",
         "pishkhan.com",
+        "pvst.ir",
         "radisan.com",
         "rasayesh.com",
         "raykanet.com",
