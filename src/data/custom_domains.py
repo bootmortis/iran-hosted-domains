@@ -98,6 +98,7 @@ custom_domains = {
         "maryamsoft.com",
         "masirwp.com",
         "medrick.games",
+        "metrix.ir",
         "microless.shop",
         "mimfarsi.com",
         "mlt.link",
