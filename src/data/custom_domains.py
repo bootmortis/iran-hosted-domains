@@ -135,6 +135,7 @@ custom_domains = {
         "salambaabaa.com",
         "samanehha.com",
         "samantel.com",
+        "sarvdata.com",
         "sdb247.com",
         "sedastore.com",
         "sha.tel",
