@@ -208,6 +208,7 @@ custom_domains = {
         "samanehha.com",
         "samantel.com",
         "sarak.co",
+        "sarvdata.com",
         "sbm24.net",
         "sdb247.com",
         "sedastore.com",
