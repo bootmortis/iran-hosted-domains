@@ -269,6 +269,7 @@ custom_domains = {
     "remove": [
         "eset.com",
         "github.io",
+        "glitch.me",
         "googleapis.com",
         "gvt1.com",
         "radiojavan.com",
