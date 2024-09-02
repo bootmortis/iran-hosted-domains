@@ -1,3 +1,5 @@
+<bdo dir="rtl">
+
 # Qv2ray
 
 1. دانلود آخرین نسخه از [qv2ray_schema.json](https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/qv2ray_schema.json)
@@ -8,3 +10,5 @@
 6. بر روی OK کلیک کنید.
 
 ![qv2ray](../../_images/qv2ray.png)
+
+</bdo>

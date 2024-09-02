@@ -10,41 +10,51 @@
     </head>
     <body>
         <div id="app"></div>
+        <style>
+            /* max width for md images */
+            .markdown-section img {
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
         <script>
             // Set html "lang" attribute based on URL
-            var lang = location.hash.match(/#\/(fa)\//);
+            var currentLang = location.hash.match(/#\/(fa)\//);
 
-            var rtlConfig = {
-                body: "ltr",
-                side: "ltr",
-                bdo: "ltr",
-            };
-
-            if (lang) {
-                document.documentElement.setAttribute("lang", lang[1]);
-
-                if (lang[1] === "fa") {
-                    rtlConfig = {
-                        body: "rtl",
-                        side: "ltr",
-                        bdo: "rtl",
-                    };
-                }
+            if (currentLang) {
+                document.documentElement.setAttribute("lang", currentLang[1]);
             }
 
             window.$docsify = {
-                name: "",
-                repo: "",
+                name: "Iran Hosted Domains",
+                repo: "bootmortis/iran-hosted-domains",
                 loadSidebar: true,
                 loadNavbar: true,
-
                 fallbackLanguages: ["fa"],
-                rtl: rtlConfig,
             };
+
+            function changeLanguage(lang) {
+                var currentLang = location.hash.match(/#\/(fa)\//);
+                if (currentLang) {
+                    document.documentElement.setAttribute("lang", currentLang[1]);
+                } else {
+                    document.documentElement.setAttribute("lang", "en");
+                }
+
+                if (lang == "us") {
+                    if (currentLang) {
+                        window.location.href = "#" + window.location.hash.substring(4);
+                    }
+                } else {
+                    if (!currentLang) {
+                        window.location.href = "#/fa" + window.location.hash.substring(1);
+                    }
+                }
+            }
         </script>
         <!-- Docsify v4 -->
-        <script src="//unpkg.com/docsify-rtl/build/index.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
         <div id="app"></div>
     </body>
 </html>
