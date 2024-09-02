@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    </head>
+    <body>
+        <div id="app"></div>
+        <script>
+            // Set html "lang" attribute based on URL
+            var lang = location.hash.match(/#\/(fa)\//);
+
+            var rtlConfig = {
+                body: "ltr",
+                side: "ltr",
+                bdo: "ltr",
+            };
+
+            if (lang) {
+                document.documentElement.setAttribute("lang", lang[1]);
+
+                if (lang[1] === "fa") {
+                    rtlConfig = {
+                        body: "rtl",
+                        side: "ltr",
+                        bdo: "rtl",
+                    };
+                }
+            }
+
+            window.$docsify = {
+                name: "",
+                repo: "",
+                loadSidebar: true,
+                loadNavbar: true,
+
+                fallbackLanguages: ["fa"],
+                rtl: rtlConfig,
+            };
+        </script>
+        <!-- Docsify v4 -->
+        <script src="//unpkg.com/docsify-rtl/build/index.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+        <div id="app"></div>
+    </body>
+</html>
