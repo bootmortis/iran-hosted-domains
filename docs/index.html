@@ -48,6 +48,15 @@
                 text-align: center;
                 top: 14px;
             }
+            .markdown-section bdo blockquote {
+                border-right: 4px solid var(--theme-color, #42b983);
+                border-left: none;
+                padding-right: 20px;
+                padding-left: 0;
+            }
+            .markdown-section pre {
+                direction: ltr !important;
+            }
             .sidebar .rtlsidebar {
                 text-align: right;
                 right: 0;
@@ -81,12 +90,12 @@
         </style>
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">Loading ...</div>
         <script>
             window.$docsify = {
                 name: "Iran Hosted Domains",
                 // repo: "bootmortis/iran-hosted-domains",
-                basePath: "https://bootmortis.github.io/iran-hosted-domains/",
+                basePath: location.hostname === "localhost" ? "" : "https://bootmortis.github.io/iran-hosted-domains/",
                 auto2top: true,
                 loadSidebar: true,
                 loadNavbar: true,
@@ -96,6 +105,20 @@
                 nameLink: {
                     "/fa/": "#/fa/",
                     "/": "#/",
+                },
+                copyCode: {
+                    buttonText: {
+                    '/fa/': 'کپی کردن',
+                    '/': 'Copy to clipboard',
+                    },
+                    errorText: {
+                    '/fa/': 'خطا',
+                    '/': 'Error',
+                    },
+                    successText: {
+                    '/fa/': 'کپی شد',
+                    '/': 'Copied',
+                    },
                 },
                 plugins: [
                     function (hook, vm) {
@@ -149,5 +172,8 @@
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+        <script src="https://unpkg.com/docsify-copy-code@2"></script>
     </body>
 </html>

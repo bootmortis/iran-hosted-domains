@@ -1,0 +1,3 @@
+# V2Ray Server
+
+For blocking local domains and IPs on the server side in [v2ray](https://www.v2ray.com/en/configuration/routing.html), follow [this](https://github.com/iranxray/hope/blob/main/routing.md#%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B2-%D8%B3%D9%85%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1) instructions (also be sure to check [#58](https://github.com/bootmortis/iran-hosted-domains/issues/58) too).
