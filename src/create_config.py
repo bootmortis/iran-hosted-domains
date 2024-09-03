@@ -44,7 +44,7 @@ def qv2ray(bypass_domains: Iterable[str], proxied_domains: Iterable[str], ads_do
         "description": "Iran hosted domains",
         "domainStrategy": "AsIs",
         "domains": {
-            "direct": ["regexp:^.+\\.ir$"] + list(bypass_domains),
+            "direct": ["domain:ir"] + list(bypass_domains),
             "proxy": list(proxied_domains),
             "block": ["geosite:category-ads-all"] + list(ads_domains),
         },
