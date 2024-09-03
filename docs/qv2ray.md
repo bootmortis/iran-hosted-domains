@@ -17,4 +17,4 @@ You can find Linux, Windows and macOS client [here](https://github.com/Qv2ray/Qv
 5. In the opened dialogue box, click on yes.
 6. Click on OK.
 
-![qv2ray](/_images/qv2ray.png)
+![qv2ray](_images/qv2ray.png)
