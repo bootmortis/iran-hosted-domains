@@ -1,4 +1,6 @@
-<nav>
-    <a onclick="changeLanguage('us')">:us:</a>
-    <a onclick="changeLanguage('fa')">:iran:</a>
-</nav>
+<li>Translations :globe_with_meridians:
+<ul>
+    <li> <a onclick="changeLanguage('us')">:us: English</a></li>
+   <li> <a onclick="changeLanguage('fa')">:iran: Persian</a> </li>
+</ul>
+</li>

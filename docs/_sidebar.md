@@ -1,2 +1,2 @@
 - Clients
-    - [Qv2ray](clients/qv2ray.md)
+    - [Qv2ray](qv2ray.md)

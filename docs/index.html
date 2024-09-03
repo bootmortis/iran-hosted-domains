@@ -7,31 +7,124 @@
         <meta name="description" content="Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
-    </head>
-    <body>
-        <div id="app"></div>
+        <link
+            href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+            rel="stylesheet"
+            type="text/css"
+        />
         <style>
-            /* max width for md images */
-            .markdown-section img {
+            .medium-zoom-image {
                 display: block;
                 margin: 0 auto;
             }
+            bdo {
+                direction: rtl;
+                font-family: Vazirmatn, sans-serif;
+            }
+            .markdown-section bdo p.tip {
+                border-bottom-left-radius: 2px;
+                border-bottom-right-radius: 0px;
+                border-right: 4px solid #f66;
+                border-left: none;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 0px;
+                margin: 2em 0;
+                padding: 12px 24px 12px 30px;
+                position: relative;
+            }
+            .markdown-section bdo p.tip:before {
+                background-color: #f66;
+                border-radius: 100%;
+                color: #fff;
+                content: "!";
+                font-family: Dosis, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                right: -12px;
+                line-height: 20px;
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                top: 14px;
+            }
+            .sidebar .rtlsidebar {
+                text-align: right;
+                right: 0;
+                left: auto !important;
+                border-left: 1px solid rgba(0, 0, 0, 0.07);
+            }
+            .sidebar .rtlsidebar ul li.active > a {
+                border-right: 0px solid !important;
+                border-left: 2px solid;
+            }
+            .sidebar .rtlsidebar ul {
+                margin: 0 15px 0 0;
+            }
+            .sidebar .rtlsidebar .app-sub-sidebar li:before {
+                content: "-";
+                padding-left: 4px;
+                float: right;
+            }
+            .sidebar-toggle {
+                background-color: unset;
+                position: fixed !important;
+                top: 0 !important;
+                bottom: auto !important;
+                padding: 10px 10px 10px 10px !important;
+            }
+            @media screen and (max-width: 768px) {
+                .markdown-section {
+                    padding: 16px 16px 16px 36px !important;
+                }
+            }
         </style>
+    </head>
+    <body>
+        <div id="app"></div>
         <script>
-            // Set html "lang" attribute based on URL
+            window.$docsify = {
+                name: "Iran Hosted Domains",
+                // repo: "bootmortis/iran-hosted-domains",
+                auto2top: true,
+                loadSidebar: true,
+                loadNavbar: true,
+                fallbackLanguages: ["fa"],
+                subMaxLevel: 4,
+                relativePath: true,
+                nameLink: {
+                    "/fa/": "#/fa/",
+                    "/": "#/",
+                },
+                plugins: [
+                    function (hook, vm) {
+                        hook.beforeEach(function (html) {
+                            var url =
+                                "https://github.com/bootmortis/iran-hosted-domains/blob/main/docs/" + vm.route.file;
+
+                            if (vm.route.file.startsWith("fa/")) {
+                                var editHtml = "[:memo: ویرایش این صفحه](" + url + ")\n";
+                            } else {
+                                var editHtml = "[:memo: Edit This Page](" + url + ")\n";
+                            }
+
+                            return editHtml + html;
+                        });
+                        hook.afterEach(function (html) {
+                            if (vm.route.file.startsWith("fa/")) {
+                                return "<bdo>" + html + "</bdo>";
+                            } else {
+                                return html;
+                            }
+                        });
+                    },
+                ],
+            };
             var currentLang = location.hash.match(/#\/(fa)\//);
 
             if (currentLang) {
                 document.documentElement.setAttribute("lang", currentLang[1]);
             }
-
-            window.$docsify = {
-                name: "Iran Hosted Domains",
-                repo: "bootmortis/iran-hosted-domains",
-                loadSidebar: true,
-                loadNavbar: true,
-                fallbackLanguages: ["fa"],
-            };
 
             function changeLanguage(lang) {
                 var currentLang = location.hash.match(/#\/(fa)\//);
@@ -55,6 +148,5 @@
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-        <div id="app"></div>
     </body>
 </html>
