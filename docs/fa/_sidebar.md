@@ -19,5 +19,8 @@
 -   آموزش‌های عمومی
     -   [به‌روزرسانی خودکار فایل `iran.dat`](auto-update.md)
     -   [ایجاد دستی فایل .dat (آموزش)](manual-build.md)
+-   لینک‌ها
+    -   [گیتهاب](https://github.com/bootmortis/iran-hosted-domains)
+    -   [آخرین انتشار](https://github.com/bootmortis/iran-hosted-domains/releases/latest)
 
 </bdo>

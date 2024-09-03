@@ -18,7 +18,7 @@
 
 راهنمای کلاینت‌ها به [https://bootmortis.github.io/iran-hosted-domains](https://bootmortis.github.io/iran-hosted-domains/#/fa/) منتقل شده است. شما می‌توانید راهنماها و دستورالعمل‌های به‌روز و مربوط به کلاینت‌های خود را در آنجا پیدا کنید.
 
-## دسته‌بندی کامل
+## دسته‌بندی
 
 - دسته بندی `all`: ترکیبی از `other` و `tld-ir`. استفاده به عنوان `direct`.
 - دسته بندی `ads`: خدمات تبلیغاتی مرتبط با ایران که باید `block` شوند.
@@ -33,16 +33,16 @@
 شما می توانید روی نام برنامه کلیک کنید تا دستورالعمل های استفاده را ببینید.  
 همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.
 
-- فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge--) در دو فرمت مختلف شامل می شود.
+- فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](https://bootmortis.github.io/iran-hosted-domains/#/fa/clash) در دو فرمت مختلف شامل می شود.
 - فایل **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
-- فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](#hysteria) را ببینید.
-- فایل **iran-geosite.db**: برای هسته sing-box بخش [Sing-Box](#sing-box) را ببینید.
+- فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](https://bootmortis.github.io/iran-hosted-domains/#/fa/hysteria) را ببینید.
+- فایل **iran-geosite.db**: برای هسته sing-box بخش [Sing-Box](https://bootmortis.github.io/iran-hosted-domains/#/fa/singbox) را ببینید.
 - فایل‌های **geosite-*.srs**: برای sing-box ورژن 1.8 به بعد، این فایل‌ها را می‌توانید از [این صفحه](https://github.com/bootmortis/sing-geosite/releases/latest) دریافت کنید.
-- فایل **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#دسته-بندی-کامل) را ببینید.
-- فایل **qv2ray_schema.json**: سناریوی json قابل وارد کردن که می تواند در [Qv2ray](#qv2ray) استفاده شود.
-- فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](#shadowrocket) استفاده شود.
-- فایل‌های **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](#surge--surfboard) در دو فرمت مختلف شامل می شود.
-- فایل **switchy_omega.sorl**: دامنه ها را برای [SwitchyOmega](#switchyomega) شامل می شود.
+- فایل **iran.dat**: تمام وب سایت های میزبانی شده در ایران، تبلیغات و دامنه های مرتبط با پروکسی برای v2ray/xray را شامل می شود، برای اطلاعات بیشتر [دسته بندی های کامل](#دستهبندی) را ببینید.
+- فایل **qv2ray_schema.json**: سناریوی json قابل وارد کردن که می تواند در [Qv2ray](https://bootmortis.github.io/iran-hosted-domains/#/fa/qv2ray) استفاده شود.
+- فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](https://bootmortis.github.io/iran-hosted-domains/#/fa/shadowrocket-ios) استفاده شود.
+- فایل‌های **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](https://bootmortis.github.io/iran-hosted-domains/#/fa/surge-surfboard) در دو فرمت مختلف شامل می شود.
+- فایل **switchy_omega.sorl**: دامنه ها را برای [SwitchyOmega](https://bootmortis.github.io/iran-hosted-domains/#/fa/switchyomega) شامل می شود.
 
 ## منابع و گرامیداشت
 

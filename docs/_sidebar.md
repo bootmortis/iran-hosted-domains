@@ -16,6 +16,6 @@
 -   General Tutorials
     -   [Auto Update `iran.dat` File](auto-update.md)
     -   [Create .dat file manually](manual-build.md)
-    -   [Files](files.md)
-    -   [Sources & Acknowledgements](sources.md)
-    -   [How does it work?](how.md)
+-  Links
+    -   [GitHub](https://github.com/bootmortis/iran-hosted-domains)
+    -   [Latest Release](https://github.com/bootmortis/iran-hosted-domains/releases/latest)

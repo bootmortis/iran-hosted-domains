@@ -34,16 +34,16 @@ You can always find the latest version of these files in the [release page][link
 You can click on app name to see the usage instructions.  
 Also, for each file there is a `.sha256` file that contains sha256 hash of that file.
 
--   **clash_rules_ads.txt**, **clash_rules_ads.yaml**, **clash_rules_other.txt** and **clash_rules_other.yaml**: Contains all ADs and non-ir domains for [clash](#clash-like-clashx--clash_for_windows_pkg--clash-verge) in two different formats.
+-   **clash_rules_ads.txt**, **clash_rules_ads.yaml**, **clash_rules_other.txt** and **clash_rules_other.yaml**: Contains all ADs and non-ir domains for [clash](https://bootmortis.github.io/iran-hosted-domains/#/clash) in two different formats.
 -   **domains.txt**: Contains all websites hosted in Iran.
--   **hysteria_client.acl** and **hysteria_server.acl**: see [Hysteria](#hysteria) section.
--   **iran-geosite.db**: for sing-box core see [Sing-Box](#sing-box) section.
+-   **hysteria_client.acl** and **hysteria_server.acl**: see [Hysteria](https://bootmortis.github.io/iran-hosted-domains/#/hysteria) section.
+-   **iran-geosite.db**: for sing-box core see [Sing-Box](https://bootmortis.github.io/iran-hosted-domains/#/singbox) section.
 -   **geosite-\*.srs** files: for sing-box v1.8 and later, these files are available [here](https://github.com/bootmortis/sing-geosite/releases/latest).
--   **iran.dat**: Contains all websites hosted in Iran, ADs and proxy related domains for v2ray/xray, see [Full Categories](#full-categories) for more info.
--   **qv2ray_schema.json**: Importable json schema that can be used in [Qv2ray](#qv2ray).
--   **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](#shadowrocket).
--   **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** and **surge_ruleset_other.txt**: Contains all ADs and non-ir websites hosted in Iran for [Surge](#surge--surfboard) in two different formats.
--   **switchy_omega.sorl**: Contains domains for [SwitchyOmega](#switchyomega).
+-   **iran.dat**: Contains all websites hosted in Iran, ADs and proxy related domains for v2ray/xray, see [Full Categories](#categories) for more info.
+-   **qv2ray_schema.json**: Importable json schema that can be used in [Qv2ray](https://bootmortis.github.io/iran-hosted-domains/#/qv2ray).
+-   **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](https://bootmortis.github.io/iran-hosted-domains/#/shadowrocket-ios).
+-   **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** and **surge_ruleset_other.txt**: Contains all ADs and non-ir websites hosted in Iran for [Surge](https://bootmortis.github.io/iran-hosted-domains/#/surge-surfboard) in two different formats.
+-   **switchy_omega.sorl**: Contains domains for [SwitchyOmega](https://bootmortis.github.io/iran-hosted-domains/#/switchyomega).
 
 ## Sources & Acknowledgements
 
