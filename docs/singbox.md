@@ -5,7 +5,7 @@ These are the instructions for [sing-box](https://github.com/SagerNet/sing-box) 
 ## Routing
 
 
-### `geosite.srs` formatting:
+### `geosite.srs` formatting
 
 Open the sing-box config file and edit the Route section in this [format](https://sing-box.sagernet.org/configuration/rule-set/):
 
@@ -44,7 +44,7 @@ Open the sing-box config file and edit the Route section in this [format](https:
 
 ?> The sing-box srs files can be found in [our sing-geosite repository](https://github.com/bootmortis/sing-geosite) release section.
 
-#### `geosite.db` formatting:
+### `geosite.db` formatting
 
 !> **Important**: Geosite is deprecated and may be removed in the future, check [Migration](https://sing-box.sagernet.org/migration/#migrate-geosite-to-rule-sets) or [here](https://github.com/bootmortis/iran-hosted-domains/issues/180).
 
