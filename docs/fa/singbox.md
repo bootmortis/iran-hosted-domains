@@ -4,7 +4,7 @@
 
 ## مسیریابی :id=routing
 
-#### فرمت `geosite.srs` :id=geositesrs-formatting
+### فرمت `geosite.srs` :id=geositesrs-formatting
 
 فایل کانفیگ sing-box را باز کنید و بخش Route را در این [فرمت](https://sing-box.sagernet.org/configuration/rule-set/) ویرایش کنید:
 
@@ -43,7 +43,7 @@
 
 ?> فایل‌های srs مرتبط با sing-box در بخش انتشار [مخزن sing-geosite ما](https://github.com/bootmortis/sing-geosite) قرار دارند.
 
-#### فرمت `geosite.db` :id=geositedb-formatting
+### فرمت `geosite.db` :id=geositedb-formatting
 
 !> **نکته**: این فرمت قدیمی شده و ممکن است در نسخه های آینده پشتیبانی نشود، برای مهاجرت به نسخه‌ی جدید [اینجا](https://sing-box.sagernet.org/migration/#migrate-geosite-to-rule-sets) و برای اطلاعات بیشتر [اینجا](https://github.com/bootmortis/iran-hosted-domains/issues/180) را ببینید.
 
