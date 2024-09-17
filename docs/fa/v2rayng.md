@@ -25,7 +25,7 @@
 <div dir="ltr">
 
 -   **Proxy URL OR IP**: `ext:iran.dat:proxy`
--   **DIRECT URL OR IP**: `ext:iran.dat:all,geoip:ir`
+-   **DIRECT URL OR IP**: `ext:iran.dat:all,geoip:ir,geoip:private`
 -   **BLOCKED URL OR IP**: `ext:iran.dat:ads,geosite:category-ads-all`
 
 </div>
