@@ -17,7 +17,7 @@ You can find v2rayNG client for Android from [here](https://github.com/2dust/v2r
 7. Write the following rules in each tab and press `✓` from the top right corner to save:
 
 -   **Proxy URL OR IP**: `ext:iran.dat:proxy`
--   **DIRECT URL OR IP**: `ext:iran.dat:all,geoip:ir`
+-   **DIRECT URL OR IP**: `ext:iran.dat:all,geoip:ir,geoip:private`
 -   **BLOCKED URL OR IP**: `ext:iran.dat:ads,geosite:category-ads-all`
 
 8. Hit back, and reconnect.
