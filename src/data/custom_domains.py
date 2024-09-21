@@ -265,6 +265,9 @@ custom_domains = {
         "yrp24.com",
         "zebline.io",
         "zoomg.ir",
+        "medu.ir",
+        "medu.gov.ir",
+        "giledu.ir",
     ],
     "remove": [
         "eset.com",
