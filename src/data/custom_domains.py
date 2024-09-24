@@ -102,6 +102,7 @@ custom_domains = {
         "fodev.org",
         "forward-co.com",
         "gbgnetwork.net",
+        "giledu.ir",
         "glorycartoon.com",
         "glorytoon.com",
         "gold-team.org",
