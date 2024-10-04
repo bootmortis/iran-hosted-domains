@@ -25,6 +25,7 @@ custom_domains = {
         "arvanstorage.com",
         "aryateb.com",
         "arzpaya.com",
+        "asiatech.com",
         "asnafshahr.com",
         "azad.im",
         "azadfekrischool.ir",
