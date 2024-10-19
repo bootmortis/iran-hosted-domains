@@ -37,6 +37,7 @@ custom_domains = {
         "bankino.digital",
         "behroozclinic.com",
         "behzisti.net",
+        "bespor.com",
         "bitbarg.com",
         "bitmax.ir",
         "bitmit.co",
