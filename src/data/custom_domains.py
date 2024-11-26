@@ -284,6 +284,7 @@ custom_domains = {
         "patoghonline.com",
         "pay98.app",
         "payamak-panel.com",
+        "paywm.net",
         "peivast.com",
         "pelikan.media",
         "persiamoviebox.com",
