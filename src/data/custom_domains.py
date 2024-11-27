@@ -395,6 +395,7 @@ custom_domains = {
         "uploadb.me",
         "vestaydesign.com",
         "voorivex.academy",
+        "wallex.ir",
         "wallpay.org",
         "wepod.ir",
         "wiiz.ir",
