@@ -52,6 +52,7 @@ custom_domains = {
         "baharmri.com",
         "bankavl.com",
         "bankino.digital",
+        "bargheman.com",
         "bazarmedical.com",
         "behroozclinic.com",
         "behzisti.net",
