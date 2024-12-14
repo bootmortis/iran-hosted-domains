@@ -408,6 +408,9 @@ custom_domains = {
         "zino-co.com",
         "zoodfood.com",
         "zoomg.ir",
+        "divar.news",
+        "abris.cloud",
+        "qallek.com",
     ],
     "remove": [
         "eset.com",
