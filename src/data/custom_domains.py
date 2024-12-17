@@ -411,7 +411,6 @@ custom_domains = {
         "divar.news",
         "abris.cloud",
         "qallek.com",
-        "tapsi.shop",
     ],
     "remove": [
         "eset.com",
