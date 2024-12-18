@@ -102,6 +102,7 @@ custom_domains = {
         "digijojeh.com",
         "digikalacloud.com",
         "digikalaprize.com",
+        "divar.news",
         "dkjet.ir",
         "doctorkhosravi.com",
         "doctormoosavi.com",
@@ -297,6 +298,7 @@ custom_domains = {
         "pishkhan24.com",
         "pishkhan.com",
         "pvst.ir",
+        "qallek.com",
         "qooetalaee.com",
         "qrmenusaz.com",
         "radisan.com",
@@ -410,7 +412,6 @@ custom_domains = {
         "zoomg.ir",
         "divar.news",
         "abris.cloud",
-        "qallek.com",
     ],
     "remove": [
         "eset.com",
