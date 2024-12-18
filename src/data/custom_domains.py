@@ -8,6 +8,7 @@ custom_domains = {
         "aanidarman.com",
         "abankapp.ir",
         "abianpharmed.com",
+        "abris.cloud",
         "actoverco.com",
         "adaklock.com",
         "adnetwork.credit",
@@ -410,8 +411,6 @@ custom_domains = {
         "zino-co.com",
         "zoodfood.com",
         "zoomg.ir",
-        "divar.news",
-        "abris.cloud",
     ],
     "remove": [
         "eset.com",
