@@ -42,6 +42,7 @@ custom_domains = {
         "asiamokamel.com",
         "asiatech.com",
         "asnafshahr.com",
+        "asr24.com",
         "azad.im",
         "azadfekrischool.ir",
         "azadilab.com",
