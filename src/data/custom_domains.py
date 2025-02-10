@@ -191,6 +191,7 @@ custom_domains = {
         "iranchetor.com",
         "irandaily.ir",
         "iranianbirdingclub.com",
+        "iranicard.exchange",
         "irannewspaper.ir",
         "iransaratan.org",
         "irantricking.com",
