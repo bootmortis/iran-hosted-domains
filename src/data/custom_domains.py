@@ -179,6 +179,7 @@ custom_domains = {
         "fgtal.com",
         "firouzeh.com",
         "fodev.org",
+        'followdeh.net",
         "foodiemaryam.com",
         "foodna.com",
         "forward-co.com",
