@@ -389,6 +389,7 @@ custom_domains = {
         "sara.clinic",
         "sarak.co",
         "sariasan.com",
+        "saraf.app",
         "sarvdata.com",
         "sbm24.net",
         "sdb247.com",
