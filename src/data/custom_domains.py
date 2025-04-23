@@ -348,6 +348,7 @@ custom_domains = {
         "pishgaman.cloud",
         "pishkhan24.com",
         "pishkhan.com",
+        "portaltvto.com",
         "pvst.ir",
         "qallek.com",
         "qooetalaee.com",
@@ -460,6 +461,7 @@ custom_domains = {
         "targoman.ir",
         "team-graphic.com",
         "techrato.com",
+        "techsiro.com",
         "tehranchemie.com",
         "tehrandarou.com",
         "tehrandrug.com",
@@ -521,4 +523,5 @@ custom_domains = {
 
 if __name__ == "__main__":
     import json
+
     print(json.dumps(custom_domains))
