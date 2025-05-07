@@ -110,6 +110,8 @@ custom_domains = {
         "dgkl.me",
         "dgkljet.me",
         "dgland.dev",
+        "dibaenergy.com",
+        "dibaptc.com",
         "didiwater.com",
         "digicharter.com",
         "digifycdn.com",
