@@ -348,7 +348,6 @@ custom_domains = {
         "pishgaman.cloud",
         "pishkhan24.com",
         "pishkhan.com",
-        "portaltvto.com",
         "pvst.ir",
         "qallek.com",
         "qooetalaee.com",
