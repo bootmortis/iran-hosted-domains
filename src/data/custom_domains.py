@@ -571,6 +571,7 @@ custom_domains = {
         "zeusboroodat.com",
         "zhinakala.com",
         "zhinora.com",
+        "zil.ink",
         "zino-co.com",
         "zinoatlasco.com",
         "zoodfood.com",
