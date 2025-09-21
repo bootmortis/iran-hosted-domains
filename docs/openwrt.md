@@ -1,24 +1,18 @@
-# OpenWrt Pass Wall
+# OpenWrt Passwall
 
-These instructions are for [OpenWrt pass wall client](https://github.com/xiaorouji/openwrt-passwall).
+These instructions are for [OpenWrt passwall clients](https://github.com/xiaorouji/).
 
 ## Routing
 
 ?> Only tested with Xray core. (v2ray core may work too)
 
-1. Download latest version of [iran.dat](https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat).
+1. Update the repo and install the package `v2ray-geosite-ir`, This proccess can also be done through Luci web interface.
 
 ```shell
-curl -LO https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat
+opkg update && opkg install v2ray-geosite-ir
 ```
 
-2. Move `iran.dat` to `/usr/share/v2ray/` directory. (you can see the correct directory in `Pass Wall -> Rule Manage -> Location of V2ray/Xray asset`)
-
-```shell
-mv iran.dat /usr/share/v2ray/
-```
-
-3. Create these new Shunt Rules in `Pass Wall -> Rule Manage -> Shunt Rules` in this order:
+2. Create these new Shunt Rules in `Pass Wall -> Rule Manage -> Shunt Rules` in this order:
     1. `Block`:
         - Remarks: `Block`
         - Domain: `ext:iran.dat:ads`
@@ -29,7 +23,7 @@ mv iran.dat /usr/share/v2ray/
         - Remarks: `Direct`
         - Domain: `ext:iran.dat:all` (you can use `other`, `ir` or `tld-ir` instead of `all` if you want. For more info see [Full categories](#full-categories))
         - IP: `geoip:ir` (you can also add `geoip:private` too in a new line)
-4. Create new node in `Pass Wall -> Node List -> Add`:
+4. [Only passwall1]Create new node in `Passwall -> Node List -> Add`:
     - Node Remarks: `Shunt`
     - Type: `Xray`
     - Protocol: `Shunt`

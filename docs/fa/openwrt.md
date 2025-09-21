@@ -1,25 +1,18 @@
-# OpenWrt Pass Wall
+# OpenWrt Passwall
 
-این دستورالعمل‌ها برای [کلاینت OpenWrt pass wall](https://github.com/xiaorouji/openwrt-passwall) می‌باشند.
+این دستورالعمل‌ها برای [کلاینتهای یک و دو OpenWrt Passwall](https://github.com/xiaorouji/) می‌باشند.
 
 ## مسیریابی :id=routing
 
 ?> فقط با هسته Xray تست شده است. (با هسته v2ray هم ممکن است کار کند)
 
-1. آخرین نسخه‌ی فایل [iran.dat](https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat) را دانلود کنید.
+۱. رپوی OpenWrt را بروز کرده و بسته v2ray-geosite-ir را نصب کنید.برای نصب این بسته از طریق رابط وب لوسی نیز میتوانید استفاده کنید. 
 
 ```shell
-curl -LO https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat
+opkg update && opkg install v2ray-geosite-ir
 ```
 
-2. فایل `iran.dat` را به دایرکتوری `/usr/share/v2ray/` منتقل کنید. (شما می توانید دایرکتوری صحیح را در `Pass Wall -> Rule Manage -> Location of V2ray/Xray asset`ببینید)
-
-```shell
-mv iran.dat /usr/share/v2ray/
-```
-
-3. قوانین shunt زیر را در بخش `Pass Wall -> Rule Manage -> Shunt Rules` به همین ترتیب ایجاد کنید:
-
+۲.قوانین shunt زیر را در بخش `Passwall(2) -> Rule Manage -> Shunt Rules` به همین ترتیب ایجاد کنید:
 <div dir=ltr>
 
 1.  `Block`:
@@ -35,7 +28,7 @@ mv iran.dat /usr/share/v2ray/
 
 </div>
 
-4. یک Node جدید در `Pass Wall -> Node List -> Add` با مشخصات زیر ایجاد کنید:
+۳.(فقط برای پسوال۱)یک Node جدید در `Passwall -> Node List -> Add` با مشخصات زیر ایجاد کنید:
 
 <div dir=ltr>
 
@@ -50,12 +43,12 @@ mv iran.dat /usr/share/v2ray/
 
 </div>
 
-5. به `Pass Wall -> Basic Settings -> Main` بروید و سپس:
+۴. به `Passwall -> Basic Settings -> Main` بروید و سپس:
 
 <div dir=ltr>
 
 -   TCP Node: `[Shunt]`
--   UDP Node: `Same as the tcp node`
+-   (passwall1 only)UDP Node: `Same as the tcp node`
 
 </div>
 
