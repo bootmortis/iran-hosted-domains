@@ -328,6 +328,7 @@ custom_domains = {
         "medvika.com",
         "mehrkia.com",
         "mehrradiology.com",
+        "menusaz.com",
         "mesterfit.com",
         "microless.shop",
         "mielse.com",
