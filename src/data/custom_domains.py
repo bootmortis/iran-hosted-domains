@@ -127,6 +127,7 @@ custom_domains = {
         "dgland.dev",
         "dibaenergy.com",
         "dibaptc.com",
+        "didar24.com",
         "didiwater.com",
         "digicharter.com",
         "digifycdn.com",
