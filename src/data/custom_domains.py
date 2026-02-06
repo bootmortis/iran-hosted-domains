@@ -215,6 +215,7 @@ custom_domains = {
         "fulicahaircare.com",
         "gashtaninews.com",
         "gbgnetwork.net",
+        "gigalib.org",
         "giledu.ir",
         "glorycartoon.com",
         "glorytoon.com",
