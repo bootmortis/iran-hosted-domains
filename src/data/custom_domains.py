@@ -263,6 +263,7 @@ custom_domains = {
         "iransaratan.org",
         "irantricking.com",
         "irantsm.com",
+        "irimc.org",
         "itposhtiban.com",
         "ivbb.ir",
         "jalinous.com",
