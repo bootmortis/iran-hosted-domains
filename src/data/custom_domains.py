@@ -83,6 +83,7 @@ custom_domains = {
         "boghratlab.com",
         "bonyan.co",
         "boomidi.net",
+        "bozorgraah.com",
         "bourseview.com",
         "bordar.live",
         "byhamraz.com",
