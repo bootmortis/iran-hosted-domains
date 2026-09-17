@@ -135,3 +135,16 @@ def switchy_omega(bypass_domains: Iterable[str]):
 
     utils.save_to_file(consts.switchy_omega_path, config)
 
+
+def fortinet(bypass_domains: Iterable[str], ads_domains: Iterable[str]):
+    domainset_config_other = domainset_config_ads = (
+        "# Fortinet\n"
+        "# Manual: https://community.fortinet.com/fortimanager-27/technical-tip-how-to-install-domain-name-external-feed-connector-to-a-fortigate-from-fortimanager-219968\n"
+    )    
+    domainset_config_other += "".join(f"*.{domain}\n" for domain in bypass_domains)
+    domainset_config_ads += "".join(f"*.{domain}\n" for domain in ads_domains)           
+
+
+    utils.save_to_file(consts.fortinet_domainset_path_other, domainset_config_other) 
+    utils.save_to_file(consts.fortinet_domainset_path_ads, domainset_config_ads)     
+

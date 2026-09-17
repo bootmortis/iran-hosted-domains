@@ -75,3 +75,4 @@ if __name__ == "__main__":
     create_config.surge(other_domains, ad_domains)
     create_config.hysteria(other_domains, ad_domains)    
     create_config.switchy_omega(other_domains)
+    create_config.fortinet(other_domains, ad_domains)

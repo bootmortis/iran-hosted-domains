@@ -16,6 +16,7 @@
     -   [Hysteria](hysteria.md)
     -   [OpenWrt Pass Wall](openwrt.md)
     -   [v2rayA](v2raya.md)
+    -   [Fortinet](fortinet.md)
 -   آموزش‌های عمومی
     -   [به‌روزرسانی خودکار فایل `iran.dat`](auto-update.md)
     -   [ایجاد دستی فایل .dat (آموزش)](manual-build.md)

@@ -43,6 +43,7 @@
 - فایل **shadowrocket.conf:** فایل conf قابل وارد کردن که می تواند در [Shadowrocket](https://bootmortis.github.io/iran-hosted-domains/#/fa/shadowrocket-ios) استفاده شود.
 - فایل‌های **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** و **surge_ruleset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Surge](https://bootmortis.github.io/iran-hosted-domains/#/fa/surge-surfboard) در دو فرمت مختلف شامل می شود.
 - فایل **switchy_omega.sorl**: دامنه ها را برای [SwitchyOmega](https://bootmortis.github.io/iran-hosted-domains/#/fa/switchyomega) شامل می شود.
+- فایل‌های **fortinet_domainset_ads.txt** و **fortinet_domainset_other.txt**: تمام تبلیغات و وب سایت های غیر ایرانی میزبانی شده در ایران را برای [Fortinet](https://bootmortis.github.io/iran-hosted-domains/#/fa/fortinet) شامل می شود.
 
 ## منابع و گرامیداشت
 

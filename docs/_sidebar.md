@@ -13,6 +13,7 @@
     -   [Hysteria](hysteria.md)
     -   [OpenWrt Pass Wall](openwrt.md)
     -   [v2rayA](v2raya.md)
+    -   [Fortinet](fortinet.md)
 -   General Tutorials
     -   [Auto Update `iran.dat` File](auto-update.md)
     -   [Create .dat file manually](manual-build.md)

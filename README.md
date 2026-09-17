@@ -44,6 +44,7 @@ Also, for each file there is a `.sha256` file that contains sha256 hash of that 
 -   **shadowrocket.conf:** Importable conf file that can be used in [Shadowrocket](https://bootmortis.github.io/iran-hosted-domains/#/shadowrocket-ios).
 -   **surge_domainset_ads.txt**, **surge_domainset_other.txt**, **surge_ruleset_ads.txt** and **surge_ruleset_other.txt**: Contains all ADs and non-ir websites hosted in Iran for [Surge](https://bootmortis.github.io/iran-hosted-domains/#/surge-surfboard) in two different formats.
 -   **switchy_omega.sorl**: Contains domains for [SwitchyOmega](https://bootmortis.github.io/iran-hosted-domains/#/switchyomega).
+-   **fortinet_domainset_ads.txt** and **fortinet_domainset_other.txt**: Contains all ADs and non-ir websites hosted in Iran for [Fortinet](https://bootmortis.github.io/iran-hosted-domains/#/fortinet).
 
 ## Sources & Acknowledgements
 
