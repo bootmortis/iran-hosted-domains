@@ -34,6 +34,13 @@ You can always find the latest version of these files in the [release page][link
 You can click on app name to see the usage instructions.  
 Also, for each file there is a `.sha256` file that contains sha256 hash of that file.
 
+> [!TIP]
+> All release assets are also published on the `release` branch. You can download them directly or via jsDelivr CDN:  
+> `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/<filename>`  
+> 
+> For example:  
+> `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/iran.dat`
+
 -   **clash_rules_ads.txt**, **clash_rules_ads.yaml**, **clash_rules_other.txt** and **clash_rules_other.yaml**: Contains all ADs and non-ir domains for [clash](https://bootmortis.github.io/iran-hosted-domains/#/clash) in two different formats.
 -   **domains.txt**: Contains all websites hosted in Iran.
 -   **hysteria_client.acl** and **hysteria_server.acl**: see [Hysteria](https://bootmortis.github.io/iran-hosted-domains/#/hysteria) section.

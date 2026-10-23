@@ -33,6 +33,13 @@
 شما می توانید روی نام برنامه کلیک کنید تا دستورالعمل های استفاده را ببینید.  
 همچنین، برای هر فایل، یک فایل `.sha256` وجود دارد که حاوی هش sha256 آن فایل است.
 
+> [!TIP]
+> تمام فایل‌های انتشار در شاخه `release` نیز منتشر می‌شوند. شما می‌توانید آن‌ها را به صورت مستقیم یا از طریق CDN jsDelivr دریافت کنید:  
+> `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/<filename>`  
+> 
+> برای مثال:  
+> `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/iran.dat`
+
 - فایل‌های **clash_rules_ads.txt** و **clash_rules_ads.yaml** و **clash_rules_other.txt** و **clash_rules_other.yaml**: تمام تبلیغات و دامنه‌های غیر ir را برای [clash](https://bootmortis.github.io/iran-hosted-domains/#/fa/clash) در دو فرمت مختلف شامل می شود.
 - فایل **domains.txt**: تمام وب سایت های میزبانی شده در ایران را شامل می شود.
 - فایل‌های **hysteria_client.acl** و **hysteria_server.acl**: بخش [Hysteria](https://bootmortis.github.io/iran-hosted-domains/#/fa/hysteria) را ببینید.

@@ -3,7 +3,8 @@
 Please **use the left sidebar** to navigate through the documentation and find the client you are using.
 
 You can download the domains list from the [release page](https://github.com/bootmortis/iran-hosted-domains/releases/latest).  
-For quick review of all release files see [Files section](https://github.com/bootmortis/iran-hosted-domains?tab=readme-ov-file#files).
+For quick review of all release files see [Files section](https://github.com/bootmortis/iran-hosted-domains?tab=readme-ov-file#files).  
+You can also download release files from the `release` branch using jsDelivr CDN: `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/<filename>` (e.g., [`iran.dat`](https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/iran.dat)).
 
 ## General Rules
 

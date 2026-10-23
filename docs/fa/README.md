@@ -3,7 +3,8 @@
 لطفا **از نوار کناری چپ** برای مرور آموزش‌ها و پیدا کردن کلاینتی که استفاده می‌کنید استفاده کنید.
 
 لیست دامنه‌ها و فایل‌های مربوط را می‌توانید از [این صفحه](https://github.com/bootmortis/iran-hosted-domains/releases/latest) دریافت کنید.  
- برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](https://github.com/bootmortis/iran-hosted-domains/blob/main/README.fa.md#%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7) مراجعه کنید.
+ برای مرور سریع فایل‌های رلیز شده در این مخزن می‌توانید به بخش [فایل‌ها](https://github.com/bootmortis/iran-hosted-domains/blob/main/README.fa.md#%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7) مراجعه کنید.  
+همچنین می‌توانید فایل‌های رلیز را از طریق شاخه `release` و CDN jsDelivr دریافت کنید: `https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/<filename>` (به عنوان مثال [`iran.dat`](https://cdn.jsdelivr.net/gh/bootmortis/iran-hosted-domains@release/iran.dat)).
 
 ## قوانین کلی
 
